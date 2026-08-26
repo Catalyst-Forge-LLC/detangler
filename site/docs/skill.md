@@ -2,7 +2,11 @@
 title: Skill
 ---
 
-Two folders. `detangler` is the comb pass: an agent reads it and writes the report. `detangler-apply` works approved findings. Each is `SKILL.md` plus the reference files it reads.
+The product is the comb folder: `detangler`. An agent reads it and writes the report. That is the first install.
+
+`detangler-apply` is a second folder. It works findings you approve after a report exists. Drop it in if you want an agent to work the knots. It is not inside the comb skill.
+
+Each folder is `SKILL.md` plus the reference files it reads.
 
 The comb skill runs after a long draft has been edited a lot — especially with an agent, or by more than one person.
 

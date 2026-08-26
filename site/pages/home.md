@@ -20,7 +20,7 @@ Findings come in three kinds.
 
 | Kind | Means | Example |
 | --- | --- | --- |
-| **Broken** | Wrong as written | "See the Resources section" after Resources was renamed |
+| **Broken** | Wrong as written | "See the Resources section" after Resources was deleted |
 | **Intentional but verify** | Looks deliberate, check it | A term used two sections before it is defined |
 | **Judgment call** | Reasonable people would differ | Two sections covering the same ground after separate passes |
 
@@ -49,6 +49,6 @@ The [skill](/docs/skill) is a folder. Drop it in. That is the product.
 pnpm add -D detangler
 ```
 
-The package is the same two skill folders.
+The package ships both folders. The comb is the one you need first. Apply is a second skill, after a report exists.
 
 Built by [Catalyst Forge LLC](https://www.catalystforge.com). MIT.

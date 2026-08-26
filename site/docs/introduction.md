@@ -18,7 +18,7 @@ The skill writes `report.md`. Findings in three buckets, then the outline extrac
 
 | Bucket | Means | Example |
 | --- | --- | --- |
-| **Broken** | Wrong as written | "See the Resources section" after Resources was renamed |
+| **Broken** | Wrong as written | "See the Resources section" after Resources was deleted |
 | **Intentional but verify** | Looks deliberate, check it | A term used two sections before it is defined |
 | **Judgment call** | Reasonable people would differ | Two sections covering the same ground after separate passes |
 

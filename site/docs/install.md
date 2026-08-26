@@ -2,7 +2,7 @@
 title: Install
 ---
 
-The [skill](/docs/skill) is the product. Two folders: `detangler` (comb pass) and `detangler-apply` (work approved findings). The package ships the same folders. There is no command-line comb.
+The [skill](/docs/skill) is the product. Start with `detangler` (comb pass). `detangler-apply` is a second folder for working approved findings after a report exists. The package ships both. There is no command-line comb.
 
 ## Get the folders
 
