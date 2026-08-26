@@ -8,9 +8,12 @@ Find what the editing tangled.
 
 Combs the whole document, not single strands.
 
-Detangler is a structural editing pass for long drafts after a lot of
-edits — yours, a collaborator's, an agent's. It is a skill: an agent
-reads it and writes a report of what the editing left behind.
+Detangler is a structural editing pass for things that have been
+worked over — drafts, and later programs. The skill that ships
+combs **drafts**: an agent reads it and writes a report of what
+the editing left behind. A second comb for **apps** (routes,
+contracts, sources of truth) is the same family, not a second
+package, and is not in this release.
 
 **Docs:** [detangler.dev/docs](https://detangler.dev/docs) · **Site:** [detangler.dev](https://detangler.dev)
 

@@ -8,6 +8,8 @@ A lot of editing tangles the document. References drift. The argument loses its 
 
 npm **`detangler`**. Site **detangler.dev**. Sibling of [aiBreze](https://aibreze.com).
 
+The family is two combs: **drafts** (this skill) and **programs** (routes, contracts, failed single source of truth). Same report buckets. Different maps. The program comb is not in the package yet. Do not fold them into one skill.
+
 ## Swaths, not strands
 
 Sections, cross-references, argument flow, and repetition are the swaths. Sentences are the strands. Line editing is a different pass with different eyes, and doing both at once does both badly.

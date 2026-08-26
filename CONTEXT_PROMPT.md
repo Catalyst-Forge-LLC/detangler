@@ -8,7 +8,7 @@ _Session continuity. Locked architecture lives in `docs/PHASE_1_BRIEF.md` and `.
 
 ## What this is
 
-Detangler is a structural editing pass for long drafts after a lot of edits — the author's, a collaborator's, an agent's. The **skill** is the product: an agent reads it and writes `report.md`. npm ships the folders. There is no command-line comb.
+Detangler is a structural editing pass for things that have been worked over. The **skill that ships** combs drafts. A second comb for programs is specified in `docs/FAMILY.md` and named on the site as not in the zip yet. Do not fold the two into one skill. The **skill** is the product: an agent reads it and writes `report.md`. npm ships the folders. There is no command-line comb.
 
 Sibling of aiBreze. npm `detangler`. Site detangler.dev. GitHub Catalyst-Forge-LLC/detangler.
 

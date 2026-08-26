@@ -48,6 +48,10 @@ Grammar, tone, and sentence rhythm stay out. Structural editing and line editing
 
 [aiBreze](https://aibreze.com) sprays AI smells off prose. Detangler is the next bottle on the shelf.
 
+## Drafts and programs
+
+Same metaphor. Different object. The skill that ships combs **drafts**. A second comb is for **programs** — routes, nav, feature contracts, and a single source of truth that editing broke. One package, two folder pairs, when that comb exists. It is not in the zip today. Do not run the draft skill on an app.
+
 ## Install
 
 The [skill](/docs/skill) is a folder. [Download detangler.zip](/skills/detangler.zip), put it in `.cursor/skills/detangler/` (or upload the zip on claude.ai), and ask whether the draft still hangs together.

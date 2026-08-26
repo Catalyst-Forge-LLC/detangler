@@ -8,7 +8,9 @@ A hair detangler works on the whole head, not strand by strand. You comb large s
 
 The knots come from editing. A long draft, many passes, more than one pair of hands — especially an agent. Each change looks fine. The document tangles: a pointer at a heading that moved, an argument that later rewrites left behind, the same claim said twice, a section that grew until it swallowed the rest.
 
-[aiBreze](https://aibreze.com) is the spray that removes AI smells. Detangler is the next bottle: run it on a draft that has been worked over and see what the editing left behind.
+[aiBreze](https://aibreze.com) is the spray that removes AI smells. Detangler is the next bottle: run it on something that has been worked over and see what the editing left behind.
+
+The comb that ships is for **drafts**. The same knots show up in a **program**: two Settings screens that almost agree, a button that goes nowhere, one fact defined in three places. That is a second skill, same family, not this one. One npm package will ship both folder pairs. Only the draft pair is in the package today.
 
 ## Names
 

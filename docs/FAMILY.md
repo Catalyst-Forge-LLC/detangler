@@ -181,7 +181,7 @@ Do this in order. Do not start the app comb until 1–3 exist in public.
 3. **Paste-dumb install.** One copy-or-download path for people with no `skills/` directory. Keep npm and folder drop for people who already live there.
 4. **Tighten the draft skill** only where the sample report shows a hole: outline nodes on every finding, apply never unnamed-applies judgment calls, deletion orphan as the broken example (already on the site).
 5. **Dogfood the app comb** on one iterated app you own. Publish *that* report: surface map, contract inventory, three buckets, authority conflicts first-class. No second landing page until that report exists.
-6. **Then** write `detangler-app` + `detangler-app-apply`, ship the folders, add a shelf line on the site.
+6. **Then** write `detangler-app` + `detangler-app-apply`, ship the folders. The site already names the family (drafts now, programs next). After the app report exists, change that line from “not in the zip” to the install path.
 
 ---
 
