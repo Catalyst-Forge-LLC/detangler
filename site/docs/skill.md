@@ -10,6 +10,8 @@ Each folder is `SKILL.md` plus the reference files it reads.
 
 The comb skill runs after a long draft has been edited a lot — especially with an agent, or by more than one person.
 
+No skills directory yet? Start on [Install](/docs/install): download the zip, put the folder where the table says, ask the agent to comb the draft.
+
 ## Download the ZIP
 
 [Download detangler.zip](/skills/detangler.zip) · [Download detangler-apply.zip](/skills/detangler-apply.zip)

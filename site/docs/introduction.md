@@ -35,5 +35,6 @@ A lot of editing produces four kinds of tangle.
 
 ## Two hooks
 
-- [Install](/docs/install) — skill folder, or npm that ships the folders
+- [Install](/docs/install) — download the zip, put the folder where the table says
 - [Skill](/docs/skill) — comb pass, plus `detangler-apply` for working a report
+- [Sample report](/docs/sample-report) — twelve findings and the outline, from a real comb

@@ -26,6 +26,13 @@ Findings come in three kinds.
 
 Nothing in your draft changes. The report is a to-do list you work by hand, or hand to an agent.
 
+A [sample report](/docs/sample-report) from a cache-invalidation note after many passes:
+
+1. **F-001** · **s1** — reference_orphan — “see the Resources section” after Resources was deleted.
+2. **F-007** · **s4** — stale_edit — retry window is 30 seconds here and 90 in the recap.
+
+The full report has twelve findings and the outline extracted from the text.
+
 ## What it checks
 
 A lot of editing produces four kinds of tangle. An agent in the file produces them faster.
@@ -43,12 +50,14 @@ Grammar, tone, and sentence rhythm stay out. Structural editing and line editing
 
 ## Install
 
-The [skill](/docs/skill) is a folder. Drop it in. That is the product.
+The [skill](/docs/skill) is a folder. [Download detangler.zip](/skills/detangler.zip), put it in `.cursor/skills/detangler/` (or upload the zip on claude.ai), and ask whether the draft still hangs together.
+
+If you already use npm:
 
 ```bash
 pnpm add -D detangler
 ```
 
-The package ships both folders. The comb is the one you need first. Apply is a second skill, after a report exists.
+Then copy the `detangler` folder out of `node_modules`. Apply is a second skill, after a report exists.
 
 Built by [Catalyst Forge LLC](https://www.catalystforge.com). MIT.

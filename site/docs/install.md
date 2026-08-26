@@ -2,23 +2,41 @@
 title: Install
 ---
 
-The [skill](/docs/skill) is the product. Start with `detangler` (comb pass). `detangler-apply` is a second folder for working approved findings after a report exists. The package ships both. There is no command-line comb.
+The [skill](/docs/skill) is the product. Start with the comb folder. Apply is a second folder, after a report exists.
 
-## Get the folders
+## Drop the folder in
 
-1. Download [detangler.zip](/skills/detangler.zip) and [detangler-apply.zip](/skills/detangler-apply.zip), or clone the [repo](https://github.com/Catalyst-Forge-LLC/detangler), or add the package:
+You do not need npm. You need a folder named `detangler` that contains `SKILL.md`.
+
+1. Download [detangler.zip](/skills/detangler.zip).
+2. Unzip it. You should see `SKILL.md` and a `references/` folder.
+3. Put that folder here:
+
+| Where you work | Put the folder here |
+| --- | --- |
+| Cursor | `.cursor/skills/detangler/` in the project, or `~/.cursor/skills/detangler/` |
+| Claude Code | `~/.claude/skills/detangler/` or `.claude/skills/detangler/` in the repo |
+| claude.ai | Settings → Customize → Skills → upload the zip (do not unzip) |
+
+4. Open a long draft. Say: *Does this still hang together after all these edits?*
+
+That is the whole install. The agent reads the folder and writes `report.md` next to the draft.
+
+Want an agent to work approved findings later? Same steps with [detangler-apply.zip](/skills/detangler-apply.zip) into a folder named `detangler-apply`.
+
+## If you already use npm
 
 ```bash
 pnpm add -D detangler
 ```
 
-2. Copy `detangler/` to `.cursor/skills/detangler/` (or `~/.claude/skills/detangler/`).
-3. Copy `detangler-apply/` to `.cursor/skills/detangler-apply/` the same way.
-4. When a long draft has been edited a lot — especially with an agent, or by more than one person — invoke Detangler even if the user only asks whether it still hangs together. After a report exists, invoke detangler-apply to work approved findings.
+Copy `node_modules/detangler/skills/detangler/` into a skills directory. Same for `detangler-apply` if you want the apply pass.
+
+Or clone the [repo](https://github.com/Catalyst-Forge-LLC/detangler) and copy `skills/detangler/`.
 
 Node.js 20+. The package is [`detangler`](https://www.npmjs.com/package/detangler) on npm.
 
-Full paths and example prompts: [Skill](/docs/skill).
+Example prompts: [Skill](/docs/skill). A finished [sample report](/docs/sample-report).
 
 ## What the skill writes
 

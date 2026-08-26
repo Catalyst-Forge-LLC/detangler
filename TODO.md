@@ -13,9 +13,9 @@ _Flat list until Phase 6 reorganizes by brand pillars._
 
 ## Next (Phase 4)
 
-- [ ] Redirects: `/install` → `/docs/install`, `/skill` → `/docs/skill`
-- [ ] Sample report on the homepage (real 8–12 findings + outline)
-- [ ] Paste-dumb install for people with no skills directory
+- [x] Redirects: `/install` → `/docs/install`, `/skill` → `/docs/skill`
+- [x] Sample report on the homepage (real 8–12 findings + outline)
+- [x] Paste-dumb install for people with no skills directory
 - [ ] Same-claim / same-example repetition (skill already classifies; tighten references if needed)
 - [ ] Chunking above ~40k words (future; not this release)
 - [x] No command-line comb (2026-08-26)
