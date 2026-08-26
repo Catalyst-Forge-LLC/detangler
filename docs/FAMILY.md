@@ -62,7 +62,7 @@ If one skill pretends they are the same, the agent wanders. On a draft it review
 
 | | Drafts | Programs |
 | --- | --- | --- |
-| Map | Reverse outline from headings (`s1`, `s1.2`) | Surface, contracts, entities, authority |
+| Map | Reverse outline from headings (`s1`, `s1.2`; `<stem>.s1` on a named set) | Surface, contracts, entities, authority |
 | References | Pointers, named sections, counts, terms | Dead routes, nav to missing screens, copy that says “see X”, deep links, clients aimed at removed endpoints |
 | Argument | Section questions; did the previous raise it? | Journeys that start and never resolve; a form that collects data no feature consumes; onboarding that promises a capability the app does not have |
 | Repetition | Near-verbatim and same-claim, ranked by **job** | Two create-flows, twin settings, parallel schemas for one noun, near-duplicate modules that drifted |

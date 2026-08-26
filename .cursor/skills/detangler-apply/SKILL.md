@@ -19,8 +19,9 @@ Standing rules: `references/apply.md` in this folder.
 
 1. If there is no `report.md`, stop. Use the `detangler` skill
    first. Do not re-comb here.
-2. The draft is the file this report was written for. The folder
-   is `<stem>.detangler/` next to it. Read `report.md`.
+2. The draft is the file or document set this report was written
+   for. The folder is `<stem>.detangler/` next to that file or
+   directory. Read `report.md`.
 3. Approval is chat-only.
 4. Unnamed "apply the report" means every `broken` finding, in
    report order. Ask before `intentional_but_verify` and

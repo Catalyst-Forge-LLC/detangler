@@ -1,6 +1,6 @@
 # Detangler: Build Specification
 
-Version 0.3. Product spec.
+Version 0.4. Product spec.
 
 Package: `detangler` on npm. Site: detangler.dev. Sibling of aiBreze (aibreze.com).
 
@@ -20,7 +20,7 @@ Hero may still use: *Combs the whole document, not single strands.* That line is
 
 Product shape: two skills. npm `detangler` ships the folders. There is no command-line comb.
 
-Family and the app variant: [`FAMILY.md`](./FAMILY.md). This file is the **draft** comb only. Do not fold programs into this skill.
+Family and the app variant: [`docs/FAMILY.md`](./docs/FAMILY.md). This file is the **draft** comb only. Do not fold programs into this skill.
 
 Naming rule: use "Detangler" for the family and for the draft comb. Say "drafts" or "the app comb" when the variant is not obvious. Do not invent a second brand.
 
@@ -43,8 +43,8 @@ The method is a reverse outline plus a link check. An editor's trick and a softw
 ### In scope
 
 - Markdown, plain text, and HTML input. Docx and PDF are accepted only if converted to Markdown by a pre-step.
-- Documents from roughly 800 words up to book-length. Below 800 words the pass adds little. Chunking above roughly 40,000 words is a future extension (Section 7), not this release.
-- Single documents. Multi-file document sets are a stated future extension (Section 10).
+- Documents from roughly 800 words up to book-length. Below 800 words the pass adds little, except a short document set that shares a job across pages. Chunking above roughly 40,000 words is a future extension (Section 7), not this release.
+- One file, or a named document set (two or more pages, or a folder of pages). Outline and repetition run across the set. A full cross-file reference table (definition sites with a file field) is still later (Section 10).
 
 ### Out of scope
 
@@ -220,11 +220,11 @@ skills/detangler-apply/
 
 Not in the first build. Listed so the method does not preclude them.
 
-- Multi-file document sets: references that cross file boundaries. The definition table would need a file field.
+- Full cross-file reference table: definition sites carry a file field. Named-set outline and same-job repetition are already in the hour.
 - Diff mode: two versions, report only findings introduced between them.
 - Reader-question model: the questions a reader carries into each section, so `spine_break` can say which question was abandoned.
 - Term glossary export: the definition table is already a glossary; emit it as one.
-- App / project comb: specified in [`FAMILY.md`](./FAMILY.md). Not this skill. Not in parallel with leftover draft-comb proof.
+- App / project comb: specified in [`docs/FAMILY.md`](./docs/FAMILY.md). Not this skill. Not in parallel with leftover draft-comb proof.
 
 ## 11. Open decisions
 

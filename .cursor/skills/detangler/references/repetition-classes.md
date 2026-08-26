@@ -12,6 +12,10 @@ job of each instance is not emitted.
 - **redundant** — same job, same context, nothing new between them.
   `repetition_redundant`, `judgment_call`. Recommend which instance
   to cut from the spine.
+- **sibling** — same job, other file in the set, nothing new on
+  the later page. Same type: `repetition_redundant`,
+  `judgment_call`. Keep the instance whose page title is that
+  job. Cut the other, or leave a pointer.
 - **contradictory** — claims conflict. `broken`.
 - **stale_edit** — near-verbatim except a fact, number, or qualifier
   that one instance updated. `broken`.
@@ -22,6 +26,10 @@ job of each instance is not emitted.
 three reasons with no new work between them. Class: `redundant`.
 `judgment_call`. Action: keep the instance that sits on the spine;
 cut the other.
+
+**Emit.** Install lists zip and npm. Skill lists zip and npm.
+Class: `sibling`. `judgment_call`. Action: keep Install; on Skill
+leave a pointer.
 
 **Do not emit.** You cannot say, in one clause each, what job A and
 B are doing. No finding.

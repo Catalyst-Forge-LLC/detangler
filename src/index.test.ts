@@ -20,7 +20,13 @@ test("comb skill is the report hour and does not name a CLI", () => {
 	const skill = readSkill("detangler");
 	assert.match(skill, /^---\nname: detangler\n/m);
 	assert.match(skill, /Write `<stem>\.detangler\/report\.md`/);
+	assert.match(skill, /document set/);
 	assert.match(skill, /Not for grammar, tone/);
+	const classes = readFileSync(
+		join(skillDir("detangler"), "references", "repetition-classes.md"),
+		"utf8",
+	);
+	assert.match(classes, /\*\*sibling\*\*/);
 	assert.doesNotMatch(skill, /npx detangler/);
 	assert.doesNotMatch(skill, /detangler assemble/);
 	assert.doesNotMatch(skill, /API key/);

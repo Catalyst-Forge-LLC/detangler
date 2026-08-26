@@ -51,6 +51,7 @@ type, an action, and evidence. No action → the finding is not
 emitted.
 
 The outline is extracted from the text as it stands. Claims come
-from each section's own text, not from intent.
+from each section's own text, not from intent. A document set
+prefixes the file stem (`install.s1`).
 
 `Raised by previous` for the first node is `—`.

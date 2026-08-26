@@ -2,55 +2,23 @@
 title: Skill
 ---
 
-The product is the comb folder: `detangler`. An agent reads it and writes the report. That is the first install.
+The product is the comb folder: `detangler`. An agent reads it and writes the report.
 
 `detangler-apply` is a second folder. It works findings you approve after a report exists. Drop it in if you want an agent to work the knots. It is not inside the comb skill.
 
 Each folder is `SKILL.md` plus the reference files it reads.
 
-The comb skill runs after a long draft has been edited a lot — especially with an agent, or by more than one person.
+The comb skill runs after a long draft has been edited a lot — especially with an agent, or by more than one person. A named document set (two pages, or a folder) is the same hour.
 
-No skills directory yet? Start on [Install](/docs/install): download the zip, put the folder where the table says, ask the agent to comb the draft.
-
-## Download the ZIP
-
-[Download detangler.zip](/skills/detangler.zip) · [Download detangler-apply.zip](/skills/detangler-apply.zip)
-
-Unpack one. Move the folder that contains `SKILL.md` into a skills directory.
-
-On claude.ai, skip unpacking. Upload the ZIP under Settings, Customize, Skills.
-
-## Clone the repo
-
-```bash
-git clone https://github.com/Catalyst-Forge-LLC/detangler.git
-```
-
-Copy `skills/detangler/` and, if you want the apply pass, `skills/detangler-apply/` from the clone into a skills directory.
-
-## Install from npm
-
-```bash
-pnpm add -D detangler
-```
-
-Copy `node_modules/detangler/skills/detangler/` and `node_modules/detangler/skills/detangler-apply/` into a skills directory.
-
-## Skills directories
-
-- Claude Code, every project: `~/.claude/skills/<name>/`
-- Claude Code, one repo: `.claude/skills/<name>/`
-- Cursor: `.cursor/skills/<name>/` or `~/.cursor/skills/<name>/`
-
-The folder you drop in must be named `detangler` or `detangler-apply` and must contain `SKILL.md`.
+No folder yet? [Install](/docs/install).
 
 ## What the agent does
 
 Comb pass (`detangler`):
 
-1. Locate the draft.
-2. Extract the outline from headings (`s1`, `s1.2`).
-3. Check references, argument, repetition, and weight.
+1. Locate the draft or the document set.
+2. Extract the outline from headings (`s1`, `s1.2`; `<stem>.s1` on a set).
+3. Check references, argument, repetition, and weight. Same-claim on two pages is repetition.
 4. Write `report.md`. Hand it over. Do not edit the draft.
 
 Apply (`detangler-apply`):
@@ -65,6 +33,7 @@ Apply (`detangler-apply`):
 - Does this still hang together after all these edits?
 - An agent has been through this file. What tangled?
 - Comb this draft.
+- These two docs pages say the same thing.
 - Reverse outline, then tell me what broke.
 - Structural pass only. Leave the sentences.
 - Apply this report.

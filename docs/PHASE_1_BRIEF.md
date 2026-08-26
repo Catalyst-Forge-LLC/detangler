@@ -132,7 +132,7 @@ No payments, email, analytics, or search API.
 - Grammar, word choice, sentence rhythm, tone, line-level edits
 - Fact checking and external HTTP link checks
 - Automatic rewriting of the draft
-- Multi-file document sets
+- Full cross-file reference table (named-set outline and same-job repetition shipped in GENESIS 0.4)
 - Native docx/PDF parsing
 - Accounts, billing, cloud document storage
 - A command-line comb
