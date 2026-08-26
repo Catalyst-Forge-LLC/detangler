@@ -35,7 +35,11 @@ A real failure mode, not a rewriter. Each pass looked fine. The thing tangled. G
 | `detangler` + `detangler-apply` | Drafts (prose) |
 | `detangler-app` + `detangler-app-apply` | Programs (apps, sites, iterated products) |
 
-No second brand. Hair products own the search term. That is accepted. A new name before either variant has a public sample report only splits attention.
+No second brand. No second npm package. One package, `detangler`, ships the skill folders. Two modes are two pairs of folders, not two registries. Copy the pair you need. Keywords and the README name both modes so a developer does not think the package is drafts-only.
+
+Hair products own the search term. That is accepted. A new name before either variant has a public sample report only splits attention.
+
+**Consultancy shelf.** Catalyst Forge will list Detangler (and the rest of the shelf) on the consultancy site. That is acknowledgment, not a second product page. Do it when CF is ready; do not block the sample report on it.
 
 **Apply stays conservative.** Chat-only approval. Unnamed apply = every `broken` finding, in report order, then ask. Never unnamed-apply `judgment_call`. One finding at a time. No drive-by rewrite of neighboring sections. Re-run the matching comb after each finding. Comb is the product. Apply is how you lose the room.
 
@@ -137,7 +141,7 @@ skills/detangler-app-apply/
 └── references/apply.md
 ```
 
-Description refuses the draft comb and architecture-review-as-roadmap. Name `detangler` only in the body. npm may ship both pairs in `detangler` later; do not add the folders until the dogfood report exists.
+Description refuses the draft comb and architecture-review-as-roadmap. Name `detangler` only in the body. Add the folders to the existing `detangler` package after the dogfood report exists. Do not publish a second package.
 
 Apply for apps: same conservatism. Do not drive-by refactor a neighboring route.
 
@@ -154,6 +158,7 @@ ForgeTrail is the lifecycle that tries not to create tangles. Detangler is the c
 - Automatic rewrite
 - Security, performance, component internals (Harden)
 - A second public name
+- A second npm package
 - Building both variants at once
 - Treating the app comb as a feature roadmap
 
@@ -161,9 +166,9 @@ ForgeTrail is the lifecycle that tries not to create tangles. Detangler is the c
 
 ## 6. Open decisions
 
-1. **Consultancy shelf.** Catalyst Forge’s homepage does not mention Detangler. Either this is a workshop tool that leaked into public, or the consultancy site and the product shelf acknowledge each other. Decide before a second landing page, not before the sample report.
-2. **npm shape for the app pair.** Same package vs a later `detangler-app` package. Default: same package, second pair of folders, after dogfood.
-3. **Map id scheme for apps.** Paths vs `r1`/`c1`/`e1`/`a1`. Default: typed ids plus the path or noun in the finding, so apply can find the surface.
+1. **Map id scheme for apps.** Paths vs `r1`/`c1`/`e1`/`a1`. Default: typed ids plus the path or noun in the finding, so apply can find the surface.
+
+**Decided.** Consultancy shelf: CF lists the products. npm: one package, folder pairs per mode.
 
 ---
 
@@ -183,5 +188,5 @@ Do this in order. Do not start the app comb until 1–3 exist in public.
 ## 8. What “done” looks like for the family
 
 - A stranger can install the draft comb without knowing what a skills directory is, and can stare at a real report on the homepage.
-- The two combs are two folders. They share philosophy and report buckets. They do not share a map.
+- The two combs are two folder pairs in one npm package. They share philosophy and report buckets. They do not share a map.
 - Apply remains how you lose the room if it gets greedy. The spec does not let it.
