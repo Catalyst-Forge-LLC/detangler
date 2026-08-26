@@ -5,13 +5,16 @@ alwaysApply: true
 
 # Detangler
 
-Product spec: [`docs/GENESIS.md`](../../docs/GENESIS.md). Architecture:
-[`docs/PHASE_1_BRIEF.md`](../../docs/PHASE_1_BRIEF.md).
+Product spec: [`docs/GENESIS.md`](../../docs/GENESIS.md) (draft comb).
+Family and app variant: [`docs/FAMILY.md`](../../docs/FAMILY.md).
+Architecture: [`docs/PHASE_1_BRIEF.md`](../../docs/PHASE_1_BRIEF.md).
+Do not fold the app comb into the draft skill.
 
-Use **Detangler** alone. Drop "Prose" except where the domain is not
-obvious. Header lockup: *A structural pass for drafts that have been
-worked over.* Hero may still use *Combs the whole document, not
-single strands.* — that line is opaque in the header by itself.
+Use **Detangler** for the family and the draft comb. Say "drafts"
+or "the app comb" when the variant is not obvious. Header lockup:
+*A structural pass for drafts that have been worked over.* Hero may
+still use *Combs the whole document, not single strands.* — that
+line is opaque in the header by itself.
 
 The job is drafts that have been **worked over** — by one person, by
 several, and especially by an agent. A lot of editing tangles

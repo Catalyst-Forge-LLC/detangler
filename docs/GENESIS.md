@@ -20,7 +20,9 @@ Hero may still use: *Combs the whole document, not single strands.* That line is
 
 Product shape: two skills. npm `detangler` ships the folders. There is no command-line comb.
 
-Naming rule for the codebase and docs: use "Detangler" alone. Drop "Prose" except where the domain is not obvious from context, such as the npm description or a first mention on an unfamiliar page.
+Family and the app variant: [`FAMILY.md`](./FAMILY.md). This file is the **draft** comb only. Do not fold programs into this skill.
+
+Naming rule: use "Detangler" for the family and for the draft comb. Say "drafts" or "the app comb" when the variant is not obvious. Do not invent a second brand.
 
 ## 1. Purpose
 
@@ -222,6 +224,7 @@ Not in the first build. Listed so the method does not preclude them.
 - Diff mode: two versions, report only findings introduced between them.
 - Reader-question model: the questions a reader carries into each section, so `spine_break` can say which question was abandoned.
 - Term glossary export: the definition table is already a glossary; emit it as one.
+- App / project comb: specified in [`FAMILY.md`](./FAMILY.md). Not this skill. Not in parallel with leftover draft-comb proof.
 
 ## 11. Open decisions
 

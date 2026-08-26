@@ -1,6 +1,6 @@
 # Detangler — Project Context Prompt
 
-_Session continuity. Locked architecture lives in `docs/PHASE_1_BRIEF.md` and `.forgetrail/workflow_tracking.json`. Product law: `docs/GENESIS.md`._
+_Session continuity. Locked architecture lives in `docs/PHASE_1_BRIEF.md` and `.forgetrail/workflow_tracking.json`. Draft-comb law: `docs/GENESIS.md`. Family and app variant: `docs/FAMILY.md`._
 
 **Merged from PHASE_1_BRIEF.md on 2026-08-25.** Brief stays in `docs/` as the audit trail.
 

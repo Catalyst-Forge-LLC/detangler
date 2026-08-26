@@ -1,6 +1,6 @@
 # Detangler — architecture brief
 
-Canonical product spec: [`GENESIS.md`](./GENESIS.md). This file is the stack and repo shape. If they drift, GENESIS wins on product law.
+Canonical product spec: [`GENESIS.md`](./GENESIS.md) (draft comb). Family and app variant: [`FAMILY.md`](./FAMILY.md). This file is the stack and repo shape. If they drift on the draft comb, GENESIS wins.
 
 **Status:** current  
 **Updated:** 2026-08-26 — two skills, no command-line comb. A CLI was tried and dropped.
