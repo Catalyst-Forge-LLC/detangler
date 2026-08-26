@@ -65,7 +65,7 @@ If one skill pretends they are the same, the agent wanders. On a draft it review
 | Map | Reverse outline from headings (`s1`, `s1.2`; `<stem>.s1` on a named set) | Surface, contracts, entities, authority |
 | References | Pointers, named sections, counts, terms | Dead routes, nav to missing screens, copy that says “see X”, deep links, clients aimed at removed endpoints |
 | Argument | Section questions; did the previous raise it? | Journeys that start and never resolve; a form that collects data no feature consumes; onboarding that promises a capability the app does not have |
-| Repetition | Near-verbatim and same-claim, ranked by **job** | Two create-flows, twin settings, parallel schemas for one noun, near-duplicate modules that drifted |
+| Repetition | Near-verbatim and same-claim, ranked by **job** (including a named document set) | Two create-flows, twin settings, parallel schemas for one noun, near-duplicate modules that drifted, two pages that restate the same job |
 | Weight | Section size vs the document as it stands | One area hypertrophied relative to the product’s **job** (god dashboard, kitchen-sink Settings) |
 | Authority | The outline *is* the source of truth | Failed single source of truth — first-class tangle, not a footnote under repetition |
 | Strands (refuse) | Line editing, tone, rhythm | Lint, naming, “clean up this file,” implementation style, component internals, performance, security |

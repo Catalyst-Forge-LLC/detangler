@@ -60,6 +60,12 @@ the finding.
   that used to match and now do not. `broken` if a user-
   visible fact conflicts; `judgment_call` if only structure
   doubled.
+- **sibling_surface** — same job on two pages (or a short
+  page and a docs page), nothing new on the later one.
+  `judgment_call`. Keep the instance whose title is that
+  job, or the fuller page if both share the title. Cut the
+  other, or leave a pointer. Two hooks with different
+  jobs (npm overlay vs skill folder) are not this class.
 
 ## Weight
 
@@ -83,5 +89,13 @@ Prefer those types when the injury is "which one is true."
 is gone. `route_orphan`, `broken`, node `r4` `/settings`.
 Action: retarget the item, or restore the page.
 
+**Emit.** `/install` and `/docs/install` both list the same
+five setup steps. Class: `sibling_surface`. `judgment_call`.
+Action: keep the fuller Install page; on the other leave a
+pointer.
+
 **Do not emit.** A component is messy. A function should be
 renamed. That is a strand. Count it, do not list it.
+
+**Do not emit.** Introduction names two hooks — wire a
+project, and drop a skill folder. Different jobs.

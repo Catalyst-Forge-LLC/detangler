@@ -46,6 +46,7 @@ test("app comb is the report hour and refuses drafts and roadmaps", () => {
 	assert.match(skill, /Write `<stem>\.detangler-app\/report\.md`/);
 	assert.match(skill, /Not for\s+drafts/i);
 	assert.match(skill, /feature roadmap/);
+	assert.match(skill, /two pages that restate the same job/);
 	assert.doesNotMatch(skill, /npx detangler/);
 	assert.doesNotMatch(skill, /API key/);
 	const description = skill.split("---")[1] ?? "";
