@@ -1,0 +1,24 @@
+{
+	"needs_model": false,
+	"entries": [
+		{
+			"node_id": "s1",
+			"question": "What is this note about?",
+			"raised_by_previous": "yes",
+			"justification": "Title and opening."
+		},
+		{
+			"node_id": "s1.1",
+			"question": "How do we invalidate after a write?",
+			"raised_by_previous": "no",
+			"justification": "none found — the question is answered before it is raised."
+		},
+		{
+			"node_id": "s1.2",
+			"question": "Why does the cache go stale?",
+			"raised_by_previous": "no",
+			"justification": "The previous section already gave the fix; it did not raise the symptom."
+		}
+	],
+	"findings": []
+}

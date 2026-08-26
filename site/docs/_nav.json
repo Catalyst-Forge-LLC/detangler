@@ -1,0 +1,18 @@
+{
+	"sections": [
+		{
+			"title": "Getting started",
+			"items": [
+				{ "id": "introduction", "title": "Introduction" },
+				{ "id": "install", "title": "Install" },
+				{ "id": "skill", "title": "Skill" }
+			]
+		},
+		{
+			"title": "Reference",
+			"items": [
+				{ "id": "report", "title": "Report" }
+			]
+		}
+	]
+}

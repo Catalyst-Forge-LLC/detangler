@@ -1,0 +1,26 @@
+---
+description: Detangler. House voice and product law for this repo.
+alwaysApply: true
+---
+
+# Detangler
+
+Product spec: [`docs/GENESIS.md`](../../docs/GENESIS.md). Architecture:
+[`docs/PHASE_1_BRIEF.md`](../../docs/PHASE_1_BRIEF.md).
+
+Use **Detangler** alone. Drop "Prose" except where the domain is not
+obvious. Header lockup: *A structural pass for drafts that have been
+worked over.* Hero may still use *Combs the whole document, not
+single strands.* — that line is opaque in the header by itself.
+
+The job is drafts that have been **worked over** — by one person, by
+several, and especially by an agent. A lot of editing tangles
+references, argument, repetition, and weight. Cutting or reordering
+is one cause, not the product.
+
+The **skill** is the product. An agent reads it and writes
+`report.md`. npm ships the folders. There is no command-line comb.
+Do not emit line-level suggestions in `report.md`.
+
+Site and README speak as the product (Detangler / it). No corporate we.
+No builder I. Same register as aiBreze: direct, no helper theater.

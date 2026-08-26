@@ -1,0 +1,26 @@
+{
+	"name": "detangler-site",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"docs:build": "node scripts/build-docs.mjs",
+		"dev": "node ../scripts/site-dev.mjs",
+		"build": "node ../scripts/sync-skill-static.mjs && pnpm docs:build && filepress build",
+		"preview": "filepress preview",
+		"check": "filepress check",
+		"ship": "pnpm build && wrangler pages deploy build --project-name=detangler",
+		"deploy": "pnpm ship"
+	},
+	"devDependencies": {
+		"getfilepress": "^0.1.9",
+		"wrangler": "^4.28.0"
+	},
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"esbuild",
+			"getfilepress",
+			"workerd"
+		]
+	}
+}

@@ -1,0 +1,12 @@
+---
+description: Deploy the marketing site with pnpm ship
+alwaysApply: true
+---
+
+# Deploy
+
+Site publish is `pnpm ship` from the repo root (FilePress build, then Wrangler Pages project `detangler`). `site:deploy` is the same command.
+
+Local preview is `pnpm site:dev`: LocalBerth lease `detangler-site` (preferred 5199), FilePress `--port` from that lease.
+
+Agents must not run `npm publish` or `pnpm publish`.

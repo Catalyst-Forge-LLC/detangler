@@ -1,0 +1,385 @@
+{
+  "project": {
+    "name": "Detangler",
+    "created": "2026-08-25",
+    "description": "Structural editing pass for long drafts after a lot of edits — the author's, a collaborator's, an agent's. Combs swaths, not strands. npm detangler, site detangler.dev. Sibling of aiBreze.",
+    "archetype": "product",
+    "status": "active"
+  },
+  "agentContext": {
+    "primaryAgent": "cursor-agent",
+    "supportsSubagents": true,
+    "supportsPlanMode": true
+  },
+  "currentPhase": "4-feature-iteration",
+  "phases": {
+    "1-architecture": {
+      "status": "completed",
+      "startedAt": "2026-08-25T20:08:00",
+      "completedAt": "2026-08-25T20:34:00",
+      "exitCriteriaMet": [
+        "Tech choices confirmed",
+        "Folder structure confirmed",
+        "Data model shape confirmed",
+        "First feature batch defined",
+        "Claude's understanding verified by user",
+        "PHASE_1_BRIEF.md created, complete, and locked (docs/)",
+        "Major decisions recorded in workflow_tracking.json decisions[]"
+      ],
+      "exitCriteriaRemaining": [],
+      "notes": [
+        {
+          "timestamp": "2026-08-25T20:08:00",
+          "text": "Kickoff from root GENESIS.md (v0.2). npm name detangler and domain detangler.dev already claimed. Modeled on aiBreze: TypeScript ESM package, FilePress site, agent skill."
+        },
+        {
+          "timestamp": "2026-08-25T20:34:00",
+          "text": "User locked Phase 1: hybrid model stages (A) and GitHub Catalyst-Forge-LLC/detangler. Brief locked. Phase 2 started."
+        }
+      ]
+    },
+    "2-scaffolding": {
+      "status": "completed",
+      "startedAt": "2026-08-25T20:34:00",
+      "completedAt": "2026-08-25T20:53:00",
+      "exitCriteriaMet": [
+        "CLI report command runs via pnpm / npx on a fixture",
+        "Real fixture input produces report.md and findings.json",
+        "Pipeline artifacts persist on disk (outline, spine, links, repetition, findings)",
+        "Hero flow functions end to end (npx detangler report fixture.md)",
+        "FilePress site serves locally (pnpm site:dev)",
+        "CONTEXT_PROMPT.md created and populated by merging PHASE_1_BRIEF.md (then template lessons as needed)",
+        "README.md created (from ForgeTrail template)",
+        "TODO.md created (from ForgeTrail template, seeded from PHASE_1_BRIEF §11)",
+        "IDEAS.md created (from ForgeTrail template)",
+        "Phase 2 doc scope only per WORKFLOW §1a (no premature extra templates)"
+      ],
+      "exitCriteriaRemaining": [],
+      "notes": [
+        {
+          "timestamp": "2026-08-25T20:42:00",
+          "text": "Spine up: CLI report, fixtures green, FilePress preview verified (home/install/skill/docs/about/posts)."
+        },
+        {
+          "timestamp": "2026-08-25T20:53:00",
+          "text": "User confirmed Phase 2 complete (stabilize then iterate). Marked complete 2026-08-25."
+        }
+      ]
+    },
+    "3-stabilization": {
+      "status": "completed",
+      "startedAt": "2026-08-25T20:53:00",
+      "completedAt": "2026-08-25T21:10:00",
+      "exitCriteriaMet": [
+        "Environment variables resolve correctly",
+        "Deterministic stages return real findings on fixtures",
+        "Core workflow completes without infrastructure errors",
+        "Error messages are human-readable (not just status codes)"
+      ],
+      "exitCriteriaRemaining": [],
+      "notes": [
+        {
+          "timestamp": "2026-08-25T21:10:00",
+          "text": "CLI names unknown commands, directories, empty files, and missing --out. Empty .env keys stay unset. LocalBerth detangler-site claimed on 5199 and passed to FilePress."
+        }
+      ]
+    },
+    "4-feature-iteration": {
+      "status": "in_progress",
+      "startedAt": "2026-08-25T21:10:00",
+      "completedAt": null,
+      "exitCriteriaMet": [
+        "Hero flow works with real data including edge cases"
+      ],
+      "exitCriteriaRemaining": [
+        "Core value proposition delivered",
+        "Features tested beyond happy path"
+      ],
+      "notes": [
+        {
+          "timestamp": "2026-08-25T21:10:00",
+          "text": "assemble + term orphans + stale-edit + GENESIS fixtures added. Same-claim and runtime LLM still open."
+        },
+        {
+          "timestamp": "2026-08-25T21:27:00",
+          "text": "apply ships as apply.md + detangler-apply skill. CLI does not rewrite."
+        },
+        {
+          "timestamp": "2026-08-25T23:41:00",
+          "text": "Skills rewritten after a hostile read: procedure, write-back schema, CLI-vs-agent split, apply re-runs report."
+        },
+        {
+          "timestamp": "2026-08-26T00:28:00",
+          "text": "Skill is the comb pass (agent writes report.md). CLI is mechanical only; no runtime model. Cold-eye: report ids, assemble keeps meta/notes/classified pairs, spine fill = every node."
+        },
+        {
+          "timestamp": "2026-08-26T00:36:00",
+          "text": "CLI pipeline removed. Product is two skills (aiBreze shape). npm ships folders. No bin."
+        }
+      ],
+      "iterations": [
+        {
+          "feature": "assemble / term orphans / remaining fixtures",
+          "status": "complete",
+          "notes": "detangler assemble after filled spine.json; CamelCase term orphans; stale-edit numbers; reinforcing last-section recap."
+        },
+        {
+          "feature": "apply guidance",
+          "status": "complete",
+          "notes": "detangler apply writes apply.md. detangler-apply skill works approved findings only."
+        }
+      ]
+    },
+    "5-refactoring": {
+      "status": "not_started",
+      "startedAt": null,
+      "completedAt": null,
+      "exitCriteriaMet": [],
+      "exitCriteriaRemaining": [
+        "No file exceeds ~500 lines without justification",
+        "Shared utilities extracted",
+        "No duplicated patterns",
+        "Build passes after each refactor"
+      ],
+      "notes": []
+    },
+    "6-strategic-review": {
+      "status": "not_started",
+      "startedAt": null,
+      "completedAt": null,
+      "exitCriteriaMet": [],
+      "exitCriteriaRemaining": [
+        "BRAND_AND_PRODUCT.md created (from ForgeTrail template)",
+        "TODO reorganized by brand value pillars",
+        "Features mapped to brand pillars",
+        "Gap between brand promise and product identified",
+        "IDEAS.md processed into TODO",
+        "Build order decided"
+      ],
+      "notes": []
+    },
+    "7-hardening": {
+      "status": "not_started",
+      "startedAt": null,
+      "completedAt": null,
+      "exitCriteriaMet": [],
+      "exitCriteriaRemaining": [
+        "CODE_QUALITY.md produced (from ForgeTrail template) and critical findings fixed",
+        "BLACK_HAT_REPORT.md produced (via ForgeTrail security audit) and critical/high findings fixed",
+        "All findings triaged into TODO.md with P0/P1/P2 priority",
+        "All LLM outputs checked against field size limits",
+        "No silent failures in core workflows (grep for empty catch blocks)",
+        "All API routes return errors in consistent format",
+        "All user input validated (centralized Zod schemas recommended)",
+        "No unvalidated as-any casts on critical paths",
+        "DEPLOYMENT.md created (from ForgeTrail template)",
+        "BUSINESS_PLAN.md created if pursuing paid users (from ForgeTrail template)",
+        "TEST_PLAN.md complete or extended (from ForgeTrail template)",
+        "TECHNICAL_REFERENCE.md complete and current",
+        "Docs alignment audit passed (via ForgeTrail docs-alignment audit)",
+        "All documentation consolidated and cross-referenced"
+      ],
+      "notes": []
+    }
+  },
+  "decisions": [
+    {
+      "id": "d1",
+      "timestamp": "2026-08-25T20:08:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "Archetype is product. npm package detangler plus FilePress marketing site at detangler.dev, sibling of aiBreze.",
+      "rationale": "User staked the npm name and registered the domain. Same distribution shape as aiBreze: installable package, skill folder, public site.",
+      "alternatives_considered": ["internal-tool", "one-shot", "web app with accounts"],
+      "status": "active"
+    },
+    {
+      "id": "d2",
+      "timestamp": "2026-08-25T20:08:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "v1 is report-only. Apply is designed for but ships second.",
+      "rationale": "GENESIS: comb first, work the knots later. Trust the fixture corpus before rewriting documents.",
+      "alternatives_considered": ["Ship apply in the same release", "Report-only forever"],
+      "status": "superseded",
+      "superseded_by": "d11"
+    },
+    {
+      "id": "d3",
+      "timestamp": "2026-08-25T20:08:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "No PocketBase, no auth, no accounts. Local CLI plus static FilePress site.",
+      "rationale": "State is the user's document and the run artifacts on disk. Nothing needs to outlive the browser or sync across devices.",
+      "alternatives_considered": ["SaaS with upload and accounts", "localStorage web app"],
+      "status": "active"
+    },
+    {
+      "id": "d4",
+      "timestamp": "2026-08-25T20:08:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "Implementation language is TypeScript ESM on Node 20+, pnpm, matching aiBreze and house rules. GENESIS skill-layout Python names are illustrative, not the stack.",
+      "rationale": "House rule: TypeScript ESM for all Node application and script code. Sibling package is already this stack.",
+      "alternatives_considered": ["Python skill scripts as sketched in GENESIS §9", "mixed TS CLI + Python skill"],
+      "status": "active"
+    },
+    {
+      "id": "d5",
+      "timestamp": "2026-08-25T20:08:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "Phase 2 exit criteria rewritten for a CLI + static site (fixture report, artifact files, FilePress preview) instead of web-app CRUD.",
+      "rationale": "Default tracking template assumes a PocketBase web app. Detangler is a local package.",
+      "alternatives_considered": ["Leave CRUD wording and mark N/A later"],
+      "status": "active"
+    },
+    {
+      "id": "d6",
+      "timestamp": "2026-08-25T20:08:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "Pruned Phase 7 auth-flow and payment-flow exit criteria. Revisit if a paid tier appears.",
+      "rationale": "v1 is a free npm package and static site. No accounts, no checkout.",
+      "alternatives_considered": ["Keep payment criteria as a reminder"],
+      "status": "active"
+    },
+    {
+      "id": "d7",
+      "timestamp": "2026-08-25T20:34:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "Model-assisted stages are hybrid: CLI always runs deterministic stages; spine, term-dependency, and same-claim wait for an agent or an optional user key.",
+      "rationale": "User chose A. Documents may be confidential; no project-owned cloud key in the published package.",
+      "alternatives_considered": ["CLI always requires an API key", "Skill-only; npx stays deterministic with no stubs"],
+      "status": "active"
+    },
+    {
+      "id": "d8",
+      "timestamp": "2026-08-25T20:34:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "GitHub home is Catalyst-Forge-LLC/detangler.",
+      "rationale": "User confirmed the same org as aiBreze.",
+      "alternatives_considered": ["Different org or private-only"],
+      "status": "active"
+    },
+    {
+      "id": "d9",
+      "timestamp": "2026-08-25T20:34:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "spine_weak (partial) is off in the default report.",
+      "rationale": "GENESIS recommendation: it generates the most noise.",
+      "alternatives_considered": ["Always show partials"],
+      "status": "active"
+    },
+    {
+      "id": "d10",
+      "timestamp": "2026-08-25T20:53:00",
+      "phase": "3-stabilization",
+      "session": 2,
+      "decision": "LocalBerth lease is detangler-site on 5199. site:dev reads the lease and passes --port to FilePress.",
+      "rationale": "5182 is ollanet-site. Claiming a port without binding FilePress to it is not a lease.",
+      "alternatives_considered": ["Hardcode 5182", "Let FilePress pick a random port", "Preview-only, no lease"],
+      "status": "active"
+    },
+    {
+      "id": "d11",
+      "timestamp": "2026-08-25T21:27:00",
+      "phase": "4-feature-iteration",
+      "session": 3,
+      "decision": "apply ships in this release as prompt and skill guidance. The CLI writes apply.md and does not rewrite the draft. detangler-apply works only approved findings.",
+      "rationale": "User: the idea is not to apply the report automatically; it is to give the prompt/skill guidance to apply a report, and that belongs in this release.",
+      "alternatives_considered": ["Keep apply as later automatic rewrite", "CLI mutates the draft"],
+      "status": "active"
+    }
+  ],
+  "gotchas": [
+    {
+      "timestamp": "2026-08-25T20:40:00",
+      "phase": "2-scaffolding",
+      "session": 1,
+      "issue": "Named-section regex that allows any Title-case run before the word 'section' matches clauses like 'See Section 2 for the hook that this section' and 'If a section'.",
+      "resolution": "Require '[Tt]he Title Case Name section'. Keep Section N on the numbered pattern.",
+      "category": "data-model"
+    },
+    {
+      "timestamp": "2026-08-25T20:41:00",
+      "phase": "2-scaffolding",
+      "session": 1,
+      "issue": "FilePress 0.1.9 build fails if site/posts is missing, and prerender fails without static/favicon.svg.",
+      "resolution": "Always ship a posts/ folder (even one post) and favicon.svg. Docs mount 404s during prerender are warnings; /docs works after mount.",
+      "category": "tooling"
+    },
+    {
+      "timestamp": "2026-08-25T20:53:00",
+      "phase": "3-stabilization",
+      "session": 2,
+      "issue": "5182 is already leased to ollanet-site. ensure-lease claimed 5182 in the script but never passed --port to FilePress, so preview landed on a random port.",
+      "resolution": "Claim detangler-site on 5199. site-dev.mjs prints the lease port and starts filepress dev --port <lease>.",
+      "category": "environment"
+    },
+    {
+      "timestamp": "2026-08-25T21:05:00",
+      "phase": "4-feature-iteration",
+      "session": 2,
+      "issue": "Sentence splitter ate heading lines (no period), so near-verbatim pairs included heading tokens and missed stale-fact.",
+      "resolution": "Blank heading lines in a length-preserving copy before sentence matching so offsets stay valid.",
+      "category": "data-model"
+    }
+  ],
+  "sessions": [
+    {
+      "session": 1,
+      "date": "2026-08-25",
+      "phasesWorked": ["1-architecture", "2-scaffolding"],
+      "accomplished": [
+        "Phase 1 brief locked (hybrid + GitHub)",
+        "CLI report pipeline + fixture tests",
+        "FilePress site (home, install, skill, about, posts, docs)",
+        "Skill folder and Phase 2 docs"
+      ],
+      "leftOff": "Phase 2 exit criteria look met. Confirm to mark Build complete, then stabilize or iterate (spine/term/same-claim).",
+      "contextLimitHit": false,
+      "approximateLines": 4500
+    },
+    {
+      "session": 2,
+      "date": "2026-08-25",
+      "phasesWorked": ["2-scaffolding", "3-stabilization", "4-feature-iteration"],
+      "accomplished": [
+        "Phase 2 marked complete",
+        "LocalBerth detangler-site on 5199 bound to FilePress",
+        "CLI error paths and empty-env handling",
+        "assemble, term orphans, stale-edit, remaining fixtures; 20 tests pass"
+      ],
+      "leftOff": "Phase 4 still open: same-claim repetition and runtime LLM. apply still later.",
+      "contextLimitHit": false,
+      "approximateLines": 2500
+    },
+    {
+      "session": 3,
+      "date": "2026-08-25",
+      "phasesWorked": ["4-feature-iteration"],
+      "accomplished": [
+        "apply ships as apply.md guidance plus detangler-apply skill"
+      ],
+      "leftOff": "Phase 4 still open: same-claim repetition and runtime LLM.",
+      "contextLimitHit": false,
+      "approximateLines": 2500
+    },
+    {
+      "session": 4,
+      "date": "2026-08-26",
+      "phasesWorked": ["4-feature-iteration"],
+      "accomplished": [
+        "Skill is the comb pass; CLI no longer pretends to call a model",
+        "Cold-eye defects: report ids, assemble source/notes/pairs, spineIsFilled every node"
+      ],
+      "leftOff": "Pure skills. Same-claim tightening and a live comb on a real draft still open.",
+      "contextLimitHit": false,
+      "approximateLines": 2000
+    }
+  ]
+}
