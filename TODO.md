@@ -19,7 +19,8 @@ _Flat list until Phase 6 reorganizes by brand pillars._
 - [ ] Same-claim / same-example repetition (skill already classifies; tighten references if needed)
 - [ ] Chunking above ~40k words (future; not this release)
 - [x] No command-line comb (2026-08-26)
-- [ ] App comb after the sample report — see `docs/FAMILY.md` (do not start in parallel)
+- [x] App comb skills drafted (`detangler-app` + apply)
+- [ ] Dogfood the app comb on a sibling (candidate: aiBreze) and put that report in public only after it exists
 
 ## Foundation
 

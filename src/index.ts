@@ -5,7 +5,12 @@ import { fileURLToPath } from "node:url";
 const packageRoot = join(dirname(fileURLToPath(import.meta.url)), "..");
 const skillsDir = join(packageRoot, "skills");
 
-export const skillNames = ["detangler", "detangler-apply"] as const;
+export const skillNames = [
+	"detangler",
+	"detangler-apply",
+	"detangler-app",
+	"detangler-app-apply",
+] as const;
 
 export type SkillName = (typeof skillNames)[number];
 

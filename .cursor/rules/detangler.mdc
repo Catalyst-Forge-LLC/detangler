@@ -9,6 +9,7 @@ Product spec: [`docs/GENESIS.md`](../../docs/GENESIS.md) (draft comb).
 Family and app variant: [`docs/FAMILY.md`](../../docs/FAMILY.md).
 Architecture: [`docs/PHASE_1_BRIEF.md`](../../docs/PHASE_1_BRIEF.md).
 Do not fold the app comb into the draft skill.
+App comb: `skills/detangler-app`. Apply: `skills/detangler-app-apply`.
 
 Use **Detangler** for the family and the draft comb. Say "drafts"
 or "the app comb" when the variant is not obvious. Header lockup:

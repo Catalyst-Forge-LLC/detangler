@@ -1,6 +1,6 @@
 # Detangler family
 
-**Status:** specified  
+**Status:** app skills drafted; not dogfooded  
 **Updated:** 2026-08-26
 
 Draft (prose) comb law: [`GENESIS.md`](./GENESIS.md). Stack: [`PHASE_1_BRIEF.md`](./PHASE_1_BRIEF.md). If they drift on the draft comb, GENESIS wins. This file owns the family, the app variant, and the next public proof.
@@ -92,9 +92,9 @@ The outline at the bottom of the report is load-bearing. Findings already carry 
 
 ---
 
-## 4. App comb (specified, not built)
+## 4. App comb (skills drafted)
 
-Same bottle family. Different comb. Do not develop in parallel with leftover draft-comb proof.
+Same bottle family. Different comb. Folders: `skills/detangler-app`, `skills/detangler-app-apply`. Do not treat a skill draft as a public sample. Dogfood on a real owned app before the site offers an install path.
 
 ### 4.1 The map (the outline equivalent)
 
@@ -166,9 +166,9 @@ ForgeTrail is the lifecycle that tries not to create tangles. Detangler is the c
 
 ## 6. Open decisions
 
-1. **Map id scheme for apps.** Paths vs `r1`/`c1`/`e1`/`a1`. Default: typed ids plus the path or noun in the finding, so apply can find the surface.
+1. **Map id scheme for apps.** Locked: typed ids (`r` / `c` / `e` / `a`) plus the path or noun in the finding, so apply can find the surface.
 
-**Decided.** Consultancy shelf: CF lists the products. npm: one package, folder pairs per mode.
+**Decided.** Consultancy shelf: CF lists the products. npm: one package, folder pairs per mode. Map ids: typed + path/noun.
 
 ---
 
@@ -181,7 +181,7 @@ Do this in order. Do not start the app comb until 1–3 exist in public.
 3. **Paste-dumb install.** One copy-or-download path for people with no `skills/` directory. Keep npm and folder drop for people who already live there.
 4. **Tighten the draft skill** only where the sample report shows a hole: outline nodes on every finding, apply never unnamed-applies judgment calls, deletion orphan as the broken example (already on the site).
 5. **Dogfood the app comb** on one iterated app you own. Publish *that* report: surface map, contract inventory, three buckets, authority conflicts first-class. No second landing page until that report exists.
-6. **Then** write `detangler-app` + `detangler-app-apply`, ship the folders. The site already names the family (drafts now, programs next). After the app report exists, change that line from “not in the zip” to the install path.
+6. **Write the skills** (done in-repo). After a dogfood report exists, ship the folders in the next npm publish and change the site line from “not in the zip” to the install path.
 
 ---
 

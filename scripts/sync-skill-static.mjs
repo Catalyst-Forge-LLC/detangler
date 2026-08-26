@@ -16,7 +16,12 @@ import { dirname, join, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const skillNames = ["detangler", "detangler-apply"];
+const skillNames = [
+	"detangler",
+	"detangler-apply",
+	"detangler-app",
+	"detangler-app-apply",
+];
 
 function walk(dir) {
 	const out = [];

@@ -11,9 +11,10 @@ Combs the whole document, not single strands.
 Detangler is a structural editing pass for things that have been
 worked over — drafts, and later programs. The skill that ships
 combs **drafts**: an agent reads it and writes a report of what
-the editing left behind. A second comb for **apps** (routes,
-contracts, sources of truth) is the same family, not a second
-package, and is not in this release.
+the editing left behind. A second comb for **apps** lives in `skills/detangler-app`
+(routes, contracts, sources of truth). Same family, not a
+second package. The advertised install is still the draft
+comb until a public app report exists.
 
 **Docs:** [detangler.dev/docs](https://detangler.dev/docs) · **Site:** [detangler.dev](https://detangler.dev)
 

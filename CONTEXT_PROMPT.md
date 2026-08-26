@@ -8,7 +8,7 @@ _Session continuity. Locked architecture lives in `docs/PHASE_1_BRIEF.md` and `.
 
 ## What this is
 
-Detangler is a structural editing pass for things that have been worked over. The **skill that ships** combs drafts. A second comb for programs is specified in `docs/FAMILY.md` and named on the site as not in the zip yet. Do not fold the two into one skill. The **skill** is the product: an agent reads it and writes `report.md`. npm ships the folders. There is no command-line comb.
+Detangler is a structural editing pass for things that have been worked over. The **draft comb** ships. The **app comb** is drafted in `skills/detangler-app` (apply: `detangler-app-apply`). Site copy still says the program comb is not in the advertised zip. Do not fold the two into one skill. The **skill** is the product: an agent reads it and writes `report.md`. npm ships the folders. There is no command-line comb.
 
 Sibling of aiBreze. npm `detangler`. Site detangler.dev. GitHub Catalyst-Forge-LLC/detangler.
 
@@ -16,7 +16,7 @@ Hero flow: load the skill → agent writes `<stem>.detangler/report.md`.
 
 ## Tech Stack
 
-- **Package:** TypeScript ESM catalog + two skill folders. Node ≥20. pnpm. No `bin`.
+- **Package:** TypeScript ESM catalog + four skill folders. Node ≥20. pnpm. No `bin`.
 - **Site:** FilePress (`getfilepress`) + Cloudflare Pages (`pnpm ship`, project `detangler`). LocalBerth lease `detangler-site` on **5199** (5182 is ollanet-site). `pnpm site:dev` claims the lease and passes `--port` to FilePress.
 - **DB / auth:** none. Local files only.
 - **AI/LLM:** The agent reading the skill is the judgment. No provider path.
@@ -29,8 +29,10 @@ Hero flow: load the skill → agent writes `<stem>.detangler/report.md`.
 detangler/
   src/                 Skill catalog (paths only)
   fixtures/            Sample tangled drafts
-  skills/detangler/         Comb-pass skill
-  skills/detangler-apply/   Apply skill
+  skills/detangler/              Draft comb
+  skills/detangler-apply/        Draft apply
+  skills/detangler-app/          App comb
+  skills/detangler-app-apply/    App apply
   site/                FilePress pages, docs, static
   docs/                GENESIS + PHASE_1_BRIEF
   .forgetrail/         lifecycle tracking
@@ -38,7 +40,7 @@ detangler/
 
 ## Data Model
 
-The deliverable is `report.md` in `<stem>.detangler/`. Shape: `skills/detangler/references/report.md`.
+Draft deliverable: `report.md` in `<stem>.detangler/`. App deliverable: `report.md` in `<stem>.detangler-app/`. Shapes live next to each skill.
 
 ## Key Architectural Decisions
 
@@ -64,7 +66,8 @@ Line editing, fact checking, external HTTP links, automatic rewrite of the draft
 
 ## Recent Changes
 
-- 2026-08-26: CLI pipeline removed. Product is two skills, same shape as aiBreze.
+- 2026-08-26: App comb drafted (`detangler-app`). Not dogfooded; site still drafts-first.
+- 2026-08-26: CLI pipeline removed. Product is skills, same shape as aiBreze.
 - 2026-08-26: Skill is the comb pass (agent writes the report).
 - 2026-08-25: `detangler-apply` skill for working approved findings.
 - 2026-08-25: Phase 1–3 scaffold, FilePress site, LocalBerth 5199.

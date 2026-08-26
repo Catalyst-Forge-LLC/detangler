@@ -5,7 +5,7 @@ import { execFileSync } from "node:child_process";
 import { test } from "node:test";
 import { assertSkillsPresent, packageRoot, skillDir, skillNames } from "./index.js";
 
-test("both skill folders ship SKILL.md", () => {
+test("skill folders ship SKILL.md", () => {
 	assert.deepEqual(assertSkillsPresent(), []);
 	for (const name of skillNames) {
 		assert.ok(existsSync(join(skillDir(name), "SKILL.md")), name);
@@ -31,6 +31,27 @@ test("apply skill works from report.md and does not name a CLI", () => {
 	assert.match(skill, /^---\nname: detangler-apply\n/m);
 	assert.match(skill, /report\.md/);
 	assert.match(skill, /Approval is chat-only/);
+	assert.doesNotMatch(skill, /npx detangler/);
+});
+
+test("app comb is the report hour and refuses drafts and roadmaps", () => {
+	const skill = readSkill("detangler-app");
+	assert.match(skill, /^---\nname: detangler-app\n/m);
+	assert.match(skill, /Write `<stem>\.detangler-app\/report\.md`/);
+	assert.match(skill, /Not for\s+drafts/i);
+	assert.match(skill, /feature roadmap/);
+	assert.doesNotMatch(skill, /npx detangler/);
+	assert.doesNotMatch(skill, /API key/);
+	const description = skill.split("---")[1] ?? "";
+	assert.doesNotMatch(description, /detangler-app-apply/);
+});
+
+test("app apply skill works from report.md and does not name a CLI", () => {
+	const skill = readSkill("detangler-app-apply");
+	assert.match(skill, /^---\nname: detangler-app-apply\n/m);
+	assert.match(skill, /report\.md/);
+	assert.match(skill, /Approval is chat-only/);
+	assert.match(skill, /neighboring route/);
 	assert.doesNotMatch(skill, /npx detangler/);
 });
 
