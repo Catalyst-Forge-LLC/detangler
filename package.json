@@ -1,6 +1,6 @@
 {
 	"name": "detangler",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"private": false,
 	"type": "module",
 	"description": "Find what the editing tangled. Structural editing pass for long drafts after a lot of edits — yours, a collaborator's, an agent's. Combs the whole document, not single strands.",
