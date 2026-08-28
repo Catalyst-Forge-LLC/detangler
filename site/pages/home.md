@@ -49,7 +49,7 @@ The full report has twelve findings and the outline extracted from the text. The
 
 ## What it checks
 
-The check names stay. What they point at changes.
+A lot of editing produces the same kinds of tangle.
 
 - **References.** A “see also” at a heading that is gone. A nav item, a deep link, or a client aimed at a removed screen.
 - **Argument.** A section that never answers the question the previous one raised. A journey that starts and never resolves. Onboarding that promises a capability the product does not have.
