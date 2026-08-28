@@ -73,6 +73,19 @@ test("package ships skills and has no bin", () => {
 	assert.ok("./skills/*" in pkg.exports);
 });
 
+test("public copy treats drafts and programs as first-class", () => {
+	const home = readFileSync(join(packageRoot, "site", "pages", "home.md"), "utf8");
+	const install = readFileSync(join(packageRoot, "site", "docs", "install.md"), "utf8");
+	const readme = readFileSync(join(packageRoot, "README.md"), "utf8");
+	assert.match(home, /drafts and programs/);
+	assert.match(home, /detangler-app/);
+	assert.doesNotMatch(home, /not in the zip today/);
+	assert.match(install, /detangler-app\.zip/);
+	assert.match(install, /detangler-app-apply\.zip/);
+	assert.match(readme, /detangler-app/);
+	assert.doesNotMatch(readme, /later programs/);
+});
+
 test("docs nav has a markdown file for every item", () => {
 	const nav = JSON.parse(
 		readFileSync(join(packageRoot, "site", "docs", "_nav.json"), "utf8"),

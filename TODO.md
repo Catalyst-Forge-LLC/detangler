@@ -20,7 +20,8 @@ _Flat list until Phase 6 reorganizes by brand pillars._
 - [ ] Chunking above ~40k words (future; not this release)
 - [x] No command-line comb (2026-08-26)
 - [x] App comb skills drafted (`detangler-app` + apply)
-- [ ] Dogfood the app comb on a sibling (candidate: aiBreze) and put that report in public only after it exists
+- [x] App comb dogfooded on aiBreze (report in that repo)
+- [ ] Public app sample report on detangler.dev (optional proof; copy already lists both pairs)
 
 ## Foundation
 

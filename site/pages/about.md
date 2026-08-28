@@ -1,16 +1,16 @@
 ---
 title: About
-description: Why the name is a comb, and why the report leaves sentences alone.
+description: Why the name is a comb, and why the report leaves strands alone.
 order: 3
 ---
 
-A hair detangler works on the whole head, not strand by strand. You comb large swaths, find the knots, then work them out. Sections, cross-references, argument flow, and repetition are the swaths. Sentences are the strands.
+A hair detangler works on the whole head, not strand by strand. You comb large swaths, find the knots, then work them out. Sections, routes, cross-references, argument, journeys, and repetition are the swaths. Sentences and file internals are the strands.
 
-The knots come from editing. A long draft, many passes, more than one pair of hands — especially an agent. Each change looks fine. The document tangles: a pointer at a heading that moved, an argument that later rewrites left behind, the same claim said twice, a section that grew until it swallowed the rest.
+The knots come from editing. A draft or a program, many passes, more than one pair of hands — especially an agent. Each change looks fine. The thing tangles: a pointer at a heading that moved, a button that goes nowhere, an argument that later rewrites left behind, two Settings screens that almost agree, a section or a dashboard that grew until it swallowed the rest.
 
-[aiBreze](https://aibreze.com) is the spray that removes AI smells. Detangler is the next bottle: run it on something that has been worked over and see what the editing left behind.
+[aiBreze](https://aibreze.com) is the spray that removes AI smells. Detangler is the next bottle: run it on a draft or a program that has been worked over and see what the editing left behind.
 
-The comb that ships is for **drafts**. The same knots show up in a **program**: two Settings screens that almost agree, a button that goes nowhere, one fact defined in three places. That is a second skill, same family, not this one. One npm package will ship both folder pairs. Only the draft pair is in the package today.
+Two combs, one family. `detangler` for drafts. `detangler-app` for programs. Same report buckets. Different maps. One npm package, two folder pairs. Copy the pair you need.
 
 ## Names
 

@@ -1,6 +1,6 @@
 # Detangler family
 
-**Status:** app skills drafted; not dogfooded  
+**Status:** both combs first-class in public copy; npm 0.1.1 is still the draft pair  
 **Updated:** 2026-08-26
 
 Draft (prose) comb law: [`GENESIS.md`](./GENESIS.md). Stack: [`PHASE_1_BRIEF.md`](./PHASE_1_BRIEF.md). If they drift on the draft comb, GENESIS wins. This file owns the family, the app variant, and the next public proof.
@@ -26,7 +26,7 @@ A real failure mode, not a rewriter. Each pass looked fine. The thing tangled. G
 
 **Family resemblance.** [aiBreze](https://aibreze.com) sprays smell off prose. Detangler finds what editing left behind. Same shelf, different bottle. Same shape: a skill an agent reads, not a command that calls a model.
 
-**Voice.** Short sentences. No hype. Site as a small press, not a SaaS funnel. Header lockup names the job. The comb line may sit under a hero; it is opaque next to the name alone.
+**Voice.** Short sentences. No hype. Site as a small press, not a SaaS funnel. Header lockup names both objects: *A structural pass for drafts and programs that have been worked over.* The comb line may sit under a hero; it is opaque next to the name alone. Public copy treats both combs as first-class. Do not bury programs in a “coming” line.
 
 **Name.** `Detangler` is the family. Variants:
 
@@ -181,7 +181,7 @@ Do this in order. Do not start the app comb until 1–3 exist in public.
 3. **Paste-dumb install.** One copy-or-download path for people with no `skills/` directory. Keep npm and folder drop for people who already live there.
 4. **Tighten the draft skill** only where the sample report shows a hole: outline nodes on every finding, apply never unnamed-applies judgment calls, deletion orphan as the broken example (already on the site).
 5. **Dogfood the app comb** on one iterated app you own. Publish *that* report: surface map, contract inventory, three buckets, authority conflicts first-class. No second landing page until that report exists.
-6. **Write the skills** (done in-repo). After a dogfood report exists, ship the folders in the next npm publish and change the site line from “not in the zip” to the install path.
+6. **Write the skills** (done in-repo). Site copy and install list both pairs. Next npm publish includes the app folders so `node_modules` matches the zip table. A public app sample report is still the next proof; it is not a second landing page.
 
 ---
 

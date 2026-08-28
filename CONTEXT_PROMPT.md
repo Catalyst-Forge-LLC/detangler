@@ -8,11 +8,11 @@ _Session continuity. Locked architecture lives in `docs/PHASE_1_BRIEF.md` and `.
 
 ## What this is
 
-Detangler is a structural editing pass for things that have been worked over. The **draft comb** ships. The **app comb** is drafted in `skills/detangler-app` (apply: `detangler-app-apply`). Site copy still says the program comb is not in the advertised zip. Do not fold the two into one skill. The **skill** is the product: an agent reads it and writes `report.md`. npm ships the folders. There is no command-line comb.
+Detangler is a structural pass for drafts and programs that have been worked over. Two combs, first-class: `detangler` and `detangler-app`. Site, README, and install list both pairs. Do not fold them. The **skill** is the product: an agent reads it and writes `report.md`. npm ships the folders. There is no command-line comb.
 
 Sibling of aiBreze. npm `detangler`. Site detangler.dev. GitHub Catalyst-Forge-LLC/detangler.
 
-Hero flow: load the skill → agent writes `<stem>.detangler/report.md`.
+Hero flow: load the matching skill → agent writes `report.md` (`<stem>.detangler/` or `<stem>.detangler-app/`).
 
 ## Tech Stack
 

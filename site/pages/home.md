@@ -1,60 +1,71 @@
 ---
 title: Find what the editing tangled.
-description: Structural editing pass for long drafts after a lot of edits — yours, a collaborator's, an agent's. An agent with the skill writes the report.
+description: Structural pass for drafts and programs that have been worked over. An agent with the skill writes the report.
 order: 0
 ---
 
-*Combs the whole document, not single strands.*
+*Combs the whole artifact, not single strands.*
 
-A long draft, many passes. You, a collaborator, an agent. Each edit looked fine. The document tangled.
+A draft or a program, many passes. You, a collaborator, an agent. Each edit looked fine. The thing tangled.
 
-**Detangler** is a structural editing pass for drafts that have been worked over. It is a skill: an agent reads it and writes a report of what the editing left behind.
+**Detangler** is a structural pass for drafts and programs that have been worked over. Two combs, one family. An agent reads the matching skill and writes a report of what the editing left behind.
 
 [Docs](/docs/) · [Install](/docs/install) · [Skill](/docs/skill) · [Why the name](/about)
 
+## Two combs
+
+Same metaphor. Different object. Same report buckets. Different maps. Do not run the draft skill on an app, or the app skill on a prose draft.
+
+| | Drafts | Programs |
+| --- | --- | --- |
+| Skill | `detangler` | `detangler-app` |
+| Apply | `detangler-apply` | `detangler-app-apply` |
+| Object | A long draft, or a named set of pages | An app, a site, an iterated product |
+| Map | Reverse outline from headings | Surface, contracts, entities, authority |
+| Signature break | “See Resources” after Resources was deleted | A Settings item that goes nowhere |
+
+One package. Copy the pair you need.
+
 ## What you get
 
-The skill writes `report.md`. Findings first, then the outline extracted from the text as it stands.
+The skill writes `report.md`. Findings first, then the map extracted from what stands.
 
 Findings come in three kinds.
 
-| Kind | Means | Example |
-| --- | --- | --- |
-| **Broken** | Wrong as written | "See the Resources section" after Resources was deleted |
-| **Intentional but verify** | Looks deliberate, check it | A term used two sections before it is defined |
-| **Judgment call** | Reasonable people would differ | Two sections covering the same ground after separate passes |
+| Kind | Means | Drafts | Programs |
+| --- | --- | --- | --- |
+| **Broken** | Wrong as written | “See the Resources section” after Resources was deleted | A button that goes to a deleted route |
+| **Intentional but verify** | Looks deliberate, check it | A term used two sections before it is defined | Two Settings screens, user vs admin |
+| **Judgment call** | Reasonable people would differ | Two sections covering the same ground | Two create-flows that still agree |
 
-Nothing in your draft changes. The report is a to-do list you work by hand, or hand to an agent.
+Nothing in the draft or the product changes. The report is a to-do list you work by hand, or hand to an agent.
 
 A [sample report](/docs/sample-report) from a cache-invalidation note after many passes:
 
 1. **F-001** · **s1** — reference_orphan — “see the Resources section” after Resources was deleted.
 2. **F-007** · **s4** — stale_edit — retry window is 30 seconds here and 90 in the recap.
 
-The full report has twelve findings and the outline extracted from the text.
+The full report has twelve findings and the outline extracted from the text. The app comb writes the same buckets, then a surface / contract / authority map.
 
 ## What it checks
 
-A lot of editing produces four kinds of tangle. An agent in the file produces them faster.
+A lot of editing produces the same kinds of tangle. The names stay. The object changes.
 
-- **References.** Headings get renamed, sections get merged, a "see also" points at something that is gone or never existed.
-- **Argument.** Later passes rewrite a section without the earlier ones noticing. Section by section: what question does this one answer, and did the previous section raise it?
-- **Repetition.** An agent restates "for clarity." Two editors cover the same ground. Near-verbatim passages, sorted by the job each one does.
-- **Weight.** One section keeps getting expanded.
+- **References.** A “see also” at a heading that is gone. A nav item, a deep link, or a client aimed at a removed screen.
+- **Argument.** A section that never answers the question the previous one raised. A journey that starts and never resolves. Onboarding that promises a capability the product does not have.
+- **Repetition.** Two pages that restated the same job. Two create-flows, twin settings, parallel schemas for one noun.
+- **Weight.** One section that swallowed the draft. A kitchen-sink Settings or a god dashboard that swallowed the product’s job.
+- **Authority (programs).** The same fact in two places that disagree. Failed single source of truth. First-class, not a stretch of repetition.
 
 ## Not a line editor
 
-Grammar, tone, and sentence rhythm stay out. Structural editing and line editing use different eyes, and doing both at once does both badly, especially when you already spent effort on the sentences. This is the hour for load-bearing walls.
+Grammar, tone, sentence rhythm, lint, and file cleanup stay out. Structural work and strand work use different eyes. Doing both at once does both badly.
 
 [aiBreze](https://aibreze.com) sprays AI smells off prose. Detangler is the next bottle on the shelf.
 
-## Drafts and programs
-
-Same metaphor. Different object. The skill that ships combs **drafts**. A second comb is for **programs** — routes, nav, feature contracts, and a single source of truth that editing broke. One package, two folder pairs, when that comb exists. It is not in the zip today. Do not run the draft skill on an app.
-
 ## Install
 
-The [skill](/docs/skill) is a folder. [Download detangler.zip](/skills/detangler.zip), put it in `.cursor/skills/detangler/` (or upload the zip on claude.ai), and ask whether the draft still hangs together.
+Pick the pair. [Download the zip](/docs/install), put the folder where the table says, and ask whether it still hangs together.
 
 If you already use npm:
 
@@ -62,6 +73,6 @@ If you already use npm:
 pnpm add -D detangler
 ```
 
-Then copy the `detangler` folder out of `node_modules`. Apply is a second skill, after a report exists.
+Then copy `skills/detangler` or `skills/detangler-app` out of `node_modules`. Apply is a second skill, after a report exists. If a folder is missing from the package, use the zip.
 
 Built by [Catalyst Forge LLC](https://www.catalystforge.com). MIT.

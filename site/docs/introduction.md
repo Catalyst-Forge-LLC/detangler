@@ -2,41 +2,46 @@
 title: Introduction
 ---
 
-**Detangler** is a structural editing pass for long drafts after a lot of edits — yours, a collaborator's, an agent's. It is a skill: an agent reads it and writes a report of what the editing left behind.
+**Detangler** is a structural pass for drafts and programs after a lot of edits — yours, a collaborator's, an agent's. Two combs, one family. An agent reads the matching skill and writes a report of what the editing left behind.
 
-A lot of editing tangles the document. References drift. The argument loses its spine. The same claim appears twice. One section grows until it swallows the rest. Cutting or reordering is one cause. Most of the damage is just accumulated edits, each of which looked fine.
+A lot of editing tangles the thing. References drift. The argument or the journey loses its spine. The same job appears twice. One area grows until it swallows the rest. On a program, the same fact is true in two places that disagree. Cutting or reordering is one cause. Most of the damage is just accumulated edits, each of which looked fine.
 
 npm **`detangler`**. Site **detangler.dev**. Sibling of [aiBreze](https://aibreze.com).
 
-The family is two combs: **drafts** (this skill) and **programs** (routes, contracts, failed single source of truth). Same report buckets. Different maps. The program comb is not in the package yet. Do not fold them into one skill.
+| | Drafts | Programs |
+| --- | --- | --- |
+| Comb | `detangler` | `detangler-app` |
+| Apply | `detangler-apply` | `detangler-app-apply` |
+| Map | Reverse outline (`s1`, `s1.2`) | Surface, contracts, entities, authority |
+
+Same report buckets. Do not fold them into one skill.
 
 ## Swaths, not strands
 
-Sections, cross-references, argument flow, and repetition are the swaths. Sentences are the strands. Line editing is a different pass with different eyes, and doing both at once does both badly.
+On a draft: sections, cross-references, argument flow, and repetition. Sentences are the strands. On a program: routes, nav, feature contracts, and sources of truth. Lint, naming, and component internals are the strands. Line editing and file cleanup are a different pass.
 
 ## Comb first, then work the knots
 
-The skill writes `report.md`. Findings in three buckets, then the outline extracted from the text as it stands.
+The skill writes `report.md`. Findings in three buckets, then the map extracted from what stands.
 
-| Bucket | Means | Example |
-| --- | --- | --- |
-| **Broken** | Wrong as written | "See the Resources section" after Resources was deleted |
-| **Intentional but verify** | Looks deliberate, check it | A term used two sections before it is defined |
-| **Judgment call** | Reasonable people would differ | Two sections covering the same ground after separate passes |
+| Bucket | Means | Drafts | Programs |
+| --- | --- | --- | --- |
+| **Broken** | Wrong as written | "See the Resources section" after Resources was deleted | A button that goes to a deleted route |
+| **Intentional but verify** | Looks deliberate, check it | A term used two sections before it is defined | Two Settings screens, user vs admin |
+| **Judgment call** | Reasonable people would differ | Two sections covering the same ground | Two create-flows that still agree |
 
-Working the knots is a separate action. The `detangler-apply` skill works findings you approve, one at a time. Neither skill rewrites the draft until you ask for apply.
+Working the knots is a separate action. `detangler-apply` or `detangler-app-apply` works findings you approve, one at a time. Neither rewrites until you ask for apply.
 
 ## What it checks
 
-A lot of editing produces four kinds of tangle.
-
-- **References.** Headings get renamed, sections get merged, a "see also" points at something that is gone or never existed.
-- **Argument.** Later passes rewrite a section without the earlier ones noticing.
-- **Repetition.** Near-verbatim passages, sorted by the job each one does.
-- **Weight.** Sections that have grown out of proportion to the rest.
+- **References.** Pointers at what is gone — a heading, a route, a screen, an endpoint.
+- **Argument.** A question raised and never answered. A journey that never resolves. A promise the shipped product does not keep.
+- **Repetition.** Same job on two pages. Twin flows. Parallel schemas.
+- **Weight.** One area hypertrophied relative to the rest, or to the product’s job.
+- **Authority (programs).** Failed single source of truth.
 
 ## Two hooks
 
-- [Install](/docs/install) — download the zip, put the folder where the table says
-- [Skill](/docs/skill) — comb pass, plus `detangler-apply` for working a report
-- [Sample report](/docs/sample-report) — twelve findings and the outline, from a real comb
+- [Install](/docs/install) — download the zip for the pair you need
+- [Skill](/docs/skill) — both combs, plus apply after a report exists
+- [Sample report](/docs/sample-report) — twelve findings and the outline, from a draft comb

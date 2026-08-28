@@ -11,16 +11,17 @@ Architecture: [`docs/PHASE_1_BRIEF.md`](../../docs/PHASE_1_BRIEF.md).
 Do not fold the app comb into the draft skill.
 App comb: `skills/detangler-app`. Apply: `skills/detangler-app-apply`.
 
-Use **Detangler** for the family and the draft comb. Say "drafts"
-or "the app comb" when the variant is not obvious. Header lockup:
-*A structural pass for drafts that have been worked over.* Hero may
-still use *Combs the whole document, not single strands.* — that
-line is opaque in the header by itself.
+Use **Detangler** for the family. Say "drafts" or "the app comb"
+when the variant is not obvious. Header lockup:
+*A structural pass for drafts and programs that have been worked over.*
+Hero may still use *Combs the whole artifact, not single strands.* —
+that line is opaque next to the name alone.
 
-The job is drafts that have been **worked over** — by one person, by
-several, and especially by an agent. A lot of editing tangles
-references, argument, repetition, and weight. Cutting or reordering
-is one cause, not the product.
+The job is drafts **and** programs that have been **worked over** —
+by one person, by several, and especially by an agent. A lot of
+editing tangles references, argument, journeys, repetition, weight,
+and (on a program) authority. Cutting or reordering is one cause,
+not the product. Two combs. Do not fold them.
 
 The **skill** is the product. An agent reads it and writes
 `report.md`. npm ships the folders. There is no command-line comb.
