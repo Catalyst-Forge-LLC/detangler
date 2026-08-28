@@ -11,7 +11,7 @@ The product is two comb folders. An agent reads one and writes the report.
 
 Apply works findings you approve after a report exists. It is not inside the comb skill. Each folder is `SKILL.md` plus the reference files it reads.
 
-The hour is the same: something has been edited a lot — especially with an agent, or by more than one person — and it no longer hangs together. A named document set (two pages, or a folder) is the draft hour. A repo, a site, or an iterated product is the app hour. Do not fold them.
+The hour is the same: something has been edited a lot, especially with an agent or by more than one person, and it no longer hangs together. A named document set (two pages, or a folder) is the draft hour. A repo, a site, or an iterated product is the app hour. Keep the two skills apart.
 
 No folder yet? [Install](/docs/install).
 
@@ -22,7 +22,7 @@ Comb pass (`detangler` or `detangler-app`):
 1. Locate the draft, the document set, or the product.
 2. Extract the map. Drafts: outline from headings (`s1`, `s1.2`; `<stem>.s1` on a set). Programs: surface, contracts, entities, authority.
 3. Check references, argument, repetition, and weight. Programs also check authority. Same job on two pages is repetition.
-4. Write `report.md`. Hand it over. Do not edit the artifact.
+4. Write `report.md`. Hand it over. Do not edit the draft or the product.
 
 Apply (`detangler-apply` or `detangler-app-apply`):
 
@@ -53,4 +53,4 @@ Either:
 - Apply this report.
 - Work the broken findings.
 
-It runs after a lot of edits — especially with an agent — or when you name it. Not for grammar, lint, naming, a first architecture, or a one-paragraph email.
+It runs after a lot of edits, especially with an agent, or when you name it. Not for grammar, lint, naming, a first architecture, or a one-paragraph email.

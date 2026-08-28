@@ -5,7 +5,7 @@ const npm = "https://www.npmjs.com/package/detangler";
 
 export default defineFilepressConfig({
 	title: "Detangler",
-	description: "Structural pass for drafts and programs that have been worked over. An agent with the skill writes the report.",
+	description: "Structural pass for drafts and programs that have been worked over. An agent with the matching skill writes the report.",
 	tagline: "A structural pass for drafts and programs that have been worked over.",
 	url: "https://detangler.dev",
 	author: "Catalyst Forge LLC",

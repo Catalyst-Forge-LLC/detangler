@@ -4,17 +4,17 @@ description: Structural pass for drafts and programs that have been worked over.
 order: 0
 ---
 
-*Combs the whole artifact, not single strands.*
+*Combs the whole draft or the whole program, not single strands.*
 
 A draft or a program, many passes. You, a collaborator, an agent. Each edit looked fine. The thing tangled.
 
-**Detangler** is a structural pass for drafts and programs that have been worked over. Two combs, one family. An agent reads the matching skill and writes a report of what the editing left behind.
+**Detangler** is a structural pass for drafts and programs that have been worked over. An agent reads the matching skill and writes a report of what the editing left behind.
 
 [Docs](/docs/) · [Install](/docs/install) · [Skill](/docs/skill) · [Why the name](/about)
 
 ## Two combs
 
-Same metaphor. Different object. Same report buckets. Different maps. Do not run the draft skill on an app, or the app skill on a prose draft.
+The metaphor is the same. The object is not. Drafts and programs share report buckets and use different maps. Do not run the draft skill on an app, or the app skill on a prose draft.
 
 | | Drafts | Programs |
 | --- | --- | --- |
@@ -24,11 +24,11 @@ Same metaphor. Different object. Same report buckets. Different maps. Do not run
 | Map | Reverse outline from headings | Surface, contracts, entities, authority |
 | Signature break | “See Resources” after Resources was deleted | A Settings item that goes nowhere |
 
-One package. Copy the pair you need.
+One package: copy the pair you need.
 
 ## What you get
 
-The skill writes `report.md`. Findings first, then the map extracted from what stands.
+The skill writes `report.md`. Findings first, then the map taken from the draft or the product as it is now.
 
 Findings come in three kinds.
 
@@ -49,13 +49,13 @@ The full report has twelve findings and the outline extracted from the text. The
 
 ## What it checks
 
-A lot of editing produces the same kinds of tangle. The names stay. The object changes.
+The check names stay. What they point at changes.
 
 - **References.** A “see also” at a heading that is gone. A nav item, a deep link, or a client aimed at a removed screen.
 - **Argument.** A section that never answers the question the previous one raised. A journey that starts and never resolves. Onboarding that promises a capability the product does not have.
 - **Repetition.** Two pages that restated the same job. Two create-flows, twin settings, parallel schemas for one noun.
 - **Weight.** One section that swallowed the draft. A kitchen-sink Settings or a god dashboard that swallowed the product’s job.
-- **Authority (programs).** The same fact in two places that disagree. Failed single source of truth. First-class, not a stretch of repetition.
+- **Authority (programs).** The same fact in two places that disagree. Failed single source of truth.
 
 ## Not a line editor
 
@@ -73,6 +73,6 @@ If you already use npm:
 pnpm add -D detangler
 ```
 
-Then copy `skills/detangler` or `skills/detangler-app` out of `node_modules`. Apply is a second skill, after a report exists. If a folder is missing from the package, use the zip.
+Then copy `skills/detangler` or `skills/detangler-app` out of `node_modules`. Apply is a second skill, after a report exists.
 
 Built by [Catalyst Forge LLC](https://www.catalystforge.com). MIT.

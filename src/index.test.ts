@@ -84,6 +84,8 @@ test("public copy treats drafts and programs as first-class", () => {
 	assert.match(install, /detangler-app-apply\.zip/);
 	assert.match(readme, /detangler-app/);
 	assert.doesNotMatch(readme, /later programs/);
+	assert.doesNotMatch(home, /whole artifact/);
+	assert.doesNotMatch(readme, /whole artifact/);
 });
 
 test("docs nav has a markdown file for every item", () => {

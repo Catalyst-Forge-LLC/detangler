@@ -11,7 +11,7 @@ Shared:
 3. Intentional but verify
 4. Judgment calls
 5. The map
-6. Deferred strand notes — a count, not the notes
+6. Deferred strand notes: a count, not the notes
 
 Every finding has an id, a location on the map, a type, evidence, and an action. Findings without an action are dropped. No map node → not a finding.
 
@@ -22,6 +22,6 @@ Every finding has an id, a location on the map, a type, evidence, and an action.
 
 Severity:
 
-- **broken** — the artifact as written is wrong
+- **broken** — the draft or the product as written is wrong
 - **intentional but verify** — plausibly deliberate
 - **judgment call** — reasonable people would differ
