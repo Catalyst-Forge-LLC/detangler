@@ -26,5 +26,5 @@ _Flat list until Phase 6 reorganizes by brand pillars._
 ## Foundation
 
 - [x] GitHub repo Catalyst-Forge-LLC/detangler
-- [ ] Attach detangler.dev to the Cloudflare Pages project
+- [x] Attach detangler.dev to the Cloudflare Pages project (`detangler` / `detangler-ad5.pages.dev`)
 - [x] npm publish (user only; bump is the user's)
