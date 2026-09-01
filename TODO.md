@@ -21,7 +21,7 @@ _Flat list until Phase 6 reorganizes by brand pillars._
 - [x] No command-line comb (2026-08-26)
 - [x] App comb skills drafted (`detangler-app` + apply)
 - [x] App comb dogfooded on aiBreze (report in that repo)
-- [ ] Public app sample report on detangler.dev (optional proof; copy already lists both pairs)
+- [x] Public app sample report on detangler.dev (aiBreze comb, then what was fixed)
 
 ## Foundation
 

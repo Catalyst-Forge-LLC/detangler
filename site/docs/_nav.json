@@ -6,7 +6,8 @@
 				{ "id": "introduction", "title": "Introduction" },
 				{ "id": "install", "title": "Install" },
 				{ "id": "skill", "title": "Skill" },
-				{ "id": "sample-report", "title": "Sample report" }
+				{ "id": "sample-report", "title": "Sample report" },
+				{ "id": "sample-app-report", "title": "Sample app report" }
 			]
 		},
 		{

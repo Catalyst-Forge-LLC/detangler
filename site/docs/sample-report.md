@@ -2,7 +2,7 @@
 title: Sample report
 ---
 
-A comb of [`fixtures/worked-over-note/input.md`](https://github.com/Catalyst-Forge-LLC/detangler/blob/main/fixtures/worked-over-note/input.md). The draft is a cache-invalidation note after many passes. Nothing in the draft was rewritten.
+A comb of [`fixtures/worked-over-note/input.md`](https://github.com/Catalyst-Forge-LLC/detangler/blob/main/fixtures/worked-over-note/input.md). The draft is a cache-invalidation note after many passes. Nothing in the draft was rewritten. The [app sample](/docs/sample-app-report) is a sibling comb, then what was fixed.
 
 # Detangler report — worked-over-note.md
 

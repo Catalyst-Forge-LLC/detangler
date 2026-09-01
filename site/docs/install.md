@@ -39,7 +39,7 @@ Or clone the [repo](https://github.com/Catalyst-Forge-LLC/detangler) and copy `s
 
 Node.js 20+. The package is [`detangler`](https://www.npmjs.com/package/detangler) on npm.
 
-Example prompts: [Skill](/docs/skill). A finished [sample report](/docs/sample-report) from a draft comb.
+Example prompts: [Skill](/docs/skill). A [sample draft report](/docs/sample-report). A [sample app report](/docs/sample-app-report).
 
 ## What the skill writes
 

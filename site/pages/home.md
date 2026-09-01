@@ -45,7 +45,14 @@ A [sample report](/docs/sample-report) from a cache-invalidation note after many
 1. **F-001** · **s1** — reference_orphan — “see the Resources section” after Resources was deleted.
 2. **F-007** · **s4** — stale_edit — retry window is 30 seconds here and 90 in the recap.
 
-The full report has twelve findings and the outline extracted from the text. The app comb writes the same buckets, then a surface / contract / authority map.
+The full report has twelve findings and the outline extracted from the text.
+
+A [sample app report](/docs/sample-app-report) from [aiBreze](https://aibreze.com) after many passes:
+
+1. **F-001** · **c1** — route_orphan — pocket card links die after copy into `.cursor/rules/`.
+2. **F-003** · **a3** — ssot_conflict — package `0.1.8`, SkillFacts still `0.1.6`.
+
+Five broken findings were worked after the comb. The page is the report as written, then what was fixed and what was left.
 
 ## What it checks
 
