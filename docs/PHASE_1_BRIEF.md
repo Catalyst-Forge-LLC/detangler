@@ -13,7 +13,7 @@ Detangler is a structural editing pass for long drafts that have been worked ove
 
 The **skill** is the product. An agent reads it and writes `report.md`. npm `detangler` ships the folders. There is no command-line comb.
 
-Family: [aiBreze](https://aibreze.com) is the spray that removes AI smells. Detangler is the next bottle. Same register, different job. Same shape: a skill an agent reads, not a command that calls a model.
+Family: [Smell Check](https://smellcheck.dev) is the spray that removes AI smells. Detangler is the next bottle. Same register, different job. Same shape: a skill an agent reads, not a command that calls a model.
 
 **Archetype:** `product`
 

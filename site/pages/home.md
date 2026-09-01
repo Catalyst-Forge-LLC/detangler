@@ -47,7 +47,7 @@ A [sample report](/docs/sample-report) from a cache-invalidation note after many
 
 The full report has twelve findings and the outline extracted from the text.
 
-A [sample app report](/docs/sample-app-report) from [aiBreze](https://aibreze.com) after many passes:
+A [sample app report](/docs/sample-app-report) from [Smell Check](https://smellcheck.dev) after many passes:
 
 1. **F-001** · **c1** — route_orphan — pocket card links die after copy into `.cursor/rules/`.
 2. **F-003** · **a3** — ssot_conflict — package `0.1.8`, SkillFacts still `0.1.6`.
@@ -68,7 +68,7 @@ A lot of editing produces the same kinds of tangle.
 
 Grammar, tone, sentence rhythm, lint, and file cleanup stay out. Structural work and strand work use different eyes. Doing both at once does both badly.
 
-[aiBreze](https://aibreze.com) sprays AI smells off prose. Detangler is the next bottle on the shelf.
+[Smell Check](https://smellcheck.dev) sprays AI smells off prose. Detangler is the next bottle on the shelf.
 
 ## Install
 

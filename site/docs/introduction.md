@@ -6,7 +6,7 @@ title: Introduction
 
 A lot of editing tangles the thing. References drift. The argument or the journey loses its spine. The same job appears twice. One area grows until it swallows the rest. On a program, the same fact is true in two places that disagree. Cutting or reordering is one cause. Most of the damage is just accumulated edits, each of which looked fine.
 
-npm **`detangler`**. Site **detangler.dev**. Sibling of [aiBreze](https://aibreze.com).
+npm **`detangler`**. Site **detangler.dev**. Sibling of [Smell Check](https://smellcheck.dev).
 
 | | Drafts | Programs |
 | --- | --- | --- |

@@ -24,7 +24,7 @@ A real failure mode, not a rewriter. Each pass looked fine. The thing tangled. G
 - Rebuild the map from what shipped, never from intent or the roadmap.
 - A false `broken` costs more than a missed `judgment_call`.
 
-**Family resemblance.** [aiBreze](https://aibreze.com) sprays smell off prose. Detangler finds what editing left behind. Same shelf, different bottle. Same shape: a skill an agent reads, not a command that calls a model.
+**Family resemblance.** [Smell Check](https://smellcheck.dev) sprays smell off prose. Detangler finds what editing left behind. Same shelf, different bottle. Same shape: a skill an agent reads, not a command that calls a model.
 
 **Voice.** Short sentences. No hype. Site as a small press, not a SaaS funnel. Header lockup names both objects: *A structural pass for drafts and programs that have been worked over.* The comb line may sit under a hero; it is opaque next to the name alone. Public copy treats both combs as first-class. Do not bury programs in a “coming” line.
 

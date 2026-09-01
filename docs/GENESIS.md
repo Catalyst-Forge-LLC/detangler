@@ -2,7 +2,7 @@
 
 Version 0.4. Product spec.
 
-Package: `detangler` on npm. Site: detangler.dev. Sibling of aiBreze (aibreze.com).
+Package: `detangler` on npm. Site: detangler.dev. Sibling of Smell Check (smellcheck.dev).
 
 ## 0. Name and metaphor
 

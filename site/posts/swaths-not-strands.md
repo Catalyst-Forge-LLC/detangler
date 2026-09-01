@@ -10,4 +10,4 @@ A long draft or a worked-over program is the same job. Yours, a collaborator's, 
 
 Detangler rebuilds a map from what is there now: an outline on a draft, surface and authority on a program. It follows internal pointers and reports what the editing left behind. It does not rewrite. The draft comb and the program comb are the same family.
 
-[aiBreze](https://aibreze.com) sprays the smell off the prose. This is the next bottle on the shelf.
+[Smell Check](https://smellcheck.dev) sprays the smell off the prose. This is the next bottle on the shelf.
