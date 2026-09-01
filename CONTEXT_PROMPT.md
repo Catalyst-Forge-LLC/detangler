@@ -10,7 +10,7 @@ _Session continuity. Locked architecture lives in `docs/PHASE_1_BRIEF.md` and `.
 
 Detangler is a structural pass for drafts and programs that have been worked over. Two combs, first-class: `detangler` and `detangler-app`. Site, README, and install list both pairs. Do not fold them. The **skill** is the product: an agent reads it and writes `report.md`. npm ships the folders. There is no command-line comb.
 
-Sibling of aiBreze. npm `detangler`. Site detangler.dev. GitHub Catalyst-Forge-LLC/detangler.
+Sibling of Smell Check. npm `detangler`. Site detangler.dev. GitHub Catalyst-Forge-LLC/detangler.
 
 Hero flow: load the matching skill → agent writes `report.md` (`<stem>.detangler/` or `<stem>.detangler-app/`).
 
@@ -44,10 +44,10 @@ Draft deliverable: `report.md` in `<stem>.detangler/`. App deliverable: `report.
 
 ## Key Architectural Decisions
 
-- **Product: npm + FilePress site + skill.** WHY: name and domain claimed; same shelf as aiBreze. DECIDED: Phase 1
+- **Product: npm + FilePress site + skill.** WHY: name and domain claimed; same shelf as Smell Check. DECIDED: Phase 1
 - **Skill is the product. No CLI.** WHY: the report is agent behavior; a command-line comb bought nothing the skill does not do. User revised 2026-08-26. DECIDED: Phase 4
 - **No accounts, no PocketBase.** WHY: the document and the report are the state. DECIDED: Phase 1
-- **TypeScript ESM catalog, not a pipeline.** WHY: house language rule and aiBreze parity. DECIDED: Phase 4
+- **TypeScript ESM catalog, not a pipeline.** WHY: house language rule and Smell Check parity. DECIDED: Phase 4
 - **GitHub Catalyst-Forge-LLC/detangler.** WHY: user confirmed. DECIDED: Phase 1
 - **spine_weak off by default.** WHY: noise. DECIDED: Phase 1
 
@@ -67,7 +67,7 @@ Line editing, fact checking, external HTTP links, automatic rewrite of the draft
 ## Recent Changes
 
 - 2026-08-26: App comb drafted (`detangler-app`). Not dogfooded; site still drafts-first.
-- 2026-08-26: CLI pipeline removed. Product is skills, same shape as aiBreze.
+- 2026-08-26: CLI pipeline removed. Product is skills, same shape as Smell Check.
 - 2026-08-26: Skill is the comb pass (agent writes the report).
 - 2026-08-25: `detangler-apply` skill for working approved findings.
 - 2026-08-25: Phase 1–3 scaffold, FilePress site, LocalBerth 5199.

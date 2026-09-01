@@ -12,7 +12,7 @@ The metaphor carries the design, so state it everywhere the product is described
 
 - **Swaths, not strands.** Sections, cross-references, argument flow, and repetition are the swaths. Sentences are the strands. Detangler only combs swaths. Strand work is line editing and belongs to a different pass with different eyes.
 - **Comb first, then work the knots.** The comb pass finds and locates knots. Working them out is a separate action. In product terms: the **detangler** skill is the comb pass (an agent reads it and writes `report.md`); **detangler-apply** works approved findings. Neither rewrites the draft until the author asks for apply.
-- **Family resemblance.** aiBreze is the spray that removes AI smells. Detangler is the next bottle on the shelf: comb a draft that has been worked over and list what the editing left behind. Same register, different job. Same shape: a skill an agent reads, not a command that calls a model.
+- **Family resemblance.** Smell Check is the spray that removes AI smells. Detangler is the next bottle on the shelf: comb a draft that has been worked over and list what the editing left behind. Same register, different job. Same shape: a skill an agent reads, not a command that calls a model.
 
 Header lockup: *A structural pass for drafts that have been worked over.*
 

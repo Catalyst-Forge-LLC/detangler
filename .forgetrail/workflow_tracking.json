@@ -2,7 +2,7 @@
   "project": {
     "name": "Detangler",
     "created": "2026-08-25",
-    "description": "Structural editing pass for long drafts after a lot of edits — the author's, a collaborator's, an agent's. Combs swaths, not strands. npm detangler, site detangler.dev. Sibling of aiBreze.",
+    "description": "Structural editing pass for long drafts after a lot of edits — the author's, a collaborator's, an agent's. Combs swaths, not strands. npm detangler, site detangler.dev. Sibling of Smell Check.",
     "archetype": "product",
     "status": "active"
   },

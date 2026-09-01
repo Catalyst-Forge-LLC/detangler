@@ -109,19 +109,19 @@ No payments, email, analytics, or search API.
 
 ## 7. Decisions
 
-**D1.** npm `detangler` + FilePress site + agent skills. Sibling of aiBreze.
+**D1.** npm `detangler` + FilePress site + agent skills. Sibling of Smell Check.
 
 **D2.** Comb first, then work the knots. `detangler` writes the report. `detangler-apply` works findings the author approved. Neither rewrites until asked.
 
 **D3.** No accounts, no PocketBase. The document and the report are the state.
 
-**D4.** TypeScript ESM catalog, not a pipeline. House language. aiBreze parity.
+**D4.** TypeScript ESM catalog, not a pipeline. House language. Smell Check parity.
 
 **D5.** No command-line comb. A CLI was scaffolded and dropped: the report is agent behavior.
 
 **D6.** One finding shape. No finding without an action. Line-level notes are a count.
 
-**D7.** Site modeled on aiBreze FilePress. Pages and docs speak as the product.
+**D7.** Site modeled on Smell Check FilePress. Pages and docs speak as the product.
 
 **D8.** `spine_weak` stays out of the default report.
 
