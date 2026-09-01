@@ -181,7 +181,7 @@ Do this in order. Do not start the app comb until 1–3 exist in public.
 3. **Paste-dumb install.** One copy-or-download path for people with no `skills/` directory. Keep npm and folder drop for people who already live there.
 4. **Tighten the draft skill** only where the sample report shows a hole: outline nodes on every finding, apply never unnamed-applies judgment calls, deletion orphan as the broken example (already on the site).
 5. **Dogfood the app comb** on one iterated app you own. Publish *that* report: surface map, contract inventory, three buckets, authority conflicts first-class. No second landing page until that report exists.
-6. **Write the skills** (done in-repo). Site copy and install list both pairs. A public app sample is on `/docs/sample-app-report`: the 2026-08-26 comb of Smell Check (then aiBreze) as written, then what was fixed and what was left.
+6. **Write the skills** (done in-repo). Site copy and install list both pairs. A public app sample is on `/docs/sample-app-report`: the 2026-08-26 comb of Smell Check as written, then what was fixed and what was left.
 
 ---
 

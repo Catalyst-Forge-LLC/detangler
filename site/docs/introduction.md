@@ -45,4 +45,4 @@ Working the knots is a separate action. `detangler-apply` or `detangler-app-appl
 - [Install](/docs/install) — download the zip for the pair you need
 - [Skill](/docs/skill) — both combs, plus apply after a report exists
 - [Sample report](/docs/sample-report) — twelve findings and the outline, from a draft comb
-- [Sample app report](/docs/sample-app-report) — Smell Check (then named aiBreze), then what was fixed and what was left
+- [Sample app report](/docs/sample-app-report) — Smell Check, then what was fixed and what was left

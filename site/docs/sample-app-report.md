@@ -2,7 +2,7 @@
 title: Sample app report
 ---
 
-A comb of [aiBreze](https://aibreze.com) on 2026-08-26. The object is a skill-and-site product after many passes. The report is the comb as written. What follows the findings is what happened after.
+A comb of [Smell Check](https://smellcheck.dev) on 2026-08-26. The object is a skill-and-site product after many passes. The report is the comb as written. What follows the findings is what happened after.
 
 **After the comb**
 
@@ -13,7 +13,7 @@ A comb of [aiBreze](https://aibreze.com) on 2026-08-26. The object is a skill-an
 
 This is not a living issue list. A [draft sample](/docs/sample-report) sits next to it.
 
-# Detangler report — aibreze (app)
+# Detangler report — Smell Check (app)
 
 18 surface nodes. 5 contracts. 5 entities. 2026-08-26T17:50:00Z.
 
@@ -24,8 +24,8 @@ Broken: 5. Intentional but verify: 1. Judgment calls: 3.
 ## Broken
 
 1. **F-001** · **c1** Wire project — route_orphan
-   `rules/cursor.mdc` links `./core.md`, `./audit.md`, `./civic.md`, and the other siblings. Install step 1 copies that file to `.cursor/rules/aibreze.mdc`. Those relatives no longer resolve.
-   Action: Point the pocket card only at paths that survive the copy (`node_modules/aibreze/rules/…` or the public `/rules/` URLs), or ship a copy-dest variant without sibling links.
+   `rules/cursor.mdc` links `./core.md`, `./audit.md`, `./civic.md`, and the other siblings. Install step 1 copies that file to `.cursor/rules/smellcheck.mdc`. Those relatives no longer resolve.
+   Action: Point the pocket card only at paths that survive the copy (`node_modules/smellcheck/rules/…` or the public `/rules/` URLs), or ship a copy-dest variant without sibling links.
    Evidence: After the advertised copy, `.cursor/rules/core.md` is not on disk. Step 2 tells the agent to open `node_modules` instead. The links in the copied file stay false.
 
 2. **F-002** · **a4** APP_FACTS.png — docs_drift
@@ -34,12 +34,12 @@ Broken: 5. Intentional but verify: 1. Judgment calls: 3.
    Evidence: README and the site footer send people to this label. The markdown pointer is still there. The png is not.
 
 3. **F-003** · **a3** package version — ssot_conflict
-   npm `package.json` is `0.1.8`. `skills/aibreze/SKILL_FACTS.md` still says `0.1.6` in the frontmatter and in the table.
+   npm `package.json` is `0.1.8`. `skills/smellcheck/SKILL_FACTS.md` still says `0.1.6` in the frontmatter and in the table.
    Action: Make the SkillFacts version match the package, or remove version from the label if it is not kept in lockstep.
    Evidence: Footer and README treat SkillFacts as the skill nutrition label. Two shipped numbers disagree.
 
 4. **F-004** · **a5** SkillFacts bundled list — docs_drift
-   SkillFacts lists bundled artifacts as `rules/core.md`, `rules/audit.md`, `rules/claims.md` only. The skill zip and `skills/aibreze/rules/` also ship the six genre files.
+   SkillFacts lists bundled artifacts as `rules/core.md`, `rules/audit.md`, `rules/claims.md` only. The skill zip and `skills/smellcheck/rules/` also ship the six genre files.
    Action: List every file the zip contains, or say “core plus genre files” so the label matches the folder.
    Evidence: A reader of the footer label will under-count what the skill folder is. The zip has ten files.
 
@@ -91,14 +91,14 @@ Job: An installable writing rule set for AI agents — editorial rules for prose
   - **r5.1** `/posts/name-the-thing` Name the thing
   - **r5.2** `/posts/dont-copy-the-bans` Don't copy the bans
 - **r6** `/about` About — spray metaphor, names
-- **r7** `/skills/aibreze.zip` Skill zip
+- **r7** `/skills/smellcheck.zip` Skill zip
 - **r8** `/rules/` Raw rule host (`core.md` … `cursor.mdc`)
 - **r9** `/rss.xml` RSS
 - **r10** `/writing` Redirect to `/posts`
 
 ### Contracts
-- **c1** Wire project — `pnpm add -D aibreze` → copy pocket card → overlay → point at `core.md`
-- **c2** Load skill — zip, clone, or npm copy of `skills/aibreze/` into a skills directory
+- **c1** Wire project — `pnpm add -D smellcheck` → copy pocket card → overlay → point at `core.md`
+- **c2** Load skill — zip, clone, or npm copy of `skills/smellcheck/` into a skills directory
 - **c3** Spray / publish pass — agent reads core + overlay, then audit or claims
 - **c4** One-off — point an agent at the raw `/skills/…/SKILL.md` and `/rules/…` URLs
 - **c5** readRule — Node import of catalog markdown from the package
@@ -107,8 +107,8 @@ Job: An installable writing rule set for AI agents — editorial rules for prose
 - **e1** Rule — `core.md`, genre files, `audit.md`, `claims.md`; created in the package; listed on Files
 - **e2** Overlay — written in the consuming project; not a file this package ships
 - **e3** Skill folder — `SKILL.md` plus `rules/*.md`; no `cursor.mdc`
-- **e4** Pocket card — `rules/cursor.mdc`; copied to `.cursor/rules/aibreze.mdc`
-- **e5** Package — npm `aibreze`; no `bin`
+- **e4** Pocket card — `rules/cursor.mdc`; copied to `.cursor/rules/smellcheck.mdc`
+- **e5** Package — npm `smellcheck`; no `bin`
 
 ### Authority
 - **a1** canon — skill and pocket card say `core.md` wins if a digest conflicts
