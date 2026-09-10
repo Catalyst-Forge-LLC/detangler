@@ -2,11 +2,13 @@
 title: Introduction
 ---
 
-**Detangler** is a structural pass for drafts and programs after a lot of edits: yours, a collaborator's, an agent's. An agent reads the matching skill and writes a report of what the editing left behind.
+**Detangler** finds structural problems left by repeated edits: stale references, contradictions, duplicated sections, and flows that no longer connect.
+
+An agent reads the matching skill and writes a report. Review does not edit the source. Apply is a second skill, after you select findings.
 
 A lot of editing tangles the thing. References drift. The argument or the journey loses its spine. The same job appears twice. One area grows until it swallows the rest. On a program, the same fact is true in two places that disagree. Cutting or reordering is one cause. Most of the damage is just accumulated edits, each of which looked fine.
 
-npm **`detangler`**. Site **detangler.dev**. Sibling of [Smell Check](https://smellcheck.dev).
+npm **`detangler`**. Site **detangler.dev**. You can finish a Detangler review without other products. [Smell Check](https://smellcheck.dev), [Misemphasis](https://misemphasis.com), and [Cold-eye](https://coldeye.dev) are optional next steps.
 
 | | Drafts | Programs |
 | --- | --- | --- |
@@ -30,7 +32,7 @@ The skill writes `report.md`. Findings in three buckets, then the map taken from
 | **Intentional but verify** | Looks deliberate, check it | A term used two sections before it is defined | Two Settings screens, user vs admin |
 | **Judgment call** | Reasonable people would differ | Two sections covering the same ground | Two create-flows that still agree |
 
-Working the knots is a separate action. `detangler-apply` or `detangler-app-apply` works findings you approve, one at a time. Neither rewrites until you ask for apply.
+Working the knots is a separate action. `detangler-apply` or `detangler-app-apply` works findings you approve, one at a time. Neither rewrites until you ask for apply. Unnamed apply means every `broken` finding. Intentional and judgment-call items stay until you name them.
 
 ## What it checks
 

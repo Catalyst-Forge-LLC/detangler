@@ -4,23 +4,33 @@
 
 # Detangler
 
-Find what the editing tangled.
+Find structural problems left by repeated edits: stale references,
+contradictions, duplicated sections, and flows that no longer connect.
 
-Combs the whole draft or the whole program, not single strands.
+An agent reads the matching skill and writes a report. Review does not
+edit the source. Apply is a second skill, after you select findings.
 
-Detangler is a structural pass for drafts and programs that have been
-worked over. An agent reads the matching skill and writes a report of
-what the editing left behind.
+| Object | Comb | Apply | A defect it can report |
+| --- | --- | --- | --- |
+| Drafts | `detangler` | `detangler-apply` | “See Resources” after Resources was deleted |
+| Programs | `detangler-app` | `detangler-app-apply` | A Settings item that goes nowhere |
 
-| Object | Comb | Apply |
-| --- | --- | --- |
-| Drafts | `detangler` | `detangler-apply` |
-| Programs | `detangler-app` | `detangler-app-apply` |
-
-They share report buckets and use different maps. Keep them as two
-skills. Copy the pair you need.
+Copy the pair you need. Sample draft report:
+[detangler.dev/docs/sample-report](https://detangler.dev/docs/sample-report).
+Sample app report:
+[detangler.dev/docs/sample-app-report](https://detangler.dev/docs/sample-app-report).
 
 **Docs:** [detangler.dev/docs](https://detangler.dev/docs) · **Site:** [detangler.dev](https://detangler.dev)
+
+## Review, then apply
+
+1. Pick draft or program.
+2. Run the matching review.
+3. Inspect `report.md`.
+4. Invoke the matching apply path on the findings you select.
+
+Unnamed apply means every `broken` finding, then the agent asks.
+Unresolved suggestions stay in the report.
 
 ## Install
 
@@ -32,6 +42,9 @@ pnpm add -D detangler
 ```
 
 Copy `node_modules/detangler/skills/<name>/` into a skills directory.
+
+Smell Check, Misemphasis, and Cold-eye are optional neighbors, not
+requirements.
 
 ## License
 

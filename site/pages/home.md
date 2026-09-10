@@ -1,36 +1,56 @@
 ---
 title: Find what the editing tangled.
-description: Structural pass for drafts and programs that have been worked over. An agent with the skill writes the report.
+description: Find structural problems left by repeated edits: broken references, contradictions, duplicated material, and flows that no longer connect.
 order: 0
 ---
 
-*Combs the whole draft or the whole program, not single strands.*
+Find structural problems left by repeated edits: stale references, contradictions, duplicated sections, and application flows that no longer connect. Choose the draft or application skill, review its findings, then apply only the changes you select.
 
-A draft or a program, many passes. You, a collaborator, an agent. Each edit looked fine. The thing tangled.
-
-**Detangler** is a structural pass for drafts and programs that have been worked over. An agent reads the matching skill and writes a report of what the editing left behind.
+An agent reads the matching skill and writes `report.md`. Review does not edit the source.
 
 [Docs](/docs/) · [Install](/docs/install) · [Skill](/docs/skill) · [Why the name](/about)
 
-## Two combs
-
-The metaphor is the same. The object is not. Drafts and programs share report buckets and use different maps. Do not run the draft skill on an app, or the app skill on a prose draft.
+## Which comb
 
 | | Drafts | Programs |
 | --- | --- | --- |
 | Skill | `detangler` | `detangler-app` |
 | Apply | `detangler-apply` | `detangler-app-apply` |
 | Object | A long draft, or a named set of pages | An app, a site, an iterated product |
-| Map | Reverse outline from headings | Surface, contracts, entities, authority |
-| Signature break | “See Resources” after Resources was deleted | A Settings item that goes nowhere |
+| A defect it can report | “See Resources” after Resources was deleted | A Settings item that goes nowhere |
 
-One package: copy the pair you need.
+One package: copy the pair you need. Do not run the draft skill on an app, or the app skill on a prose draft.
 
-## What you get
+## Review, then apply
 
-The skill writes `report.md`. Findings first, then the map taken from the draft or the product as it is now.
+1. Pick the object: draft or program.
+2. Run the matching review skill.
+3. Read `report.md`. Findings stay in the report until you choose them.
+4. Invoke the matching apply skill on the findings you select.
+5. Unnamed “apply the report” means every `broken` finding, then the agent asks. `intentional_but_verify` and `judgment_call` stay until you name them.
 
-Findings come in three kinds.
+Nothing in the draft or the product changes during review. Apply consumes the report and leaves rejected or unnamed suggestions in place.
+
+## Evidence in the report
+
+A [sample draft report](/docs/sample-report) from a cache-invalidation note after many passes. One broken finding, quoted from that page:
+
+1. **F-001** · **s1** (line 9) · reference_orphan
+   see the Resources section
+   Action: Restore a Resources heading, or retarget every pointer that names it.
+   Evidence: No heading or definition named Resources remains. The same pointer appears in s2, s3, and s6.
+
+Line numbers help the next agent find the sentence. If the draft moved, search for the quoted phrase rather than treating the line number as law.
+
+A [sample app report](/docs/sample-app-report) from Smell Check after many passes:
+
+1. **F-001** · **c1** · route_orphan
+   pocket card links die after copy into `.cursor/rules/`.
+   Evidence: After the advertised copy, `.cursor/rules/core.md` is not on disk.
+
+F-001 is observed breakage. A judgment call on the same draft, two sections covering the same ground, is a debatable cut, not a broken pointer.
+
+## Findings
 
 | Kind | Means | Drafts | Programs |
 | --- | --- | --- | --- |
@@ -38,43 +58,19 @@ Findings come in three kinds.
 | **Intentional but verify** | Looks deliberate, check it | A term used two sections before it is defined | Two Settings screens, user vs admin |
 | **Judgment call** | Reasonable people would differ | Two sections covering the same ground | Two create-flows that still agree |
 
-Nothing in the draft or the product changes. The report is a to-do list you work by hand, or hand to an agent.
+## Optional neighbors
 
-A [sample report](/docs/sample-report) from a cache-invalidation note after many passes:
+Detangler is a structural pass. You can finish a review without other products.
 
-1. **F-001** · **s1** — reference_orphan — “see the Resources section” after Resources was deleted.
-2. **F-007** · **s4** — stale_edit — retry window is 30 seconds here and 90 in the recap.
+- [Smell Check](https://smellcheck.dev) reviews prose register.
+- [Misemphasis](https://misemphasis.com) reviews likely readings.
+- [Cold-eye](https://coldeye.dev) checks whether a newcomer can use what you are about to ship.
 
-The full report has twelve findings and the outline extracted from the text.
-
-A [sample app report](/docs/sample-app-report) from [Smell Check](https://smellcheck.dev) after many passes:
-
-1. **F-001** · **c1** — route_orphan — pocket card links die after copy into `.cursor/rules/`.
-2. **F-003** · **a3** — ssot_conflict — package `0.1.8`, SkillFacts still `0.1.6`.
-
-Five broken findings were worked after the comb. The page is the report as written, then what was fixed and what was left.
-
-## What it checks
-
-A lot of editing produces the same kinds of tangle.
-
-- **References.** A “see also” at a heading that is gone. A nav item, a deep link, or a client aimed at a removed screen.
-- **Argument.** A section that never answers the question the previous one raised. A journey that starts and never resolves. Onboarding that promises a capability the product does not have.
-- **Repetition.** Two pages that restated the same job. Two create-flows, twin settings, parallel schemas for one noun.
-- **Weight.** One section that swallowed the draft. A kitchen-sink Settings or a god dashboard that swallowed the product’s job.
-- **Authority (programs).** The same fact in two places that disagree. Failed single source of truth.
-
-## Not a line editor
-
-Grammar, tone, sentence rhythm, lint, and file cleanup stay out. Structural work and strand work use different eyes. Doing both at once does both badly.
-
-[Smell Check](https://smellcheck.dev) sprays AI smells off prose. Detangler is the next bottle on the shelf.
+Grammar, tone, lint, and file cleanup stay out.
 
 ## Install
 
 Pick the pair. [Download the zip](/docs/install), put the folder where the table says, and ask whether it still hangs together.
-
-If you already use npm:
 
 ```bash
 pnpm add -D detangler
