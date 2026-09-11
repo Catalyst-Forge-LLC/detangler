@@ -77,8 +77,9 @@ test("public copy treats drafts and programs as first-class", () => {
 	const home = readFileSync(join(packageRoot, "site", "pages", "home.md"), "utf8");
 	const install = readFileSync(join(packageRoot, "site", "docs", "install.md"), "utf8");
 	const readme = readFileSync(join(packageRoot, "README.md"), "utf8");
-	assert.match(home, /drafts and programs/);
+	assert.match(home, /\|\s*Drafts\s*\|\s*Programs\s*\|/);
 	assert.match(home, /detangler-app/);
+	assert.match(home, /draft or (application|program)/i);
 	assert.doesNotMatch(home, /not in the zip today/);
 	assert.match(install, /detangler-app\.zip/);
 	assert.match(install, /detangler-app-apply\.zip/);
