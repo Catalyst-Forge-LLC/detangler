@@ -1,6 +1,6 @@
 # Detangler: Build Specification
 
-Version 0.4. Product spec.
+Version 0.5. Product spec.
 
 Package: `detangler` on npm. Site: detangler.dev. Sibling of Smell Check (smellcheck.dev).
 
@@ -10,7 +10,7 @@ A hair detangler works on the whole head of hair, not strand by strand. You comb
 
 The metaphor carries the design, so state it everywhere the product is described:
 
-- **Swaths, not strands.** Sections, cross-references, argument flow, and repetition are the swaths. Sentences are the strands. Detangler only combs swaths. Strand work is line editing and belongs to a different pass with different eyes.
+- **Swaths, not strands.** Sections, cross-references, argument flow, and repetition are the swaths. Sentences are the strands, except when a sentence is the only appearance of a concept that never joined the weave — that is an isolate (`unwoven_claim` or `debris`), not line editing. Detangler only combs swaths. Strand work is line editing and belongs to a different pass with different eyes.
 - **Comb first, then work the knots.** The comb pass finds and locates knots. Working them out is a separate action. In product terms: the **detangler** skill is the comb pass (an agent reads it and writes `report.md`); **detangler-apply** works approved findings. Neither rewrites the draft until the author asks for apply.
 - **Family resemblance.** Smell Check is the spray that removes AI smells. Detangler is the next bottle on the shelf: comb a draft that has been worked over and list what the editing left behind. Same register, different job. Same shape: a skill an agent reads, not a command that calls a model.
 
@@ -26,7 +26,7 @@ Naming rule: use "Detangler" for the family and for the draft comb. Say "drafts"
 
 ## 1. Purpose
 
-Detangler is a structural editing pass for long-form documents that have been worked over — by one person, by several, and especially by an agent. A lot of editing tangles the document: references drift, the argument loses its spine, the same claim appears twice for different reasons, one section grows until it swallows the rest. Cutting or reordering is one cause. Most of the damage is just accumulated edits, each of which looked fine.
+Detangler is a structural editing pass for long-form documents that have been worked over — by one person, by several, and especially by an agent. A lot of editing tangles the document: references drift, the argument loses its spine, a claim lands and is never woven, leftover debris from another job sticks in a section, the same claim appears twice for different reasons, one section grows until it swallows the rest. Cutting or reordering is one cause. Most of the damage is just accumulated edits, each of which looked fine.
 
 It rebuilds the document's outline from the text as it exists, checks that the argument holds together, verifies every internal reference against what is still present, classifies repetition, and reports findings sorted by severity.
 
@@ -34,7 +34,7 @@ The first release produces a report. The skill writes it. It does not rewrite.
 
 It is deliberately not a line editor. Line editing and structural editing use different attention and doing them simultaneously does both badly, especially when previous effort went into sentences. This pass is the hour for load-bearing walls.
 
-One injury it catches is the deletion orphan: a section was removed correctly, but other sections still point at it. That is not the whole job. The same pass finds an argument that later rewrites left behind, a recap of something that no longer happens, a term used after its definition was rewritten out, a section that grew across many sessions. Each edit looks clean in isolation. The tangle only shows when the whole document is combed end to end.
+One injury it catches is the deletion orphan: a section was removed correctly, but other sections still point at it. That is not the whole job. The same pass finds an argument that later rewrites left behind, a recap of something that no longer happens, a term used after its definition was rewritten out, a concept that appears once and dies, a sentence from another job stuck in the tangle, a section that grew across many sessions. Each edit looks clean in isolation. The tangle only shows when the whole document is combed end to end.
 
 The method is a reverse outline plus a link check. An editor's trick and a software habit, run together as one pass.
 
@@ -57,9 +57,9 @@ The method is a reverse outline plus a link check. An editor's trick and a softw
 
 1. **Rebuild from the text, never from intent.** The outline is derived from what is on the page. The author's notes, prior outlines, and commit messages are not inputs to the reconstruction step. They may be used later, only for the "intentional but verify" classification.
 2. **Findings are a to-do list, not a complaint list.** Every finding has a location, a category, a severity, and a proposed action. Findings without a proposed action are dropped.
-3. **Classify before flagging.** Repetition, forward references, and section imbalance all have legitimate uses. The tool must say what job the pattern is doing before it says the pattern is a problem.
+3. **Classify before flagging.** Repetition, forward references, section imbalance, and isolates all have legitimate neighbors (a stiff sentence, a pivot, a claim the next section will take up). The tool must name the concept or the job before it says the pattern is a problem.
 4. **The agent reading the skill is the judgment.** There is no command-line comb and no model API. Outline, references, argument, repetition, and weight are the hour in `skills/detangler/SKILL.md`.
-5. **Swaths, not strands.** The tool refuses to emit line-level suggestions even if the model notices them. A line-level observation is a count at the end of the report, not a list.
+5. **Swaths, not strands.** The tool refuses to emit line-level suggestions even if the model notices them. A line-level observation is a count at the end of the report, not a list. An isolate is not a line-level observation: it is a named concept that failed to join the outline.
 
 ## 4. The hour
 
@@ -76,6 +76,15 @@ Every heading appears exactly once. Claims do not borrow material from other sec
 ### Argument
 
 For every outline node: what question does this section answer, and did the previous section raise it? First node: `raised_by_previous` is `—`. After that, `no` is `spine_break`, `broken`. Three or more `no`/`partial` in a row is `spine_drift`, `broken`. `partial` alone (`spine_weak`) stays out of the default report.
+
+Isolates sit inside a node. They are not spine joints. For each fragment that looks out of place: name the concept. If you cannot name a concept distinct from the node's claim, it is a strand. Count it. Do not list it. Then ask whether this draft already has a place for that concept.
+
+- `unwoven_claim`: the concept belongs to this draft's job. It does not serve the node's claim and later nodes do not take it up. Usually `judgment_call`. Action: cut it, or extend it until surrounding claims depend on it (enough that it could be a heading, or enough that the node claim must mention it).
+- `debris`: the concept belongs to another job (a cut leftover, a paste, an agent aside, a note from a different draft). Developing it would add a second job. `broken` when the sentence is false or alien in this draft; otherwise `judgment_call`. Action: pull it out, or move it to the node or draft that owns that job.
+
+A whole node that nothing else references, with `no` on both joints, is `detachable` under weight, not an isolate. A term used after its definition is gone is a reference finding, not an isolate.
+
+Rules: `skills/detangler/references/isolate-types.md`.
 
 ### References
 
@@ -119,9 +128,9 @@ A top-level section more than about 2.5× the median top-level section is `secti
 
 Three buckets. Rubric: `skills/detangler/references/severity-rubric.md`.
 
-- `broken`: wrong as written. Orphans, count mismatches, contradictions, stale edits, heading gaps, spine breaks. Must fix.
+- `broken`: wrong as written. Orphans, count mismatches, contradictions, stale edits, heading gaps, spine breaks, debris that is false or alien in this draft. Must fix.
 - `intentional_but_verify`: plausibly deliberate. Confirm it.
-- `judgment_call`: reasonable people would differ.
+- `judgment_call`: reasonable people would differ. Includes an unwoven claim that could be cut or woven.
 
 Sort by severity, then by document position. If the same location produces two findings, merge them.
 
@@ -150,7 +159,7 @@ Every finding uses this shape. The report is markdown; this is the fields, not a
 }
 ```
 
-`job_analysis` is required for repetition findings and null elsewhere. `action` is always required and always phrased as something the author can do.
+`job_analysis` is required for repetition findings and null elsewhere. Isolate findings name the concept in evidence, not in a new field. `action` is always required and always phrased as something the author can do.
 
 ## 6. Report format
 
@@ -173,7 +182,7 @@ Not in this release. When it ships, above roughly 40,000 words:
 1. Outline per chapter or top-level section, then merge.
 2. Definition table across the whole document first. Deletion orphans cross chunk boundaries, so that table is never chunk-local.
 3. Near-verbatim and same-claim run on the whole outline, then drill into text only for candidate pairs.
-4. Argument runs on the merged outline.
+4. Argument runs on the merged outline. Isolates run on each node's text after that merge.
 
 ## 8. Sample drafts
 
@@ -188,6 +197,8 @@ Not in this release. When it ships, above roughly 40,000 words:
 | `stale-fact` | Update a number in one place but not its restatement | `stale_edit`, broken |
 | `reinforcing-ok` | Legitimate recap after a long digression | No broken finding; at most `judgment_call` |
 | `spine-gap` | Reorder two sections so a question is answered before it is raised | `spine_break` |
+| `unwoven-claim` | A sentence names a concept the section never uses and later sections never take up | `unwoven_claim`, judgment_call |
+| `debris` | A sentence from another job stuck in an otherwise holding section | `debris`, broken |
 | `clean` | No injected faults | Zero `broken` findings |
 
 A false `broken` on `clean` is a miss of the product.
@@ -203,6 +214,7 @@ skills/detangler/
     ├── report.md
     ├── reference-patterns.md
     ├── repetition-classes.md
+    ├── isolate-types.md
     └── severity-rubric.md
 skills/detangler-apply/
 ├── SKILL.md
@@ -210,7 +222,7 @@ skills/detangler-apply/
     └── apply.md
 ```
 
-**SKILL.md description** (make it pushy; agents undertrigger): "Detangler combs the whole document, not single strands. Structural editing pass for long drafts after a lot of edits — the user's, a collaborator's, an agent's. Finds what the editing tangled: orphaned references, argument gaps, stale repetition, sections that have grown out of proportion. Use when a long draft has been edited a lot (especially with an agent or by more than one person), when the user asks whether it still hangs together, mentions tangled structure, orphaned references, stale repetition, or a draft that no longer tracks after many passes, asks for a reverse outline, or wants a structural rather than line-level edit. Trigger even if they only say 'does this still make sense' about a long document. Not for grammar, tone, a one-paragraph email, chat-only, line editing, or applying a report."
+**SKILL.md description** (make it pushy; agents undertrigger): "Detangler combs the whole document, not single strands. Structural editing pass for long drafts after a lot of edits — the user's, a collaborator's, an agent's. Finds what the editing tangled: orphaned references, argument gaps, unwoven claims, leftover debris, stale repetition, sections that have grown out of proportion. Use when a long draft has been edited a lot (especially with an agent or by more than one person), when the user asks whether it still hangs together, mentions tangled structure, orphaned references, a sentence that never connects, stale repetition, or a draft that no longer tracks after many passes, asks for a reverse outline, or wants a structural rather than line-level edit. Trigger even if they only say 'does this still make sense' about a long document. Not for grammar, tone, a one-paragraph email, chat-only, line editing, or applying a report."
 
 **SKILL.md body:** the hour (locate draft, extract outline, four scopes, write `report.md`, stop), pointers to the reference files, refuse apply in the description, name the sibling skill only in the body.
 
@@ -231,3 +243,4 @@ Not in the first build. Listed so the method does not preclude them.
 1. Near-verbatim thresholds (0.25 edit distance, 0.6 shingle overlap) are guesses. Tune in use.
 2. `spine_weak` (`partial`) stays out of the default report.
 3. An optional author-supplied intended outline ("what you meant vs what you wrote") is out of scope. If added later, it must not leak into the reverse outline.
+4. Isolate vs clumsy sentence is agent judgment under the four-part test in `isolate-types.md`. Tune from the `unwoven-claim` and `debris` fixtures. A false isolate on `clean` is a miss of the product.

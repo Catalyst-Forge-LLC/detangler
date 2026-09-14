@@ -17,7 +17,9 @@ Detangler found.
    `intentional_but_verify` and `judgment_call`.
 3. One approved finding at a time, including orphans that edit
    creates. Finish its `action`. Stop if the next edit would turn
-   into a line edit.
+   into a line edit. Weaving an `unwoven_claim` means extending
+   that concept until the node depends on it, not rewriting the
+   neighbors. Cutting `debris` means that fragment only.
 4. Do the finding's `action`. Do not expand into grammar, tone, or
    line-level notes.
 5. After the edit, remaining references must still resolve. If you

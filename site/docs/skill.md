@@ -37,6 +37,7 @@ Drafts:
 
 - Does this still hang together after all these edits?
 - An agent has been through this file. What tangled?
+- A sentence in this section never connects to the rest.
 - Comb this draft.
 - These two docs pages say the same thing.
 - Reverse outline, then tell me what broke.

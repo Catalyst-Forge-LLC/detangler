@@ -1,7 +1,7 @@
 # Detangler family
 
 **Status:** both combs first-class in public copy; npm 0.1.1 is still the draft pair  
-**Updated:** 2026-08-26
+**Updated:** 2026-09-14
 
 Draft (prose) comb law: [`GENESIS.md`](./GENESIS.md). Stack: [`PHASE_1_BRIEF.md`](./PHASE_1_BRIEF.md). If they drift on the draft comb, GENESIS wins. This file owns the family, the app variant, and the next public proof.
 
@@ -64,7 +64,7 @@ If one skill pretends they are the same, the agent wanders. On a draft it review
 | --- | --- | --- |
 | Map | Reverse outline from headings (`s1`, `s1.2`; `<stem>.s1` on a named set) | Surface, contracts, entities, authority |
 | References | Pointers, named sections, counts, terms | Dead routes, nav to missing screens, copy that says “see X”, deep links, clients aimed at removed endpoints |
-| Argument | Section questions; did the previous raise it? | Journeys that start and never resolve; a form that collects data no feature consumes; onboarding that promises a capability the app does not have |
+| Argument | Section questions; did the previous raise it? A claim inside a node that never joined the weave (`unwoven_claim`) or leftover from another job (`debris`) | Journeys that start and never resolve; a form that collects data no feature consumes; onboarding that promises a capability the app does not have; copy that names a capability with no contract; leftover from a removed screen |
 | Repetition | Near-verbatim and same-claim, ranked by **job** (including a named document set) | Two create-flows, twin settings, parallel schemas for one noun, near-duplicate modules that drifted, two pages that restate the same job |
 | Weight | Section size vs the document as it stands | One area hypertrophied relative to the product’s **job** (god dashboard, kitchen-sink Settings) |
 | Authority | The outline *is* the source of truth | Failed single source of truth — first-class tangle, not a footnote under repetition |
@@ -88,7 +88,7 @@ The outline at the bottom of the report is load-bearing. Findings already carry 
 
 - Reference tangles earn trust fast. Deletion orphan is the signature `broken` example, not a rename.
 - Repetition ranks by job, not string similarity.
-- Argument and weight need the extracted outline, not vibes. “This section grew out of proportion” is relative to the document as it stands. “A question was raised and never answered” is a spine check on outline nodes.
+- Argument and weight need the extracted outline, not vibes. “This section grew out of proportion” is relative to the document as it stands. “A question was raised and never answered” is a spine check on outline nodes. An isolate must name a concept distinct from the node’s claim; a clumsy sentence is still a strand.
 
 ---
 

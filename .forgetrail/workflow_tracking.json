@@ -293,6 +293,16 @@
       "rationale": "User: the idea is not to apply the report automatically; it is to give the prompt/skill guidance to apply a report, and that belongs in this release.",
       "alternatives_considered": ["Keep apply as later automatic rewrite", "CLI mutates the draft"],
       "status": "active"
+    },
+    {
+      "id": "d12",
+      "timestamp": "2026-09-14T13:21:00",
+      "phase": "4-feature-iteration",
+      "session": 5,
+      "decision": "Draft isolates are two types: unwoven_claim (belongs here, never woven) and debris (belongs to another job). Not one isolate type. Not named strand.",
+      "rationale": "Section-scale detachable and spine joints missed a concept that lands inside a holding node and dies, or leftover from a cut or paste. A clumsy sentence stays a strand. Action is only cut, weave, or move.",
+      "alternatives_considered": ["One type (isolate) with flyaway/debris in evidence", "Treat as line notes", "Extend detachable downward without new types"],
+      "status": "active"
     }
   ],
   "gotchas": [

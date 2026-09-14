@@ -6,3 +6,7 @@ skill writes the report; nothing here is a command-line fixture.
 
 `worked-over-note/` is the public sample. The comb of that draft
 is on the site: [Sample report](https://detangler.dev/docs/sample-report).
+
+`unwoven-claim/` injects a concept that never joins the section.
+`debris/` injects a sentence from another job. A false isolate on
+`clean/` is a miss.
