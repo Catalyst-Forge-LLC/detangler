@@ -80,10 +80,15 @@ test("public copy treats drafts and programs as first-class", () => {
 	assert.match(home, /\|\s*Drafts\s*\|\s*Programs\s*\|/);
 	assert.match(home, /detangler-app/);
 	assert.match(home, /draft or (application|program)/i);
+	assert.match(home, /Install in your agent/);
+	assert.doesNotMatch(home, /pnpm add/);
 	assert.doesNotMatch(home, /not in the zip today/);
 	assert.match(install, /detangler-app\.zip/);
 	assert.match(install, /detangler-app-apply\.zip/);
+	assert.match(install, /Which agent do you use/);
+	assert.match(install, /Other installation methods/);
 	assert.match(readme, /detangler-app/);
+	assert.match(readme, /Get started/);
 	assert.doesNotMatch(readme, /later programs/);
 	assert.doesNotMatch(home, /whole artifact/);
 	assert.doesNotMatch(readme, /whole artifact/);
@@ -92,14 +97,21 @@ test("public copy treats drafts and programs as first-class", () => {
 test("docs nav has a markdown file for every item", () => {
 	const nav = JSON.parse(
 		readFileSync(join(packageRoot, "site", "docs", "_nav.json"), "utf8"),
-	) as { sections: Array<{ items: Array<{ id: string }> }> };
+	) as {
+		sections: Array<{ items: Array<{ id: string }> }>;
+		aliases?: Array<{ id: string }>;
+	};
 	for (const section of nav.sections) {
 		for (const item of section.items) {
 			assert.ok(existsSync(join(packageRoot, "site", "docs", `${item.id}.md`)), item.id);
 		}
 	}
+	for (const item of nav.aliases ?? []) {
+		assert.ok(existsSync(join(packageRoot, "site", "docs", `${item.id}.md`)), item.id);
+	}
 	execFileSync("node", [join(packageRoot, "site", "scripts", "build-docs.mjs")], {
 		cwd: join(packageRoot, "site"),
 	});
 	assert.ok(existsSync(join(packageRoot, "site", "docs", "dist", "index.html")));
+	assert.ok(existsSync(join(packageRoot, "site", "docs", "dist", "skill", "index.html")));
 });

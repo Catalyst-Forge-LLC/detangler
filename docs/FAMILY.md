@@ -80,9 +80,9 @@ The outline at the bottom of the report is load-bearing. Findings already carry 
 
 **Still unfinished (public proof):**
 
-1. **Sample report on the homepage.** A real 8–12 finding `report.md` plus the outline it extracted, from a comb of a real draft or a fixture run in the open. Not a mocked table. This sells faster than another paragraph about the metaphor. First public proof is “we ran this on X and here is the report.”
-2. **Paste-dumb install.** `pnpm add` and “drop the folder in” are correct for people who already have a skills directory. The other half of the audience is editors and spec writers with a long draft and no `skills/` path. One path: download or copy `SKILL.md`, put it *here* (Claude.ai upload, Cursor project skill, a paste block). Widen it. Do not water the product down.
-3. **`/install` and `/skill` must not 404.** Nav already points at `/docs/install` and `/docs/skill`. Add redirects (`/install` → `/docs/install`, `/skill` → `/docs/skill`) so old or guessed URLs work. A skill product that 404s on Install is a joke at its own expense.
+1. **Sample report on the homepage.** A real 8–12 finding `report.md` plus the outline it extracted, from a comb of a real draft or a fixture run in the open. Not a mocked table. This sells faster than another paragraph about the metaphor. First public proof is “we ran this on X and here is the report.” One broken finding already sits on the homepage, with a link to the full sample.
+
+**Public getting-started path (locked):** install the skill in the agent, then use it. Homepage leads with benefit, one example, **Install in your agent**, and a sample-report link. Get started asks which agent first, then Get it / Add it / Confirm it / Try it / Find the result. npm is an other method: it supplies files and does not register the skill. `/install` and `/skill` redirect and must not 404. The Skill page is a stub that points at Get started.
 
 **The hard part, still the hour:**
 
@@ -176,9 +176,9 @@ ForgeTrail is the lifecycle that tries not to create tangles. Detangler is the c
 
 Do this in order. Do not start the app comb until 1–3 exist in public.
 
-1. **Redirects.** `/install` → `/docs/install`, `/skill` → `/docs/skill`.
-2. **Sample draft report.** Run the shipping comb on a real draft or an owned fixture. Put 8–12 findings plus the outline on the homepage (and a docs page if it helps). That is the first public proof.
-3. **Paste-dumb install.** One copy-or-download path for people with no `skills/` directory. Keep npm and folder drop for people who already live there.
+1. **Redirects.** `/install` → `/docs/install`, `/skill` → `/docs/skill`. Done. `/docs/skill` is a stub that points at Get started.
+2. **Sample draft report.** Run the shipping comb on a real draft or an owned fixture. Put 8–12 findings plus the outline on the homepage (and a docs page if it helps). That is the first public proof. One broken finding and a full-report link are on the homepage now.
+3. **Paste-dumb install.** Done as Get started: agent first, zip for that agent, named first run. npm is an other method.
 4. **Tighten the draft skill** only where the sample report shows a hole: outline nodes on every finding, apply never unnamed-applies judgment calls, deletion orphan as the broken example (already on the site).
 5. **Dogfood the app comb** on one iterated app you own. Publish *that* report: surface map, contract inventory, three buckets, authority conflicts first-class. No second landing page until that report exists.
 6. **Write the skills** (done in-repo). Site copy and install list both pairs. A public app sample is on `/docs/sample-app-report`: the 2026-08-26 comb of Smell Check as written, then what was fixed and what was left.

@@ -1,14 +1,12 @@
 ---
-title: Introduction
+title: What it does
 ---
 
-**Detangler** finds structural problems left by repeated edits: stale references, contradictions, duplicated sections, and flows that no longer connect.
+**Detangler** is an installable skill for AI agents. It finds structural problems left by repeated edits: stale references, contradictions, duplicated sections, and flows that no longer connect.
 
 An agent reads the matching skill and writes a report. Review does not edit the source. Apply is a second skill, after you select findings.
 
-A lot of editing tangles the thing. References drift. The argument or the journey loses its spine. The same job appears twice. One area grows until it swallows the rest. On a program, the same fact is true in two places that disagree. Cutting or reordering is one cause. Most of the damage is just accumulated edits, each of which looked fine.
-
-npm **`detangler`**. Site **detangler.dev**. You can finish a Detangler review without other products. [Smell Check](https://smellcheck.dev), [Misemphasis](https://misemphasis.com), and [Cold-eye](https://coldeye.dev) are optional next steps.
+**[Get started](/docs/install)** — install the skill in your agent, then use it.
 
 | | Drafts | Programs |
 | --- | --- | --- |
@@ -18,21 +16,13 @@ npm **`detangler`**. Site **detangler.dev**. You can finish a Detangler review w
 
 They share report buckets. Keep them as two skills.
 
-## Swaths, not strands
+## What it reads, writes, and changes
 
-On a draft: sections, cross-references, argument flow, and repetition. Sentences are the strands. On a program: routes, nav, feature contracts, and sources of truth. Lint, naming, and component internals are the strands. Line editing and file cleanup are a different pass.
-
-## Comb first, then work the knots
-
-The skill writes `report.md`. Findings in three buckets, then the map taken from the draft or the product as it is now.
-
-| Bucket | Means | Drafts | Programs |
-| --- | --- | --- | --- |
-| **Broken** | Wrong as written | "See the Resources section" after Resources was deleted | A button that goes to a deleted route |
-| **Intentional but verify** | Looks deliberate, check it | A term used two sections before it is defined | Two Settings screens, user vs admin |
-| **Judgment call** | Reasonable people would differ | Two sections covering the same ground | Two create-flows that still agree |
-
-Working the knots is a separate action. `detangler-apply` or `detangler-app-apply` works findings you approve, one at a time. Neither rewrites until you ask for apply. Unnamed apply means every `broken` finding. Intentional and judgment-call items stay until you name them.
+| | |
+| --- | --- |
+| Reads | A long draft, a named set of pages, or a shipped app or site |
+| Writes | `report.md` |
+| Changes | Nothing during review |
 
 ## What it checks
 
@@ -42,9 +32,14 @@ Working the knots is a separate action. `detangler-apply` or `detangler-app-appl
 - **Weight.** One area that grew out of proportion to the rest, or to the product’s job.
 - **Authority (programs).** Failed single source of truth.
 
-## Two hooks
+On a draft: sections, cross-references, argument flow, and repetition. Sentences are the strands. On a program: routes, nav, feature contracts, and sources of truth. Lint, naming, and component internals are the strands.
 
-- [Install](/docs/install) — download the zip for the pair you need
-- [Skill](/docs/skill) — both combs, plus apply after a report exists
-- [Sample report](/docs/sample-report) — twelve findings and the outline, from a draft comb
-- [Sample app report](/docs/sample-app-report) — Smell Check, then what was fixed and what was left
+| Bucket | Means | Drafts | Programs |
+| --- | --- | --- | --- |
+| **Broken** | Wrong as written | "See the Resources section" after Resources was deleted | A button that goes to a deleted route |
+| **Intentional but verify** | Looks deliberate, check it | A term used two sections before it is defined | Two Settings screens, user vs admin |
+| **Judgment call** | Reasonable people would differ | Two sections covering the same ground | Two create-flows that still agree |
+
+Working the knots is a separate action. [Get started](/docs/install#after-the-review) covers apply.
+
+A [sample draft report](/docs/sample-report). A [sample app report](/docs/sample-app-report). The [report shape](/docs/report).

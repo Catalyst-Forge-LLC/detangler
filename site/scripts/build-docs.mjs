@@ -204,7 +204,7 @@ function flatItems() {
 }
 
 function pageHref(id) {
-	return id === 'introduction' ? '/docs/' : `/docs/${id}`;
+	return id === 'install' ? '/docs/' : `/docs/${id}`;
 }
 
 function renderPage(item, bodyHtml, toc, prev, next) {
@@ -258,8 +258,7 @@ function renderPage(item, bodyHtml, toc, prev, next) {
 		<a class="docs-brand" href="/docs/">Detangler <span>docs</span></a>
 		<nav class="docs-top-links">
 			<a href="/">Home</a>
-			<a href="/docs/install">Install</a>
-			<a href="/docs/skill">Skill</a>
+			<a href="/docs/install">Get started</a>
 			<a href="https://github.com/Catalyst-Forge-LLC/detangler">GitHub</a>
 		</nav>
 	</header>
@@ -312,12 +311,27 @@ function main() {
 		const prev = idx > 0 ? items[idx - 1] : null;
 		const next = idx < items.length - 1 ? items[idx + 1] : null;
 		const page = renderPage(pageItem, html, toc, prev, next);
-		if (item.id === 'introduction') {
+		if (item.id === 'install') {
 			writeFileSync(join(outDir, 'index.html'), page);
-		} else {
-			mkdirSync(join(outDir, item.id), { recursive: true });
-			writeFileSync(join(outDir, item.id, 'index.html'), page);
 		}
+		mkdirSync(join(outDir, item.id), { recursive: true });
+		writeFileSync(join(outDir, item.id, 'index.html'), page);
+	}
+
+	const aliases = nav.aliases ?? [];
+	for (const item of aliases) {
+		const src = join(docsRoot, `${item.id}.md`);
+		if (!existsSync(src)) {
+			throw new Error(`docs: missing alias ${item.id}.md`);
+		}
+		mdFiles.delete(item.id);
+		const raw = readFileSync(src, 'utf8');
+		const { meta, body } = parseFrontmatter(raw);
+		const title = meta.title || item.title;
+		const { html, toc } = renderMarkdown(body);
+		const page = renderPage({ ...item, title }, html, toc, null, null);
+		mkdirSync(join(outDir, item.id), { recursive: true });
+		writeFileSync(join(outDir, item.id, 'index.html'), page);
 	}
 
 	if (mdFiles.size > 0) {

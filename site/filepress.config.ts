@@ -5,7 +5,7 @@ const npm = "https://www.npmjs.com/package/detangler";
 
 export default defineFilepressConfig({
 	title: "Detangler",
-	description: "Structural pass for drafts and programs that have been worked over. An agent with the matching skill writes the report.",
+	description: "An installable skill for AI agents. Structural pass for drafts and programs that have been worked over.",
 	tagline: "A structural pass for drafts and programs that have been worked over.",
 	url: "https://detangler.dev",
 	author: "Catalyst Forge LLC",
@@ -14,15 +14,14 @@ export default defineFilepressConfig({
 	homePage: "home",
 	nav: [
 		{ label: "Home", href: "/" },
+		{ label: "Get started", href: "/docs/install" },
 		{ label: "Docs", href: "/docs/" },
-		{ label: "Install", href: "/docs/install" },
-		{ label: "Skill", href: "/docs/skill" },
 		{ label: "Posts", href: "/posts" },
 		{ label: "About", href: "/about" },
 		{ label: "GitHub", href: github, icon: "github" },
 	],
 	footerLinks: [
-		{ label: "Docs", href: "/docs/" },
+		{ label: "Get started", href: "/docs/install" },
 		{ label: "npm", href: npm },
 		{ label: "GitHub", href: github, icon: "github" },
 	],
