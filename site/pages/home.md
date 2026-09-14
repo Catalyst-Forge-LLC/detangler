@@ -1,6 +1,6 @@
 ---
 title: Find what the editing tangled.
-description: Find structural problems left by repeated edits: broken references, contradictions, duplicated material, and flows that no longer connect.
+description: "Find structural problems left by repeated edits: broken references, contradictions, duplicated material, and flows that no longer connect."
 order: 0
 ---
 
