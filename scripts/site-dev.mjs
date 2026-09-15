@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Claim/read the LocalBerth lease, then start FilePress on that port.
+ * Claim/read the LocalSlip lease, then start FilePress on that port.
  */
 import { spawn, spawnSync } from "node:child_process";
 import { dirname, join } from "node:path";
@@ -18,11 +18,11 @@ function run(args, cwd = root) {
 run([join(root, "scripts/sync-skill-static.mjs")]);
 run([join(site, "scripts/build-docs.mjs")], site);
 
-const lease = spawnSync(node, [join(root, "scripts/ensure-lease.mjs"), "detangler-site", "5199"], {
+const lease = spawnSync(node, [join(root, "scripts/ensure-lease.mjs"), "detangler-site", "5203"], {
 	encoding: "utf8",
 	windowsHide: true,
 });
-const port = String(lease.stdout || "").trim() || "5199";
+const port = String(lease.stdout || "").trim() || "5203";
 if (lease.stderr) process.stderr.write(lease.stderr);
 console.log(`detangler-site: http://127.0.0.1:${port}`);
 

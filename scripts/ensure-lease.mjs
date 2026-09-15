@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Idempotent LocalBerth claim. Prints the leased port on stdout.
+ * Idempotent LocalSlip claim. Prints the leased port on stdout.
  * Missing CLI → warn on stderr, print the preferred port, exit 0.
  * Usage: node scripts/ensure-lease.mjs <name> <preferredPort>
  */
@@ -21,14 +21,14 @@ const opt = {
 };
 
 function getPort() {
-	const got = spawnSync("localberth", ["get", name], { ...opt, stdio: ["ignore", "pipe", "pipe"] });
+	const got = spawnSync("localslip", ["get", name], { ...opt, stdio: ["ignore", "pipe", "pipe"] });
 	if (got.status !== 0) return null;
 	const port = String(got.stdout || "").trim();
 	return /^\d+$/.test(port) ? port : null;
 }
 
-if (spawnSync("localberth", ["--help"], { ...opt, stdio: "ignore" }).error) {
-	console.warn(`localberth: CLI not on PATH; FilePress will try port ${preferred}`);
+if (spawnSync("localslip", ["--help"], { ...opt, stdio: "ignore" }).error) {
+	console.warn(`localslip: CLI not on PATH; FilePress will try port ${preferred}`);
 	console.log(preferred);
 	process.exit(0);
 }
@@ -36,12 +36,12 @@ if (spawnSync("localberth", ["--help"], { ...opt, stdio: "ignore" }).error) {
 let port = getPort();
 if (!port) {
 	const claim = spawnSync(
-		"localberth",
-		["claim", name, "--port", preferred, "--or-next", "--notes", "FilePress site"],
+		"localslip",
+		["claim", name, "--port", preferred, "--or-next", "--notes", "FilePress"],
 		{ ...opt, stdio: ["ignore", "pipe", "pipe"] },
 	);
 	if (claim.status !== 0) {
-		console.warn(`localberth: claim ${name} failed; FilePress will try port ${preferred}`);
+		console.warn(`localslip: claim ${name} failed; FilePress will try port ${preferred}`);
 		if (claim.stderr) console.warn(String(claim.stderr).trim());
 		console.log(preferred);
 		process.exit(0);

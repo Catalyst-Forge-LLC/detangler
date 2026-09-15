@@ -17,7 +17,7 @@ Hero flow: load the matching skill → agent writes `report.md` (`<stem>.detangl
 ## Tech Stack
 
 - **Package:** TypeScript ESM catalog + four skill folders. Node ≥20. pnpm. No `bin`.
-- **Site:** FilePress (`getfilepress`) + Cloudflare Pages (`pnpm ship`, project `detangler`). LocalBerth lease `detangler-site` on **5199** (5182 is ollanet-site). `pnpm site:dev` claims the lease and passes `--port` to FilePress.
+- **Site:** FilePress (`getfilepress`) + Cloudflare Pages (`pnpm ship`, project `detangler`). LocalSlip lease `detangler-site` on **5203** (5182 is ollanet-site). `pnpm site:dev` claims the lease and passes `--port` to FilePress.
 - **DB / auth:** none. Local files only.
 - **AI/LLM:** The agent reading the skill is the judgment. No provider path.
 - **Tests:** `tsc` + `node --test` on the skill catalog. Sample drafts in `fixtures/`.
@@ -57,7 +57,7 @@ Draft deliverable: `report.md` in `<stem>.detangler/`. App deliverable: `report.
 - No finding without an action. Line-level notes are a count at the end of the report, not a list.
 - Agents never `pnpm publish`. Site deploy is `pnpm ship` only (one pipeline).
 - Site copy speaks as the product. No corporate we. No builder I.
-- LocalBerth: claim a named lease, then pass that port to FilePress. Do not assume 5182.
+- LocalSlip: claim a named lease, then pass that port to FilePress. Do not assume 5182 or 5199.
 - The skill writes `report.md`. Apply is a second skill. Neither rewrites until the author asks for apply.
 
 ## Out of scope (v1)
@@ -70,4 +70,4 @@ Line editing, fact checking, external HTTP links, automatic rewrite of the draft
 - 2026-08-26: CLI pipeline removed. Product is skills, same shape as Smell Check.
 - 2026-08-26: Skill is the comb pass (agent writes the report).
 - 2026-08-25: `detangler-apply` skill for working approved findings.
-- 2026-08-25: Phase 1–3 scaffold, FilePress site, LocalBerth 5199.
+- 2026-08-25: Phase 1–3 scaffold, FilePress site, LocalSlip 5203.
