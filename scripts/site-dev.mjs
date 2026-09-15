@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /**
- * Claim/read the LocalSlip lease, then start FilePress on that port.
+ * Sync skill zips and docs, then start FilePress.
+ * Port comes from LocalSlip (`detangler-site`). Claim in site/package.json.
  */
 import { spawn, spawnSync } from "node:child_process";
 import { dirname, join } from "node:path";
@@ -18,15 +19,7 @@ function run(args, cwd = root) {
 run([join(root, "scripts/sync-skill-static.mjs")]);
 run([join(site, "scripts/build-docs.mjs")], site);
 
-const lease = spawnSync(node, [join(root, "scripts/ensure-lease.mjs"), "detangler-site", "5203"], {
-	encoding: "utf8",
-	windowsHide: true,
-});
-const port = String(lease.stdout || "").trim() || "5203";
-if (lease.stderr) process.stderr.write(lease.stderr);
-console.log(`detangler-site: http://127.0.0.1:${port}`);
-
-const child = spawn("filepress", ["dev", "--host", "0.0.0.0", "--port", port], {
+const child = spawn("filepress", ["dev", "--host", "0.0.0.0"], {
 	cwd: site,
 	stdio: "inherit",
 	shell: process.platform === "win32",

@@ -17,7 +17,7 @@ Hero flow: load the matching skill → agent writes `report.md` (`<stem>.detangl
 ## Tech Stack
 
 - **Package:** TypeScript ESM catalog + four skill folders. Node ≥20. pnpm. No `bin`.
-- **Site:** FilePress (`getfilepress`) + Cloudflare Pages (`pnpm ship`, project `detangler`). LocalSlip lease `detangler-site` on **5203** (5182 is ollanet-site). `pnpm site:dev` claims the lease and passes `--port` to FilePress.
+- **Site:** FilePress (`getfilepress`) + Cloudflare Pages (`pnpm ship`, project `detangler`). LocalSlip lease `detangler-site` on **5203**. `pnpm site:dev` runs `localslip claim`, then FilePress reads the lease.
 - **DB / auth:** none. Local files only.
 - **AI/LLM:** The agent reading the skill is the judgment. No provider path.
 - **Tests:** `tsc` + `node --test` on the skill catalog. Sample drafts in `fixtures/`.

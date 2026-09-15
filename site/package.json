@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"docs:build": "node scripts/build-docs.mjs",
-		"dev": "node ../scripts/site-dev.mjs",
+		"dev": "localslip claim detangler-site --port 5203 && node ../scripts/site-dev.mjs",
 		"build": "node ../scripts/sync-skill-static.mjs && pnpm docs:build && filepress build",
 		"preview": "filepress preview",
 		"check": "filepress check",
