@@ -4,20 +4,30 @@ title: Get started
 
 Install the skill in your agent, then use it. You do not need Node or npm for this path.
 
+Detangler writes a report file. A writable workspace is required. Claude.ai without project files is not a supported first-use route.
+
 ## What are you reviewing?
 
 - **A draft or a set of pages** — install `detangler`. Apply later is `detangler-apply`.
 - **An app, a site, or a product** — install `detangler-app`. Apply later is `detangler-app-apply`.
 
-Download the review skill first. Add apply when a report exists.
+Use draft review for structural relationships in text. Use application review for relationships between interface, state, and behavior. A documentation site may contain both jobs. Download the review skill first. Add apply when a report exists and you want edits.
+
+## Supported hosts
+
+| Host | Scope | Required | Notes |
+| --- | --- | --- | --- |
+| Cursor | Project skills folder | Writable workspace | Host listing / discovery not independently verified in this docs pass |
+| Claude Code | Project or `~/.claude/skills/` | Writable workspace | Same |
+| Other agents that read `SKILL.md` | Manual copy | Writable workspace | Unverified |
+| Claude.ai | — | Writable project files | Not a supported first-use route without files |
+
+A folder on disk is not proof the agent loaded the skill. Prefer the host’s skill list or a visible file-read of `SKILL.md`. A report alone does not prove loading.
 
 ## Which agent do you use?
 
 - [Cursor](#cursor)
 - [Claude Code](#claude-code)
-- [Claude.ai](#claudeai)
-
-A folder on disk is not proof the agent found the skill. The first run below is the check.
 
 ## Cursor
 
@@ -43,7 +53,7 @@ Put that folder in the project you are reviewing:
 
 ### Confirm it
 
-Ask Cursor to use the installed skill on the sample below. If it writes `report.md`, it found the skill and the reference files.
+If Cursor lists installed skills, confirm the skill name. Otherwise ask it to open that skill’s `SKILL.md` and quote the first heading.
 
 ### Try it
 
@@ -65,26 +75,30 @@ Run the comb pass on a finished draft. The Resources section also covers how to 
 
 Then ask:
 
-> Use Detangler on `stale-reference.md`. Follow the installed Detangler skill. Write the report.
+> Use Detangler on `stale-reference.md`. Follow the installed Detangler skill. Write the report. Leave the note unchanged. This short fixture is an explicit first-run request.
 
-**Programs.** Point at the app or site you already have:
+**Programs.** Download the [broken-settings](/samples/broken-settings/) fixture (or copy that folder into the project), then ask:
 
-> Use detangler-app on this repo. Follow the installed detangler-app skill. Write the report.
+> Use detangler-app on the broken-settings fixture. Follow the installed detangler-app skill. Write the report. Leave the files unchanged.
+
+The fixture has a working Account page and a Settings nav item that goes nowhere. Reviewing a real app still needs access to the relevant project files; a pasted description is narrower evidence.
 
 ### Find the result
 
 | Review | Where |
 | --- | --- |
 | Drafts | `stale-reference.detangler/report.md` next to the note |
-| Programs | `<stem>.detangler-app/report.md` at the repo root |
+| Programs | `<stem>.detangler-app/report.md` at the fixture or repo root |
 
-The source should be unchanged. On the draft sample, the report should flag the Resources pointers as broken. Wording varies by model. Do not expect an identical report every time.
+The source should be unchanged. On the draft sample, the report should flag the Resources pointers as broken without inventing broader failures to make the sample seem substantial. On the app fixture, look for the dead Settings connection and the working Account control. Wording varies by model.
+
+That the example behaved is not the same check as discovery.
 
 ## Claude Code
 
 ### Get it
 
-Same zips as Cursor: [detangler.zip](/skills/detangler.zip) or [detangler-app.zip](/skills/detangler-app.zip).
+Download [detangler.zip](/skills/detangler.zip) or [detangler-app.zip](/skills/detangler-app.zip).
 
 ### Add it
 
@@ -97,54 +111,42 @@ Unzip, then put the folder in the repo you are reviewing:
 
 ### Confirm it
 
-Same check as Cursor: the first run must produce `report.md`.
+If Claude Code lists skills, confirm the skill name. Otherwise ask it to open that skill’s `SKILL.md` and quote the first heading.
 
 ### Try it
 
-Same request as [Cursor](#try-it).
+**Drafts.** Save `stale-reference.md` as in [Cursor](#try-it) (or [download it](/samples/stale-reference.md)), then ask:
+
+> Use Detangler on `stale-reference.md`. Follow the installed Detangler skill. Write the report. Leave the note unchanged. This short fixture is an explicit first-run request.
+
+**Programs.** Use the [broken-settings](/samples/broken-settings/) fixture, then ask:
+
+> Use detangler-app on the broken-settings fixture. Follow the installed detangler-app skill. Write the report. Leave the files unchanged.
 
 ### Find the result
 
-Same paths as [Cursor](#find-the-result).
-
-## Claude.ai
-
-### Get it
-
-Download [detangler.zip](/skills/detangler.zip) or [detangler-app.zip](/skills/detangler-app.zip).
-
-### Add it
-
-Do not unzip. Open Settings → Customize → Skills and upload the zip.
-
-### Confirm it
-
-Start a chat and run the request below. If the agent writes a Detangler report, it loaded the skill.
-
-### Try it
-
-Paste the sample note from [Cursor](#try-it), or attach `stale-reference.md`. Then ask:
-
-> Use Detangler on this note. Follow the installed Detangler skill. Write the report.
-
-For a program, attach the site or repo you already have and name `detangler-app`.
-
-### Find the result
-
-The report appears in the chat. When the agent can write files, drafts land in `stale-reference.detangler/report.md`.
+Open `stale-reference.detangler/report.md` or `<stem>.detangler-app/report.md`. Source unchanged. Look for the stale Resources pointers or the dead Settings nav.
 
 ## After the review
 
-The matching apply skill performs the edit. Detangler does not rewrite during review.
+Install only a review skill first. The matching apply skill performs edits. Detangler does not rewrite during review.
 
 | Review | Apply zip |
 | --- | --- |
 | Drafts | [detangler-apply.zip](/skills/detangler-apply.zip) |
 | Programs | [detangler-app-apply.zip](/skills/detangler-app-apply.zip) |
 
-Add it the same way you added the review skill. Then name the findings you want worked.
+Add it the same way you added the review skill. Prefer naming the finding ids you want worked.
 
-Unnamed “apply the report” means every **broken** finding, then the agent asks.
+Example:
+
+> Apply F-001 from `stale-reference.detangler/report.md`. Follow the installed detangler-apply skill.
+
+Unnamed “apply the report” authorizes every **broken** finding under the current apply contract. Before the first edit, the agent should state which broken findings it will work. Verify and judgment-call findings stay until you name them.
+
+### Update or remove
+
+Replace the installed skill folder to update. Delete that folder to uninstall. Copied skills do not refresh when you bump the npm package.
 
 ## Other ways to ask
 
@@ -178,7 +180,7 @@ Or clone the [repo](https://github.com/Catalyst-Forge-LLC/detangler) and copy `s
 - Cursor: `~/.cursor/skills/<name>/`
 - Claude Code: `~/.claude/skills/<name>/`
 
-Same folder shape. The first-run check is the same.
+Same folder shape. Discovery and first-use checks are the same.
 
 ## Sample reports
 
