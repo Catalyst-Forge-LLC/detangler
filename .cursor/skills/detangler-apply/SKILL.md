@@ -22,9 +22,10 @@ Standing rules: `references/apply.md` in this folder.
 2. The draft is the file or document set this report was written
    for. The folder is `<stem>.detangler/` next to that file or
    directory. Read `report.md`.
-3. Approval is chat-only.
-4. Unnamed "apply the report" means every `broken` finding, in
-   report order. Ask before `intentional_but_verify` and
+3. Approval is chat-only. Prefer selected finding ids.
+4. Unnamed "apply the report" authorizes every `broken` finding
+   under the apply contract, in report order. State those ids
+   before the first edit. Ask before `intentional_but_verify` and
    `judgment_call`.
 5. One **approved finding** at a time, including orphans that
    edit creates. Do its `action`. Nothing else.

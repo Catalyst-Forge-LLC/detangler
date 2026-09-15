@@ -12,24 +12,30 @@ Detangler found.
 ## Rules
 
 1. Work only findings the author approved. Approval is chat-only.
-2. If they said apply the report and named no ids: start with every
-   `broken` finding, in report order. Ask before
-   `intentional_but_verify` and `judgment_call`.
-3. One approved finding at a time, including orphans that edit
+2. Prefer named finding ids. Selected IDs are the default editing
+   example.
+3. If they said apply the report and named no ids: that request
+   authorizes every `broken` finding under this contract, in report
+   order. Do not treat verify or judgment-call items as approved by
+   that phrase. Ask before `intentional_but_verify` and
+   `judgment_call`.
+4. Before the first edit under a broad apply, state which broken
+   findings you will work. Then proceed under that authorization.
+5. One approved finding at a time, including orphans that edit
    creates. Finish its `action`. Stop if the next edit would turn
    into a line edit. Weaving an `unwoven_claim` means extending
    that concept until the node depends on it, not rewriting the
    neighbors. Cutting `debris` means that fragment only.
-4. Do the finding's `action`. Do not expand into grammar, tone, or
+6. Do the finding's `action`. Do not expand into grammar, tone, or
    line-level notes.
-5. After the edit, remaining references must still resolve. If you
+7. After the edit, remaining references must still resolve. If you
    delete a heading, retarget or remove the pointers that aimed at it
    as part of that same approved finding.
-6. Do not invent findings. If the text already satisfies the action,
+8. Do not invent findings. If the text already satisfies the action,
    skip and say so.
-7. Re-run the detangler comb skill after each approved finding.
+9. Re-run the detangler comb skill after each approved finding.
    Show what is gone and what is new. Then continue or stop.
-8. If the draft is in git, one commit per finding is allowed. Do not
-   commit unless asked.
+10. If the draft is in git, one commit per finding is allowed. Do not
+    commit unless asked.
 
 Swaths, not strands. This is still not a line-edit hour.
