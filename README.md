@@ -43,9 +43,10 @@ The report lands in `stale-reference.detangler/report.md`. The note
 should be unchanged. The report should flag the Resources pointers.
 
 Install the review skill first. After that, install the matching apply
-skill and prefer naming the finding ids you want worked. Unnamed
-“apply the report” authorizes every broken finding under the apply
-contract.
+skill. Name finding ids to apply those. Unnamed “apply the report”
+authorizes every finding marked broken. The agent states those ids
+before editing. Intentional-but-verify and judgment-call findings need
+separate approval.
 
 For programs, use the
 [broken-settings](https://detangler.dev/samples/broken-settings/)

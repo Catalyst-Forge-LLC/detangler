@@ -6,7 +6,7 @@ order: 0
 
 An installable skill for AI agents. Detangler finds structural problems left by repeated edits: stale references, contradictions, duplicated sections, and application flows that no longer connect.
 
-An agent reads the skill and writes a report. The draft or the product does not change until you apply findings you select.
+An agent reads the skill and writes a report. Review does not change the draft or the product. Naming finding ids applies those. “Apply the report” authorizes every finding marked broken.
 
 ## One example
 
@@ -22,7 +22,7 @@ The report flags that pointer as **broken**, names the section that said it, and
 | --- | --- |
 | Reads | A long draft, a named set of pages, or a shipped app or site |
 | Writes | `report.md` in a folder next to the work |
-| Changes | Nothing during review. The matching apply skill edits only findings you select |
+| Changes | Nothing during review. Naming finding ids applies those. “Apply the report” authorizes every finding marked broken. The agent states those ids before editing. Other classes need separate approval |
 
 ## Draft or application
 
@@ -39,7 +39,7 @@ Do not run the draft skill on an app, or the app skill on a prose draft.
 
 ## After the report
 
-Install the matching apply skill. Name the findings you want worked. Unnamed “apply the report” means every **broken** finding, then the agent asks. Intentional and judgment-call items stay until you name them.
+Install the matching apply skill. Name finding ids to apply those. “Apply the report” authorizes every finding marked broken. The agent states those ids before editing. Intentional-but-verify and judgment-call findings need separate approval.
 
 ## Findings
 
