@@ -1,5 +1,5 @@
 ---
-title: Find what the editing tangled.
+title: Find structural problems left behind by repeated edits.
 description: "An installable skill for AI agents. Finds structural problems left by repeated edits: broken references, contradictions, duplicated material, and flows that no longer connect."
 order: 0
 ---
