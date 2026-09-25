@@ -26,7 +26,7 @@ The report flags that pointer as **broken**, names the section that said it, and
 
 ## Draft or application
 
-Choose before you install. They are different skills.
+Choose Draft for prose and document sets. Choose App for screens, navigation, and user flows. Install the matching Apply skill only when you want it to work approved findings. A documentation set is the draft route unless you are reviewing interaction flows.
 
 | | Drafts | Programs |
 | --- | --- | --- |
