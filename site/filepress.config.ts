@@ -7,6 +7,7 @@ export default defineFilepressConfig({
 	title: "Detangler",
 	description: "An installable skill for AI agents. Structural pass for drafts and programs that have been worked over.",
 	tagline: "A structural pass for drafts and programs that have been worked over.",
+	lede: 'Skill · structure · repeated edits',
 	url: "https://detangler.dev",
 	author: "Catalyst Forge LLC",
 	logo: "/logo.png",

@@ -8,6 +8,11 @@ An installable skill for AI agents. Detangler finds structural problems left by 
 
 An agent reads the skill and writes a report. Review does not change the draft or the product. Naming finding ids applies those. “Apply the report” authorizes every finding marked broken.
 
+<div class="cta-row">
+  <a class="cta cta-primary" href="/docs/install">Install in your agent</a>
+  <a class="cta cta-secondary" href="https://github.com/Catalyst-Forge-LLC/detangler">View on GitHub</a>
+</div>
+
 ## One example
 
 A note still says “see the Resources section” after Resources was deleted.
