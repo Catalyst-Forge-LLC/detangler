@@ -2,13 +2,13 @@
 title: Sample report
 ---
 
-A comb of [`fixtures/worked-over-note/input.md`](https://github.com/Catalyst-Forge-LLC/detangler/blob/main/fixtures/worked-over-note/input.md). The draft is a cache-invalidation note after many passes. Nothing in the draft was rewritten. The [app sample](/docs/sample-app-report) is a sibling comb, then what was fixed.
+A comb of [`fixtures/worked-over-note/input.md`](https://github.com/Catalyst-Forge-LLC/detangler/blob/main/fixtures/worked-over-note/input.md). The draft is a cache-invalidation note after many passes. Nothing in the draft was rewritten. Why we wait is not broken merely because Usage did not ask that question. The [app sample](/docs/sample-app-report) is a sibling comb, then what was fixed. A continuity example sits in [`fixtures/reader-continuity/`](https://github.com/Catalyst-Forge-LLC/detangler/blob/main/fixtures/reader-continuity/c02-delayed-payoff.md).
 
 # Detangler report — worked-over-note.md
 
 814 words. 9 sections. 2026-08-26.
 
-Broken: 8. Intentional but verify: 1. Judgment calls: 3.
+Broken: 7. Intentional but verify: 1. Judgment calls: 3.
 
 ## Broken
 
@@ -47,31 +47,26 @@ Broken: 8. Intentional but verify: 1. Judgment calls: 3.
    Action: Pick 30 or 90 and make both sentences agree.
    Evidence: s6 says 90 seconds in a near-verbatim recap.
 
-8. **F-008** · **s4** — spine_break
-   Why we wait
-   Action: Raise the wait question in Usage, or move this section next to How we invalidate.
-   Evidence: Usage tells you how to run a comb. It does not ask why the hook change is frozen.
-
 ## Intentional but verify
 
-1. **F-009** · **s2** (line 17) — forward_undefined
+1. **F-008** · **s2** (line 17) — forward_undefined
    Writers call CacheHook after every durable write.
    Action: Confirm the term may appear before s5 defines it, or add a gloss, or move the definition up.
    Evidence: CacheHook is named in Setup. The definition sentence is in s5.
 
 ## Judgment calls
 
-1. **F-010** · **s4** (line 38) — repetition_redundant
+1. **F-009** · **s4** (line 38) — repetition_redundant
    after every durable write the process calls the invalidation hook
    Action: Keep the sentence in s5. Cut it from Why we wait, or turn it into a pointer.
    Evidence: s5 is the how. s4 added the same sentence “for clarity.” Same job, adjacent sections.
 
-2. **F-011** · **s8** — repetition_redundant
+2. **F-010** · **s8** — repetition_redundant
    Install the CLI, then copy the overlay.
    Action: Keep Setup or Playbook. Cut the other, or make Playbook a pointer to s2.
    Evidence: Playbook covers the same ground as Setup, written later as a “runbook voice.”
 
-3. **F-012** · **s4** — section_bloat
+3. **F-011** · **s4** — section_bloat
    Why we wait
    Action: Cut the leftover paragraph that exists so the section looks finished, or accept this as the centerpiece.
    Evidence: About 2.5× the median section. The last paragraph says it is leftover from a later editor.
@@ -90,17 +85,21 @@ Broken: 8. Intentional but verify: 1. Judgment calls: 3.
 
 ## Argument spine
 
-| Section | Question it answers | Raised by previous |
-| --- | --- | --- |
-| s1 | What is this note for? | — |
-| s2 | How do you install the overlay? | partial |
-| s3 | How do you run the comb? | yes |
-| s4 | Why is the hook change frozen? | no |
-| s5 | How does invalidation work? | partial |
-| s6 | What should an operator remember? | yes |
-| s7 | What does this note refuse? | partial |
-| s8 | What are the run steps? | no |
-| s9 | What remains from the cut chapter? | yes |
+| Section | Question it answers | Raised by previous | Progression basis |
+| --- | --- | --- | --- |
+| s1 | What is this note for? | — | not applicable |
+| s2 | How do you install the overlay? | partial | purpose names the overlay; the heading establishes install |
+| s3 | How do you run the comb? | yes | setup already raised install |
+| s4 | Why is the hook change frozen? | no | the heading establishes the freeze; Usage does not promise this section |
+| s5 | How does invalidation work? | partial | the note's job is invalidation; Why we wait already treats the hook as settled |
+| s6 | What should an operator remember? | yes | recap of the window and the hook |
+| s7 | What does this note refuse? | partial | limits of the map |
+| s8 | What are the run steps? | no | the heading establishes a runbook; the duplicate of Setup is F-010, not a spine break |
+| s9 | What remains from the cut chapter? | yes | leftovers from the chapter the note already says was cut |
+
+## Continuity overview
+
+No actionable continuity findings. Why we wait follows Usage without Usage promising that section, so the heading is enough and the old automatic spine break is not a finding. How we invalidate says it is answering a question the previous section already treated as settled.
 
 ## Deferred line notes
 

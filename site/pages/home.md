@@ -19,6 +19,8 @@ A note still says “see the Resources section” after Resources was deleted.
 
 The report flags that pointer as **broken**, names the section that said it, and leaves the note unchanged.
 
+A method can end, and three asides can sit between it and the example. On a draft, the report names that interruption and where the example could sit. It does not rewrite the sentence.
+
 [Install in your agent](/docs/install) · [See a draft report](/docs/sample-report) · [See an app report](/docs/sample-app-report)
 
 ## What it reads, writes, and changes

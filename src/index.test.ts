@@ -30,6 +30,15 @@ test("comb skill is the report hour and does not name a CLI", () => {
 	assert.doesNotMatch(skill, /npx detangler/);
 	assert.doesNotMatch(skill, /detangler assemble/);
 	assert.doesNotMatch(skill, /API key/);
+	assert.match(skill, /five scopes/);
+	assert.match(skill, /reader-continuity\.md/);
+	assert.doesNotMatch(skill, /`no` is\s+`spine_break`, `broken`/);
+	const continuity = readFileSync(
+		join(skillDir("detangler"), "references", "reader-continuity.md"),
+		"utf8",
+	).replace(/\r\n/g, "\n");
+	assert.match(continuity, /continuity_delayed_payoff/);
+	assert.match(continuity, /rewritten sentence/);
 });
 
 test("apply skill works from report.md and does not name a CLI", () => {
@@ -37,6 +46,8 @@ test("apply skill works from report.md and does not name a CLI", () => {
 	assert.match(skill, /^---\nname: detangler-apply\n/m);
 	assert.match(skill, /report\.md/);
 	assert.match(skill, /Approval is chat-only/);
+	assert.match(skill, /does not edit them/);
+	assert.match(skill, /reused an id/);
 	assert.doesNotMatch(skill, /npx detangler/);
 });
 

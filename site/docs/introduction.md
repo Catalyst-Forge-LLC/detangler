@@ -27,12 +27,13 @@ They share report buckets. Keep them as two skills.
 ## What it checks
 
 - **References.** Pointers at what is gone: a heading, a route, a screen, an endpoint.
-- **Argument.** A question raised and never answered. A journey that never resolves. A promise the shipped product does not keep.
+- **Argument.** A question the text itself leaves unanswered, a journey that never resolves, or a promise the shipped product does not keep. On a draft, an unexpected next section is not automatically broken.
+- **Continuity (drafts).** Passages that are clear alone and do not develop. A method, then three asides, then the example it promised. The app comb does not run this scope.
 - **Repetition.** Same job on two pages. Twin flows. Parallel schemas.
 - **Weight.** One area that grew out of proportion to the rest, or to the product’s job.
 - **Authority (programs).** Failed single source of truth.
 
-On a draft: sections, cross-references, argument flow, and repetition. Sentences are the strands. On a program: routes, nav, feature contracts, and sources of truth. Lint, naming, and component internals are the strands.
+On a draft: sections, cross-references, argument, continuity, and repetition. Sentences are the strands, except when a relationship between passages is the finding. On a program: routes, nav, feature contracts, and sources of truth. Lint, naming, and component internals are the strands. Continuity is the draft comb only.
 
 | Bucket | Means | Drafts | Programs |
 | --- | --- | --- | --- |

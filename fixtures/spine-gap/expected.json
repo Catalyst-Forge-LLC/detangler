@@ -1,4 +1,5 @@
 {
-	"brokenMin": 1,
-	"types": ["spine_break"]
+  "brokenMin": 1,
+  "types": ["spine_break"],
+  "note": "The draft states that the answer precedes the question. That admission is the defect. Raised-by-previous = no is not, by itself, enough."
 }

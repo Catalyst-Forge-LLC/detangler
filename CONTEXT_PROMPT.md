@@ -50,6 +50,7 @@ Draft deliverable: `report.md` in `<stem>.detangler/`. App deliverable: `report.
 - **TypeScript ESM catalog, not a pipeline.** WHY: house language rule and Smell Check parity. DECIDED: Phase 4
 - **GitHub Catalyst-Forge-LLC/detangler.** WHY: user confirmed. DECIDED: Phase 1
 - **spine_weak off by default.** WHY: noise. DECIDED: Phase 1
+- **Draft continuity is a fifth scope. An unexpected next section is not automatically broken.** WHY: passages can be clear and still fail to develop, and the old spine rule marked pivots as broken. A promised procedure that never arrives stays broken. The report names the repair and does not include a rewritten sentence. DECIDED: 2026-09-26
 
 ## Critical Patterns
 
@@ -66,7 +67,7 @@ Line editing, fact checking, external HTTP links, automatic rewrite of the draft
 
 ## Recent Changes
 
-- 2026-08-26: App comb drafted (`detangler-app`). Not dogfooded; site still drafts-first.
+- 2026-09-26: Draft comb continuity scope. Contextual spine. Continuity judgments are not in a bare apply.
 - 2026-08-26: CLI pipeline removed. Product is skills, same shape as Smell Check.
 - 2026-08-26: Skill is the comb pass (agent writes the report).
 - 2026-08-25: `detangler-apply` skill for working approved findings.

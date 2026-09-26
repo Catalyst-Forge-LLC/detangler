@@ -7,5 +7,5 @@ _These are raw ideas that need to be processed into a proper TODO entry. Check i
 - [ ] Full cross-file reference table (definition sites carry a file field)
 - [ ] Term glossary export from the definition table
 - [ ] Optional author-supplied intended outline, consumed only in Stage 5
-- [ ] Reader-question model so spine_break names the abandoned question
+- [ ] Reader-question model so spine_break names the abandoned question (bounded continuity scope is in the draft skill as of 2026-09-26; this item is the fuller model)
 - [x] App / project comb (accounted in `docs/FAMILY.md`; do not build until sample draft report exists)

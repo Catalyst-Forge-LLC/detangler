@@ -25,7 +25,10 @@ not the product. Two combs. Do not fold them.
 
 The **skill** is the product. An agent reads it and writes
 `report.md`. npm ships the folders. There is no command-line comb.
-Do not emit line-level suggestions in `report.md`.
+Do not emit line-level suggestions in `report.md`. A continuity
+action names a move, reconnect, or clarification. It does not
+include a rewritten sentence. The draft comb has five scopes.
+Continuity is drafts only.
 
 Site and README speak as the product (Detangler / it). No corporate we.
 No builder I. Same register as Smell Check: direct, no helper theater.

@@ -24,6 +24,12 @@ The quote may be one sentence. The finding is still about the
 map: this node is carrying a claim that is not on the outline
 and is not load-bearing.
 
+The distinct-concept test is for isolates only. A continuity
+defect can sit inside the node's topic. Two sentences that change
+actor or scope without saying so are continuity when the six-part
+test in `reader-continuity.md` holds. They are not an isolate
+just because both sentences belong to the section.
+
 ## Types
 
 - **unwoven_claim** — the concept belongs to this draft's job.
@@ -61,4 +67,5 @@ owns invoicing.
 
 **Do not emit.** A transition is stiff, or a word is ugly, and
 you cannot name a concept distinct from the node's claim. Strand.
-Count it.
+Count it. If the relationship is already clear, do not reclassify
+that stiffness as `continuity_missing_handoff`.

@@ -17,11 +17,13 @@ Every finding has an id, a location on the map, a type, evidence, and an action.
 
 | | Drafts | Programs |
 | --- | --- | --- |
-| Map | Reverse outline, then argument spine | Surface, contracts, entities, authority |
-| Location | Outline node (`s1`, `install.s2`) | Typed id plus path or noun (`r4` `/settings`) |
+| Map | Reverse outline, then argument spine, then a short continuity overview | Surface, contracts, entities, authority |
+| Location | Outline node (`s1`, `install.s2`), plus the other passages a continuity finding needs | Typed id plus path or noun (`r4` `/settings`) |
 
 Severity:
 
 - **broken** — the draft or the product as written is wrong
 - **intentional but verify** — plausibly deliberate
 - **judgment call** — reasonable people would differ
+
+On a draft, the argument spine records whether the previous section raised the question and a progression basis. `no` is not automatically broken. A continuity finding names the passages, the relationship, and the repair. It does not include a rewritten sentence. The continuity overview is a few sentences after the spine, not another bucket.

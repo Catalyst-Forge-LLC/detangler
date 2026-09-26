@@ -20,6 +20,13 @@ job of each instance is not emitted.
 - **stale_edit** — near-verbatim except a fact, number, or qualifier
   that one instance updated. `broken`.
 
+Bridging, reinforcing, and framing may repeat a phrase on purpose.
+Do not treat that repeat as waste. If the repair is "cut the
+duplicate," own it as repetition. Do not also emit
+`continuity_fragmented_development` for the same cut. If both
+passages belong and the defect is order or an unclear join, own
+it as continuity.
+
 ## Worked
 
 **Emit.** Two paragraphs in the same section both list the same

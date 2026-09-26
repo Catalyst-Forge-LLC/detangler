@@ -26,12 +26,22 @@ Standing rules: `references/apply.md` in this folder.
 4. Unnamed "apply the report" authorizes every `broken` finding
    under the apply contract, in report order. State those ids
    before the first edit. Ask before `intentional_but_verify` and
-   `judgment_call`.
+   `judgment_call`. Continuity findings are judgments unless the
+   report marks them broken for a different, demonstrated defect.
+   A bare apply does not edit them.
 5. One **approved finding** at a time, including orphans that
-   edit creates. Do its `action`. Nothing else.
+   edit creates. Do its `action`. Nothing else. An approved
+   continuity repair may move the named passage, combine adjacent
+   paragraphs, remove true duplication, or add the smallest
+   clarification that expresses a relationship the text already
+   supports. It may adjust the boundaries that move touches.
+   Stop if the edit needs a new premise, a new fact, or a change
+   of position.
 6. Re-run the **detangler** comb skill on the draft. Show what
-   is gone and what is new. Then the next approved finding, or
-   stop.
+   is gone and what is new. A rerun can renumber ids. Approval
+   stays tied to the original report's quote, location, and
+   action. Do not apply a new finding because it reused an id.
+   Then the next approved finding, or stop.
 
 If the text already satisfies the action, skip and say so. Do
 not invent findings. Do not commit unless asked.

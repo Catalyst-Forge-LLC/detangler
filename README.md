@@ -17,6 +17,8 @@ edit the source. Apply is a second skill, after you select findings.
 | Drafts | `detangler` | `detangler-apply` | “See Resources” after Resources was deleted |
 | Programs | `detangler-app` | `detangler-app-apply` | A Settings item that goes nowhere |
 
+On a draft, the comb also checks continuity: passages that make sense alone and do not develop. The method ends, then three asides sit between it and the example. The report names the interruption and where the example could sit. It does not rewrite the sentence. The app comb does not run that scope.
+
 Copy the pair you need.
 
 **Get started:** pick the agent, install the skill, then run a named

@@ -337,6 +337,14 @@
       "issue": "Sentence splitter ate heading lines (no period), so near-verbatim pairs included heading tokens and missed stale-fact.",
       "resolution": "Blank heading lines in a length-preserving copy before sentence matching so offsets stay valid.",
       "category": "data-model"
+    },
+    {
+      "timestamp": "2026-09-26T12:00:00",
+      "phase": "4-feature-iteration",
+      "session": 3,
+      "issue": "The draft comb treated an unexpected next section as a broken spine and had no scope for passages that are clear but do not develop.",
+      "resolution": "Add continuity as a fifth draft scope, defaulting to judgment_call. Keep spine_break broken only when the text promises material it never supplies. Reports name the repair and do not include a rewritten sentence. Agent repeats of the continuity fixtures are still pending.",
+      "category": "product"
     }
   ],
   "sessions": [

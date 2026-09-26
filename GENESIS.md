@@ -48,7 +48,7 @@ The method is a reverse outline plus a link check. An editor's trick and a softw
 
 ### Out of scope
 
-- Grammar, word choice, sentence rhythm, tone, or any line-level change.
+- Grammar, word choice, sentence rhythm, tone, or a rewritten sentence in the report. An approved continuity repair may still change one sentence to express a relationship the text already supports. That edit is apply, not the comb.
 - Fact checking or external link validation (HTTP checks). Internal references only.
 - Automatic rewriting. The comb skill reports. Applying is the separate `detangler-apply` skill (Section 9). Comb first, work the knots later.
 - A command-line comb. A CLI was tried and dropped.
@@ -58,12 +58,12 @@ The method is a reverse outline plus a link check. An editor's trick and a softw
 1. **Rebuild from the text, never from intent.** The outline is derived from what is on the page. The author's notes, prior outlines, and commit messages are not inputs to the reconstruction step. They may be used later, only for the "intentional but verify" classification.
 2. **Findings are a to-do list, not a complaint list.** Every finding has a location, a category, a severity, and a proposed action. Findings without a proposed action are dropped.
 3. **Classify before flagging.** Repetition, forward references, section imbalance, and isolates all have legitimate neighbors (a stiff sentence, a pivot, a claim the next section will take up). The tool must name the concept or the job before it says the pattern is a problem.
-4. **The agent reading the skill is the judgment.** There is no command-line comb and no model API. Outline, references, argument, repetition, and weight are the hour in `skills/detangler/SKILL.md`.
-5. **Swaths, not strands.** The tool refuses to emit line-level suggestions even if the model notices them. A line-level observation is a count at the end of the report, not a list. An isolate is not a line-level observation: it is a named concept that failed to join the outline.
+4. **The agent reading the skill is the judgment.** There is no command-line comb and no model API. Outline, references, argument, continuity, repetition, and weight are the hour in `skills/detangler/SKILL.md`.
+5. **Swaths, not strands.** The tool refuses to emit line-level suggestions even if the model notices them. A line-level observation is a count at the end of the report, not a list. An isolate is not a line-level observation: it is a named concept that failed to join the outline. A continuity finding may be repaired in one sentence. The report names the move or the clarification. It does not include a rewritten sentence.
 
 ## 4. The hour
 
-The agent runs four scopes, then writes `report.md`. There are no intermediate JSON artifacts and no stage to rerun. The report is the deliverable.
+The agent runs five scopes, then writes `report.md`. There are no intermediate JSON artifacts and no stage to rerun. The report is the deliverable.
 
 ### Reverse outline
 
@@ -75,7 +75,7 @@ Every heading appears exactly once. Claims do not borrow material from other sec
 
 ### Argument
 
-For every outline node: what question does this section answer, and did the previous section raise it? First node: `raised_by_previous` is `—`. After that, `no` is `spine_break`, `broken`. Three or more `no`/`partial` in a row is `spine_drift`, `broken`. `partial` alone (`spine_weak`) stays out of the default report.
+For every outline node: what question does this section answer, and did the previous section raise it? First node: `raised_by_previous` is `—`. Record that observation and a progression basis. `no` is not, by itself, `spine_break`, `broken`. Three or more `no`/`partial` values are not, by themselves, `spine_drift`, `broken`. `partial` alone (`spine_weak`) stays out of the default report. Use `spine_break` or `spine_drift` at `broken` when the text promises material it never supplies, contradicts a structural promise, or lacks a necessary premise. Continuity covers order and handoffs where both passages belong. Rules: `skills/detangler/references/reader-continuity.md`.
 
 Isolates sit inside a node. They are not spine joints. For each fragment that looks out of place: name the concept. If you cannot name a concept distinct from the node's claim, it is a strand. Count it. Do not list it. Then ask whether this draft already has a place for that concept.
 
@@ -196,7 +196,8 @@ Not in this release. When it ships, above roughly 40,000 words:
 | `count-drift` | Change "three reasons" to list four | `count_mismatch` |
 | `stale-fact` | Update a number in one place but not its restatement | `stale_edit`, broken |
 | `reinforcing-ok` | Legitimate recap after a long digression | No broken finding; at most `judgment_call` |
-| `spine-gap` | Reorder two sections so a question is answered before it is raised | `spine_break` |
+| `spine-gap` | The draft states that the answer precedes the question | `spine_break` |
+| `reader-continuity` | Delayed payoff, backtrack, missing handoff, fragmented development, and one unfulfilled procedure | continuity types at `judgment_call`; `c23` stays `spine_break`, `broken` |
 | `unwoven-claim` | A sentence names a concept the section never uses and later sections never take up | `unwoven_claim`, judgment_call |
 | `debris` | A sentence from another job stuck in an otherwise holding section | `debris`, broken |
 | `clean` | No injected faults | Zero `broken` findings |
@@ -215,6 +216,7 @@ skills/detangler/
     ├── reference-patterns.md
     ├── repetition-classes.md
     ├── isolate-types.md
+    ├── reader-continuity.md
     └── severity-rubric.md
 skills/detangler-apply/
 ├── SKILL.md
@@ -224,7 +226,7 @@ skills/detangler-apply/
 
 **SKILL.md description** (make it pushy; agents undertrigger): "Detangler combs the whole document, not single strands. Structural editing pass for long drafts after a lot of edits — the user's, a collaborator's, an agent's. Finds what the editing tangled: orphaned references, argument gaps, unwoven claims, leftover debris, stale repetition, sections that have grown out of proportion. Use when a long draft has been edited a lot (especially with an agent or by more than one person), when the user asks whether it still hangs together, mentions tangled structure, orphaned references, a sentence that never connects, stale repetition, or a draft that no longer tracks after many passes, asks for a reverse outline, or wants a structural rather than line-level edit. Trigger even if they only say 'does this still make sense' about a long document. Not for grammar, tone, a one-paragraph email, chat-only, line editing, or applying a report."
 
-**SKILL.md body:** the hour (locate draft, extract outline, four scopes, write `report.md`, stop), pointers to the reference files, refuse apply in the description, name the sibling skill only in the body.
+**SKILL.md body:** the hour (locate draft, extract outline, five scopes, write `report.md`, stop), pointers to the reference files, refuse apply in the description, name the sibling skill only in the body.
 
 `detangler-apply` works only the knots the author has approved, one finding at a time, then re-runs the comb. Chat-only approval. Unnamed apply means every `broken` finding, then ask.
 
@@ -234,7 +236,7 @@ Not in the first build. Listed so the method does not preclude them.
 
 - Full cross-file reference table: definition sites carry a file field. Named-set outline and same-job repetition are already in the hour.
 - Diff mode: two versions, report only findings introduced between them.
-- Reader-question model: the questions a reader carries into each section, so `spine_break` can say which question was abandoned.
+- Reader-question model, bounded: continuity scope and a contextual spine are in the draft skill (`reader-continuity.md`). A full model of reader psychology is not. Agent runs of the continuity fixtures are the verification. Instruction text alone does not mark that gate passed.
 - Term glossary export: the definition table is already a glossary; emit it as one.
 - App / project comb: specified in [`docs/FAMILY.md`](./docs/FAMILY.md). Not this skill. Not in parallel with leftover draft-comb proof.
 

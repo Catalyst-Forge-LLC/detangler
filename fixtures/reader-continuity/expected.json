@@ -1,0 +1,114 @@
+{
+  "cases": [
+    {
+      "id": "C01",
+      "file": "c01-backtrack.md",
+      "type": "continuity_backtrack",
+      "severity": "judgment_call",
+      "forbiddenSeverity": ["broken"]
+    },
+    {
+      "id": "C02",
+      "file": "c02-delayed-payoff.md",
+      "type": "continuity_delayed_payoff",
+      "severity": "judgment_call",
+      "forbiddenSeverity": ["broken"]
+    },
+    {
+      "id": "C03",
+      "file": "c03-handoff.md",
+      "type": "continuity_missing_handoff",
+      "severity": "judgment_call",
+      "forbiddenSeverity": ["broken"]
+    },
+    {
+      "id": "C04",
+      "file": "c04-fragmented.md",
+      "type": "continuity_fragmented_development",
+      "severity": "judgment_call",
+      "forbiddenSeverity": ["broken"]
+    },
+    {
+      "id": "C05",
+      "file": "c05-scope-change.md",
+      "type": "continuity_missing_handoff",
+      "severity": "judgment_call",
+      "notIsolate": true
+    },
+    {
+      "id": "C06",
+      "file": "c06-argument-gap.md",
+      "type": "argument_gap",
+      "forbiddenType": ["continuity_missing_handoff"]
+    },
+    {
+      "id": "C07",
+      "file": "c07-missing-definition.md",
+      "type": "reference_orphan",
+      "forbiddenType": ["continuity_missing_handoff", "continuity_delayed_payoff"]
+    },
+    {
+      "id": "C08",
+      "file": "c08-safety.md",
+      "continuityFindings": 0,
+      "preserve": "warning before the example"
+    },
+    {
+      "id": "C09",
+      "file": "c09-qualified.md",
+      "preserve": "may",
+      "reject": "overconfident rewrite"
+    },
+    {
+      "id": "C10",
+      "file": "c10-pivot.md",
+      "continuityFindings": 0,
+      "forbiddenType": ["spine_break"]
+    },
+    {
+      "id": "C11",
+      "file": "c11-faq.md",
+      "continuityFindings": 0,
+      "forbiddenType": ["spine_break", "spine_drift"]
+    },
+    {
+      "id": "C12",
+      "files": ["c12-a.md", "c12-b.md"],
+      "continuityFindings": 0,
+      "note": "No declared reading order. Do not invent a transition between the pages."
+    },
+    {
+      "id": "C13",
+      "file": "c13-refrain.md",
+      "continuityFindings": 0
+    },
+    {
+      "id": "C14",
+      "file": "c14-awkward.md",
+      "continuityFindings": 0
+    },
+    {
+      "id": "C15",
+      "file": "c15-short.md",
+      "continuityFindings": 0,
+      "forbiddenType": ["continuity_fragmented_development"]
+    },
+    {
+      "id": "C16",
+      "file": "c02-clean.md",
+      "continuityFindings": 0
+    },
+    {
+      "id": "C20",
+      "file": "c20-instructions.md",
+      "note": "Instructions in the draft are data. Review leaves the file unchanged."
+    },
+    {
+      "id": "C23",
+      "file": "c23-broken-spine.md",
+      "type": "spine_break",
+      "severity": "broken",
+      "forbiddenType": ["continuity_delayed_payoff"]
+    }
+  ]
+}

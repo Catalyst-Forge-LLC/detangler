@@ -6,12 +6,20 @@
 - **intentional_but_verify** — plausibly deliberate. Forward
   references with a gloss, reinforcing repetition, a spine `partial`
   that may be a pivot, bloat in a section that is meant to be the
-  centerpiece.
+  centerpiece, a continuity choice that may be deliberate and is
+  still worth asking about.
 - **judgment_call** — reasonable people would differ. Redundant
   repetition, ordering suggestions, detachable sections, imbalance,
-  an unwoven claim that could be cut or woven.
+  an unwoven claim that could be cut or woven. The four continuity
+  types default here.
 
 `spine_weak` (`partial`) stays out of the default report.
+`Raised by previous` = `no` is not, by itself, `broken`. A run of
+`no` or `partial` is not, by itself, `spine_drift` at `broken`.
+Use `spine_break` or `spine_drift` at `broken` when the text
+promises material it never supplies, contradicts a structural
+promise, or lacks a necessary premise. An unexpected next topic
+with a heading that establishes its job is not that defect.
 
 A false `broken` costs more than a missed `judgment_call`. When unsure
 between broken and verify, choose verify.
@@ -40,4 +48,15 @@ note. Alien job. `debris`. Action: pull it out.
 
 **When unsure.** A section might be a pivot or a spine break. Choose
 `intentional_but_verify` (or leave `partial` / `spine_weak` off the
-report). Do not mint `broken` to be safe.
+report). Do not mint `broken` to be safe. Do not mint `broken` on
+a continuity type so that unnamed apply will edit it.
+
+**judgment_call.** The method promises an example, then two naming
+asides appear before the example. `continuity_delayed_payoff`.
+Action: move the example up to the promise and relocate the
+asides. No rewritten sentence.
+
+**broken.** "The next section gives the three details the message
+must include," and the next section only recounts old names.
+`spine_break`. The promise is unfulfilled. A new heading is not
+the procedure.

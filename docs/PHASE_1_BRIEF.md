@@ -136,4 +136,4 @@ No payments, email, analytics, or search API.
 - Native docx/PDF parsing
 - Accounts, billing, cloud document storage
 - A command-line comb
-- Diff mode, reader-question model, glossary export (GENESIS §10)
+- Diff mode, glossary export (GENESIS §10). The bounded reader-continuity scope superseded the “reader-question model is out of v1” line on 2026-09-26. A full model of reader psychology remains out.
