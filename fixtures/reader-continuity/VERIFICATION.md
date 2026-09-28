@@ -30,5 +30,7 @@ This file records one reading of the synthetic sources against `expected.json`. 
 | C21 | These fixtures are short. An explicit first request is enough. |
 | C22 | Not exercised. No partial-coverage run was performed. |
 | C23 | `spine_break`, `broken`. The next section never supplies the three details. |
+| C24 | Added 2026-09-28, read once by the adding session. `continuity_missing_handoff` (unmarked branch), `judgment_call`. The second reply reads as a later message until "in both cases." |
+| C25 | Added 2026-09-28, read once by the adding session. No finding. "Or suppose" marks the branch. |
 
 Sources in this folder were written as fixtures. This reading did not modify them.

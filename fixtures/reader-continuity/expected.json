@@ -109,6 +109,20 @@
       "type": "spine_break",
       "severity": "broken",
       "forbiddenType": ["continuity_delayed_payoff"]
+    },
+    {
+      "id": "C24",
+      "file": "c24-unmarked-branch.md",
+      "type": "continuity_missing_handoff",
+      "severity": "judgment_call",
+      "forbiddenSeverity": ["broken"],
+      "note": "Unmarked branch. The two replies are alternatives and read as a timeline."
+    },
+    {
+      "id": "C25",
+      "file": "c25-marked-branch.md",
+      "continuityFindings": 0,
+      "note": "Repaired counterpart of C24. The branch is marked where it starts."
     }
   ]
 }

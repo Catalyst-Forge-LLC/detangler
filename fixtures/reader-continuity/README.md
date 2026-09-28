@@ -5,6 +5,8 @@ file is a source. `expected.json` names the required type and
 severity. The skill writes the report. Nothing here calls a model.
 
 `c02-clean.md` is the repaired counterpart of `c02-delayed-payoff.md`.
+`c25-marked-branch.md` is the repaired counterpart of
+`c24-unmarked-branch.md`.
 `c12-a.md` and `c12-b.md` are a set with no declared reading order.
 
 C17–C19 and C22 are authorization and coverage rules in the apply

@@ -58,6 +58,14 @@ second finding for the same repair.
   relationship unstated, and the relationship is supportable from
   the text. If you cannot name a supported relationship, it is an
   argument gap. Do not invent a "therefore."
+  An **unmarked branch** is this type. One setup has two or more
+  possible outcomes, and they arrive one after another with nothing
+  saying they are alternatives, so they read as a timeline. The
+  unstated relationship is "instead of," not "next." Name the shared
+  setup and each branch. The repair marks the branch where it starts.
+  A marker that arrives only at the end ("either way") does not
+  count. A real sequence, where the second event follows the first,
+  is not a branch.
 - **continuity_fragmented_development** — one explanation stops
   and restarts often enough that the parts no longer develop each
   other. Name the unfinished development and at least two
@@ -127,6 +135,17 @@ next discusses another person's conduct and does not say whose
 job changed. `continuity_missing_handoff`, `judgment_call`.
 Action: state the change of actor at the boundary. Do not assign
 equal blame.
+
+**Emit.** A follow-up email gets no reply. The next paragraph gives
+one reply: the invoice went to an old address. The paragraph after
+gives a different reply: the work did not match the quote. Only the
+closing line says "in both cases." Jobs: set up the silence; show one
+outcome; show the other outcome. `continuity_missing_handoff`
+(unmarked branch), `judgment_call`. Action: mark the second reply as
+an alternative where it begins. Do not merge the replies.
+
+**Do not emit.** The same draft introduces the second reply with "Or
+suppose they write back." The branch is marked. No finding.
 
 **Do not emit.** The same two paragraphs already state both
 responsibilities, and the join sounds formal. Strand. Count it.
