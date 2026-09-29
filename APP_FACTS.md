@@ -1,6 +1,6 @@
 ---
 app_facts_version: 0.1.0
-name: detangler
+name: Detangler
 type: web app
 status: active
 license: MIT
@@ -25,7 +25,7 @@ credits:
   built_by: "Catalyst Forge — https://www.catalystforge.com/"
 ---
 
-# detangler
+# Detangler
 
 `web app` · **active** · MIT
 
@@ -56,4 +56,4 @@ _None listed_
 ---
 *Generated with [AppFacts](https://appfacts.dev) · Built by [Catalyst Forge](https://www.catalystforge.com/) · [Visual label][appfacts-label]*
 
-[appfacts-label]: https://appfacts.dev/v#af1.eNpNkMtqwzAQRX_F3EVWsk232gYKLWk27a6UMpYGWY0sCWvsNoT8e1FMH8uZOdx7mAtW6DuFSBNDw7JQdIFnKMg519UnDw3lDIUiJEuBBhnxK0MheMOxVOrp4WUjzAn6gkDRLeTq5ZFWejazzwKFeYnib03HZLn7KLUnpeCjg0aOecJVwXIu0K9vCsPig62BmcyJHL9PFMnx_AMrCBeBhhTT7HZNTJabtq3LxvoivY-Wv7o6b2UmTdmHKnCLbspmdlUY08R5Ux5FctF9__uNzvJa7Tmn4iXN53-Q8zIuQ2fS1O9JKJyLtPdpdtweDvu_CFy_Ad38els
+[appfacts-label]: https://appfacts.dev/v#af1.eNpNkEFLxDAQhf9KeYc9pS1ec10RlNWL3kRkmgxp3DQJzbS6LPvfJVsWPc7Mx3sfc8YKfacQaWJo3LNQdIFnKMgp19U3Dw3lDIUiJEuBBhnxK0MheMOxVOr58W0jzBH6jEDRLeTq5YlWejWzzwKFeYnir00vyXL3VWpPSsFHB40c84SLguVcoN8_FIbFB1sDM5kjOf6cKJLj-QYrCBeBhhTT7HZNTJabtq3LxvoivY-Wf7o6b2UmTdmHKnCNbspmdlEY08R5Ux5FctF9b2_f6Cyv1Z5zKl7SfPoHOS_jMnQmTf2ehMKpSPuQZsft4bD_i8DlF7J8ejs
