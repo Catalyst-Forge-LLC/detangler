@@ -4,7 +4,7 @@ name: Detangler
 type: web app
 status: active
 license: MIT
-version: 0.1.21
+version: 0.1.22
 homepage: https://detangler.dev
 repository: https://github.com/Catalyst-Forge-LLC/detangler
 stack:

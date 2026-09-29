@@ -2,7 +2,7 @@
 skill_facts_version: "0.1.0"
 name: Detangler Apply
 developer: Catalyst Forge
-version: 0.1.21
+version: 0.1.22
 status: active
 license: MIT
 kind: cursor-skill
@@ -37,7 +37,7 @@ credits:
 | | |
 |---|---|
 | **Developer** | Catalyst Forge |
-| **Version** | 0.1.21 |
+| **Version** | 0.1.22 |
 | **Status** | active |
 | **License** | MIT |
 | **Kind** | cursor-skill |
