@@ -41,6 +41,9 @@ test("comb skill is the report hour and does not name a CLI", () => {
 	assert.match(continuity, /rewritten sentence/);
 	assert.match(continuity, /\*\*unmarked branch\*\* is this type/);
 	assert.match(continuity, /"instead of," not "next\."/);
+	assert.match(continuity, /continuity_register_seam/);
+	assert.match(continuity, /It is not a tone note/);
+	assert.match(skill, /register seam/);
 });
 
 test("apply skill works from report.md and does not name a CLI", () => {

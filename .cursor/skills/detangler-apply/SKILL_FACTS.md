@@ -34,6 +34,7 @@ credits:
 ---
 
 # Skill Facts - Detangler Apply
+
 | | |
 |---|---|
 | **Developer** | Catalyst Forge |

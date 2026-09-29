@@ -10,7 +10,7 @@
   still worth asking about.
 - **judgment_call** — reasonable people would differ. Redundant
   repetition, ordering suggestions, detachable sections, imbalance,
-  an unwoven claim that could be cut or woven. The four continuity
+  an unwoven claim that could be cut or woven. The five continuity
   types default here.
 
 `spine_weak` (`partial`) stays out of the default report.

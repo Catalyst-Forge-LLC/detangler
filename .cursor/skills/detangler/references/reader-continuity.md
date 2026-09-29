@@ -18,8 +18,9 @@ All six must be writable before you emit:
 2. The job of each unit.
 3. The relationship or missing dependency.
 4. A material effect: an abandoned question, an unclear change of
-   scope, an unfulfilled setup, a repeated restart, or an
-   unsupported inference. Dislike of the phrasing is not enough.
+   scope, an unfulfilled setup, a repeated restart, an unsupported
+   inference, or an unmarked change of speaker or reader. Dislike
+   of the phrasing is not enough.
 5. A bounded repair: move, combine, clarify, reconnect, or remove
    genuine duplication, and where.
 6. What the repair must preserve: caveat, uncertainty, attribution,
@@ -36,7 +37,7 @@ relationship is already clear.
 
 ## Types
 
-All four default to `judgment_call`. Use `intentional_but_verify`
+All five default to `judgment_call`. Use `intentional_but_verify`
 only when a material choice may be deliberate. Do not mark them
 `broken` to make a broad apply pick them up. A hard reference
 failure, contradiction, or missing premise stays in its existing
@@ -71,6 +72,20 @@ second finding for the same repair.
   other. Name the unfinished development and at least two
   boundaries. Short paragraphs, aphorisms, and deliberate pauses
   are not this type.
+- **continuity_register_seam** — one passage speaks to a different
+  reader, or as a different speaker, than the passages around it,
+  and nothing marks the shift. It is usually an edit layer: the
+  passage kept an earlier draft's voice while later edits warmed or
+  cooled its neighbors. Typical case: a personal essay drops into
+  spec voice for its steps. Name the passage, the neighbors it
+  breaks from, and each voice in plain terms. If the passage is
+  echoed elsewhere (steps that a later example walks through), name
+  the echo too, so the repair keeps them matched. The repair brings
+  the stale passage to its neighbors' voice and preserves its
+  content and order. It is not a tone note. The voice of the whole
+  draft stays out of scope. A marked shift is not a seam: a quoted
+  message, a code block, a definition set off as one, a heading
+  that announces a reference section.
 
 ## Ownership
 
@@ -81,6 +96,7 @@ second finding for the same repair.
 | Two passages do the same job and add nothing | Repetition |
 | A concept appears once and is never taken up | Isolate |
 | Both passages belong, and the order or relationship is unclear | Continuity |
+| One passage kept another draft's voice | Continuity (register seam) |
 | A section is large | Weight, unless one displaced payoff is the defect |
 
 A bridge may repeat a phrase. That repetition is not automatically
@@ -146,6 +162,22 @@ an alternative where it begins. Do not merge the replies.
 
 **Do not emit.** The same draft introduces the second reply with "Or
 suppose they write back." The branch is marked. No finding.
+
+**Emit.** A second-person post about a silence speaks warmly through
+its opening sections. Its four steps then read as a procedure: steps
+to "run," an explanation kept "within scope" and "open to revision."
+The worked example that follows returns to the warm voice but uses
+the steps as its headings. Jobs: set up the feeling; give the steps;
+walk one case. `continuity_register_seam`, `judgment_call`. Action:
+bring the steps to the post's voice, and keep the example headings
+matched to them. Preserve the four steps, their order, and "nothing
+yet." No sample wording.
+
+**Do not emit.** A warm post quotes a policy clause in a block
+quote. The shift is marked. No finding.
+
+**Do not emit.** A whole draft reads formally, and the author wants
+it warmer. That is tone, not a seam. Out of scope.
 
 **Do not emit.** The same two paragraphs already state both
 responsibilities, and the join sounds formal. Strand. Count it.
