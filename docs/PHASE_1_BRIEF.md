@@ -1,9 +1,9 @@
 # Detangler — architecture brief
 
-Canonical product spec: [`GENESIS.md`](./GENESIS.md) (draft comb). Family and app variant: [`FAMILY.md`](./FAMILY.md). This file is the stack and repo shape. If they drift on the draft comb, GENESIS wins.
+Canonical product spec: [`GENESIS.md`](../GENESIS.md) (draft comb). Family and app variant: [`FAMILY.md`](./FAMILY.md). The installed [draft](../skills/detangler/SKILL.md) and [app](../skills/detangler-app/SKILL.md) skills describe their operating scope. This brief records stack and repo shape; it is not a second status ledger. Decisions, sessions, and phases live in `appledger/`.
 
 **Status:** current  
-**Updated:** 2026-08-26 — two skills, no command-line comb. A CLI was tried and dropped.
+**Updated:** 2026-09-30 — two review/apply pairs, named document sets, and prose continuity. No command-line comb. A CLI was tried and dropped.
 
 ---
 
@@ -21,6 +21,7 @@ Family: [Smell Check](https://smellcheck.dev) is the spray that removes AI smell
 
 - Comb skill (`detangler`) writes `<stem>.detangler/report.md`.
 - Apply skill (`detangler-apply`) works approved findings, one at a time, then re-runs the comb.
+- App comb (`detangler-app`) writes `<stem>.detangler-app/report.md`; `detangler-app-apply` works its approved findings. It reviews the shipped product, not a feature roadmap.
 - Site at detangler.dev: home, docs (install, skill, report), about.
 - npm package ships `skills/` plus a tiny path catalog. No `bin`.
 
@@ -28,7 +29,7 @@ Family: [Smell Check](https://smellcheck.dev) is the spray that removes AI smell
 
 ## 2. Users and hero flow
 
-**Primary users:** authors, editors, and agents on long Markdown (or converted) drafts after a lot of edits.
+**Primary users:** authors, editors, and agents on long Markdown (or converted) drafts and named document sets after many edits; maintainers and agents reviewing iterated programs and sites with the separate app pair.
 
 **Hero flow:** load the comb skill → agent writes `report.md` (broken, then intentional-but-verify, then judgment calls, then reverse outline and spine) → author decides what to fix, or hands approved findings to apply.
 
@@ -40,7 +41,7 @@ Family: [Smell Check](https://smellcheck.dev) is the spray that removes AI smell
 
 - **Technical:** TypeScript ESM, Node ≥20, pnpm. No accounts. Input: Markdown, plain text, HTML. Docx/PDF only via a pre-step. Documents ~800 words to book length.
 - **Business:** npm name `detangler` is staked. Domain detangler.dev is registered. The maintainer publishes to npm.
-- **Non-goals:** line editing, fact checking, external HTTP link checks, automatic rewrite, multi-file sets, a command-line comb.
+- **Non-goals:** line editing, fact checking, external HTTP link checks, automatic rewrite, a command-line comb. Named document sets are supported for outline, continuity, and same-job repetition; a full cross-file reference table remains later. The app comb does not invent features or perform a first architecture review.
 
 **State:** local files only. The draft and `report.md` are the state.
 
@@ -58,7 +59,7 @@ Family: [Smell Check](https://smellcheck.dev) is the spray that removes AI smell
 
 | Area | Choice |
 | --- | --- |
-| Package | Two skill folders + TypeScript path catalog. No `bin`. |
+| Package | Four skill folders (draft/app review and apply) + TypeScript path catalog. No `bin`. |
 | Language | TypeScript, ESM (`"type": "module"`) |
 | Runtime | Node ≥20 |
 | Package manager | pnpm |
@@ -73,6 +74,8 @@ detangler/
 ├── src/                      # skill catalog (paths only)
 ├── skills/detangler/         # comb pass
 ├── skills/detangler-apply/   # work approved findings
+├── skills/detangler-app/     # app comb pass
+├── skills/detangler-app-apply/ # work approved app findings
 ├── fixtures/                 # sample tangled drafts
 ├── site/                     # FilePress
 ├── docs/                     # GENESIS + this brief
@@ -85,10 +88,10 @@ detangler/
 
 The deliverable is `report.md` in `<stem>.detangler/`. Shape: `skills/detangler/references/report.md`.
 
-- **Outline node** — id from heading order (`s1`, `s1.2`). Inferred as `s1` if there are no headings.
+- **Draft outline node** — id from heading order (`s1`, `s1.2`); named sets prefix the file stem. Inferred as `s1` if there are no headings. The app map instead contains surface, contracts, entities, and authority nodes.
 - **Finding** — id `F-001`, location, type, severity, evidence, action. No action → drop it.
 - **Severity** — broken / intentional but verify / judgment call.
-- **Scopes** — references, argument, repetition, weight.
+- **Draft scopes** — references, argument, continuity, repetition, weight. **App scopes** — references, journeys, repetition, weight, authority. Continuity stays in prose.
 - **Line-level notes** — a count at the end, not a list.
 
 Fixtures in `fixtures/` are sample tangled drafts, not a command-line corpus.
