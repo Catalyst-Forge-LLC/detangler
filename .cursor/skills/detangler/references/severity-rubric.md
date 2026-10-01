@@ -10,7 +10,7 @@
   still worth asking about.
 - **judgment_call** — reasonable people would differ. Redundant
   repetition, ordering suggestions, detachable sections, imbalance,
-  an unwoven claim that could be cut or woven. The five continuity
+  an unwoven claim that could be woven or cut. The five continuity
   types default here.
 
 `spine_weak` (`partial`) stays out of the default report.
@@ -36,12 +36,14 @@ used before it is defined.
 
 **judgment_call.** The same three reasons appear in adjacent
 sections with no contradiction. Reasonable to keep as a bridge or
-cut as redundant. Action: pick one instance from the spine.
+cut as redundant. Action: pick one instance from the spine, and
+carry over anything only the other instance said.
 
 **judgment_call.** "Shard tokens expire at the lease window" in a
 section whose claim is that writes call the hook. Concept is
 named; later sections never take it up. `unwoven_claim`. Action:
-cut it, or weave shard tokens into the hook.
+weave shard tokens into the hook, or cut the sentence if the draft
+does not need them.
 
 **broken.** "The invoice PDF must include the VAT line" in a cache
 note. Alien job. `debris`. Action: pull it out.
