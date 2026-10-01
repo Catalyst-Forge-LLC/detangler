@@ -20,6 +20,10 @@ job of each instance is not emitted.
 - **stale_edit** — near-verbatim except a fact, number, or qualifier
   that one instance updated. `broken`.
 
+Before cutting a `redundant` or `sibling` instance, carry any fact,
+qualifier, or example only the cut instance has into the one you
+keep. Name that carry-over in the action.
+
 Bridging, reinforcing, and framing may repeat a phrase on purpose.
 Do not treat that repeat as waste. If the repair is "cut the
 duplicate," own it as repetition. Do not also emit

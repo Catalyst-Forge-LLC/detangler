@@ -28,12 +28,15 @@ Detangler found.
    neighbors. Cutting `debris` means that fragment only. An
    approved continuity repair moves, joins, cuts true duplication,
    or clarifies a relationship the text already supports. Prefer
-   the smallest change that does that. Do not polish the rest of
-   the page.
+   the smallest change that does that. Smallest means least scope,
+   not fewest words. A cut that leaves its neighbors without a join
+   is not done. Repair the handoff it broke, inside the same
+   finding. Do not polish the rest of the page.
 6. Do the finding's `action`. Do not expand into grammar, tone, or
    line-level notes. Do not replace "may" with "does," drop a
    warning, move a condition after the action it governs, erase a
-   deliberate pause, or merge two actors' responsibilities.
+   deliberate pause, merge two actors' responsibilities, or drop a
+   fact, example, or qualifier only the cut passage carried.
 7. After the edit, remaining references must still resolve. If you
    delete a heading, retarget or remove the pointers that aimed at it
    as part of that same approved finding. After a move, check the

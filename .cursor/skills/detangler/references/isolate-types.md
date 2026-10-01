@@ -14,8 +14,8 @@ that nothing else references, with `no` on both joints, is
    node's claim.
 2. The concept does not serve the question that node answers.
 3. Later nodes do not take it up.
-4. The action is only cut, weave into this node, or move to the
-   node that already owns it.
+4. The action is only weave into this node, move to the node that
+   already owns it, or cut.
 
 If any of those four is not writable, it is a strand. Count it.
 Do not list it.
@@ -35,9 +35,10 @@ just because both sentences belong to the section.
 - **unwoven_claim** — the concept belongs to this draft's job.
   It appears once (a sentence, sometimes a short paragraph) and
   dies. The point may be good. It has no body and no joint.
-  Usually `judgment_call`. Action: cut it, or extend it until
-  surrounding claims depend on it — enough that it could be a
-  heading, or enough that the node claim must mention it.
+  Usually `judgment_call`. Action: extend it until surrounding
+  claims depend on it — enough that it could be a heading, or
+  enough that the node claim must mention it. Or cut it, if this
+  draft's job does not need it.
 - **debris** — the concept belongs to another job: a leftover
   from a cut, a paste, an agent aside, a note from a different
   draft. Developing it would add a second job. `broken` when the

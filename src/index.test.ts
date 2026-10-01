@@ -46,6 +46,23 @@ test("comb skill is the report hour and does not name a CLI", () => {
 	assert.match(skill, /register seam/);
 });
 
+test("cuts keep what only the cut passage carried", () => {
+	const ref = (skill: string, file: string) =>
+		readFileSync(join(skillDir(skill as (typeof skillNames)[number]), "references", file), "utf8").replace(
+			/\r\n/g,
+			"\n",
+		);
+	const isolates = ref("detangler", "isolate-types.md");
+	assert.match(isolates, /weave into this node, move to the node that\s+already owns it, or cut/);
+	assert.match(isolates, /if this\s+draft's job does not need it/);
+	const classes = ref("detangler", "repetition-classes.md");
+	assert.match(classes, /carry any fact,\s+qualifier, or example only the cut instance has/);
+	const apply = ref("detangler-apply", "apply.md");
+	assert.match(apply, /Smallest means least scope,\s+not fewest words/);
+	assert.match(apply, /Repair the handoff it broke/);
+	assert.match(apply, /drop a\s+fact, example, or qualifier only the cut passage carried/);
+});
+
 test("apply skill works from report.md and does not name a CLI", () => {
 	const skill = readSkill("detangler-apply");
 	assert.match(skill, /^---\nname: detangler-apply\n/m);
