@@ -42,5 +42,13 @@ cut the other.
 Class: `sibling`. `judgment_call`. Action: keep Install; on Skill
 leave a pointer.
 
+**Emit.** The overview says "The plan is free for teams under ten."
+Pricing, three sections later, says "Every seat is $5 a month." The
+wording shares nothing, but both answer the same question: what
+does a small team pay? Class: `contradictory`. `broken`. Action:
+ask which is current, then make the other match. Do not pick one
+yourself. A contradiction is a same-claim pair even when the words
+do not repeat.
+
 **Do not emit.** You cannot say, in one clause each, what job A and
 B are doing. No finding.

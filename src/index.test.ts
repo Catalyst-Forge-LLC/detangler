@@ -57,6 +57,7 @@ test("cuts keep what only the cut passage carried", () => {
 	assert.match(isolates, /if this\s+draft's job does not need it/);
 	const classes = ref("detangler", "repetition-classes.md");
 	assert.match(classes, /carry any fact,\s+qualifier, or example only the cut instance has/);
+	assert.match(classes, /A contradiction is a same-claim pair even when the words\s+do not repeat/);
 	const apply = ref("detangler-apply", "apply.md");
 	assert.match(apply, /Smallest means least scope,\s+not fewest words/);
 	assert.match(apply, /Repair the handoff it broke/);
