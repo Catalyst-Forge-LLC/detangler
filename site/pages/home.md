@@ -1,17 +1,10 @@
 ---
-title: Find structural problems left behind by repeated edits.
-description: "An installable skill for AI agents. Finds structural problems left by repeated edits: broken references, contradictions, duplicated material, and flows that no longer connect."
+title: "Find what repeated edits left disconnected."
+description: "After a draft or app has changed many times, Detangler checks for stale references, contradictions, duplicated material, and flows that no longer connect. Read the report, then choose the repairs."
 order: 0
 ---
 
-An installable skill for AI agents. Detangler finds structural problems left by repeated edits: stale references, contradictions, duplicated sections, and application flows that no longer connect.
-
-An agent reads the skill and writes a report. Review does not change the draft or the product. Naming finding ids applies those. “Apply the report” authorizes every finding marked broken.
-
-<div class="cta-row">
-  <a class="cta cta-primary" href="/docs/install">Install in your agent</a>
-  <a class="cta cta-secondary" href="https://github.com/Catalyst-Forge-LLC/detangler">View on GitHub</a>
-</div>
+<section class="value-hero" aria-label="Detangler overview"><div class="value-intro"><p class="value-kind">Structural review skills for your AI agent</p><h1>Find what repeated edits left disconnected.</h1><p class="value-lede">After a draft or app has changed many times, Detangler checks for stale references, contradictions, duplicated material, and flows that no longer connect. Read the report, then choose the repairs.</p><div class="cta-row"><a class="cta cta-primary" href="/docs/install">Install Detangler</a><a class="cta cta-secondary" href="/docs/sample-report">Read a sample report</a></div><p class="value-limit">Review leaves the source unchanged. Apply named findings when you are ready. Draft and app reviews use separate skills.</p></div><figure class="value-proof"><figcaption>Illustrative example</figcaption><p><strong>Starting point</strong><br>A note says “see the Resources section.” That section was deleted.</p><div class="value-result"><p><strong>What you get</strong><br>A finding marked broken, with the location of the stale pointer.</p></div><p>You can repair the reference without treating the whole draft as a rewrite.</p><p class="value-note">Illustrative finding. Applying a report is a separate instruction.</p></figure></section>
 
 ## One example
 
