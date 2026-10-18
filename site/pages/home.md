@@ -4,17 +4,25 @@ description: "After a draft or app has changed many times, Detangler checks for 
 order: 0
 ---
 
-<section class="value-hero" aria-label="Detangler overview"><div class="value-intro"><p class="value-kind">Structural review skills for your AI agent</p><h1>Find what repeated edits left disconnected.</h1><p class="value-lede">After a draft or app has changed many times, Detangler checks for stale references, contradictions, duplicated material, and flows that no longer connect. Read the report, then choose the repairs.</p><div class="cta-row"><a class="cta cta-primary" href="/docs/install">Install Detangler</a><a class="cta cta-secondary" href="/docs/sample-report">Read a sample report</a></div><p class="value-limit">Review leaves the source unchanged. Apply named findings when you are ready. Draft and app reviews use separate skills.</p></div><figure class="value-proof"><figcaption>Illustrative example</figcaption><p><strong>Starting point</strong><br>A note says “see the Resources section.” That section was deleted.</p><div class="value-result"><p><strong>What you get</strong><br>A finding marked broken, with the location of the stale pointer.</p></div><p>You can repair the reference without treating the whole draft as a rewrite.</p><p class="value-note">Illustrative finding. Applying a report is a separate instruction.</p></figure></section>
-
-## One example
-
-A note still says “see the Resources section” after Resources was deleted.
-
-The report flags that pointer as **broken**, names the section that said it, and leaves the note unchanged.
-
-A method can end, and three asides can sit between it and the example. On a draft, the report names that interruption and where the example could sit. It does not rewrite the sentence.
-
-[Install in your agent](/docs/install) · [See a draft report](/docs/sample-report) · [See an app report](/docs/sample-app-report)
+<section class="value-hero" aria-label="Detangler overview"><div class="value-intro"><div class="value-headline"><p class="value-kind">Structural review skills for your AI agent</p><h1>Find what repeated edits left disconnected.</h1></div><div class="value-pitch"><p class="value-lede">After a draft or app has changed many times, Detangler checks for stale references, contradictions, duplicated material, and flows that no longer connect. Read the report, then choose the repairs.</p><div class="cta-row"><a class="cta cta-primary" href="/docs/install">Install Detangler</a><a class="cta cta-secondary" href="#one-example">See a pointer repaired</a></div><p class="value-limit">Review leaves the source unchanged. Apply named findings when you are ready. Draft and app reviews use separate skills.</p></div></div>
+<figure class="value-proof worked-example" id="one-example" tabindex="-1">
+<figcaption>Send readers to the section that actually has the answer</figcaption>
+<p class="example-context">From the worked-over-note fixture: headings moved during editing, but an old numbered reference survived.</p>
+<section class="example-step" aria-labelledby="example-step-1">
+<h2 id="example-step-1"><span>1 · Edited draft</span> The pointer sends readers to the wrong section</h2>
+<blockquote><p>See Section 5 if you need the hook itself.</p></blockquote><p>Section 5 is now <strong>Why we wait</strong>. The hook is under <strong>How we invalidate</strong>, now section 6.</p>
+</section>
+<section class="example-step example-report" aria-labelledby="example-step-2">
+<h2 id="example-step-2"><span>2 · Detangler report</span> Locate the stale reference</h2>
+<p><strong>F-004 · broken · misdirected</strong><br><code>s3 (line 23)</code></p><p><strong>Action:</strong> Point at s5 (How we invalidate), or name the hook section by title.</p><p>The report uses stable section IDs; <code>s5</code> identifies the heading now numbered 6.</p>
+</section>
+<section class="example-step" aria-labelledby="example-step-3">
+<h2 id="example-step-3"><span>3 · Author-applied repair</span> Name the destination readers need</h2>
+<blockquote><p>See “How we invalidate” if you need the hook itself.</p></blockquote><p class="example-payoff">The reader can find the hook without chasing an obsolete section number.</p><p>The author can make this one edit or ask the Apply skill to address <code>F-004</code>.</p>
+</section>
+<p class="value-note">The finding comes from the sample report. The repaired sentence is an illustrative author edit; review alone leaves the draft unchanged.</p>
+<p class="example-links"><a href="/docs/sample-report">Read the full draft report</a> · <a href="/docs/sample-app-report">See a different example for apps</a></p>
+</figure></section>
 
 ## What it reads, writes, and changes
 
@@ -28,12 +36,16 @@ A method can end, and three asides can sit between it and the example. On a draf
 
 Choose Draft for prose and document sets. Choose App for screens, navigation, and user flows. Install the matching Apply skill only when you want it to work approved findings. A documentation set is the draft route unless you are reviewing interaction flows.
 
+<div class="comparison-scroll" role="region" aria-label="Draft and application review comparison" tabindex="0">
+
 | | Drafts | Programs |
 | --- | --- | --- |
 | Skill | `detangler` | `detangler-app` |
 | Apply | `detangler-apply` | `detangler-app-apply` |
 | Object | A long draft, or a named set of pages | An app, a site, an iterated product |
 | A defect it can report | “See Resources” after Resources was deleted | A Settings item that goes nowhere |
+
+</div>
 
 Do not run the draft skill on an app, or the app skill on a prose draft.
 
@@ -43,11 +55,15 @@ Install the matching apply skill. Name finding ids to apply those. “Apply the 
 
 ## Findings
 
+<div class="comparison-scroll" role="region" aria-label="Finding types and examples" tabindex="0">
+
 | Kind | Means | Drafts | Programs |
 | --- | --- | --- | --- |
 | **Broken** | Wrong as written | “See the Resources section” after Resources was deleted | A button that goes to a deleted route |
 | **Intentional but verify** | Looks deliberate, check it | A term used two sections before it is defined | Two Settings screens, user vs admin |
 | **Judgment call** | Reasonable people would differ | Two sections covering the same ground | Two create-flows that still agree |
+
+</div>
 
 ## Optional neighbors
 
