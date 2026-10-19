@@ -4,7 +4,7 @@ name: Detangler
 type: agent skill package
 status: active
 license: MIT
-version: 0.1.27
+version: 0.1.28
 homepage: https://detangler.dev
 repository: https://github.com/Catalyst-Forge-LLC/detangler
 stack:
