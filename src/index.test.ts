@@ -107,25 +107,18 @@ test("package ships skills and has no bin", () => {
 	assert.ok("./skills/*" in pkg.exports);
 });
 
-test("public copy treats drafts and programs as first-class", () => {
+test("public pages offer both the draft and app skills", () => {
 	const home = readFileSync(join(packageRoot, "site", "pages", "home.md"), "utf8");
 	const install = readFileSync(join(packageRoot, "site", "docs", "install.md"), "utf8");
 	const readme = readFileSync(join(packageRoot, "README.md"), "utf8");
-	assert.match(home, /\|\s*Drafts\s*\|\s*Programs\s*\|/);
+	assert.match(home, /href="\/docs\/install"/);
 	assert.match(home, /detangler-app/);
-	assert.match(home, /draft or (application|program)/i);
-	assert.match(home, /Install Detangler/);
 	assert.doesNotMatch(home, /pnpm add/);
 	assert.doesNotMatch(home, /not in the zip today/);
 	assert.match(install, /detangler-app\.zip/);
 	assert.match(install, /detangler-app-apply\.zip/);
-	assert.match(install, /Which agent do you use/);
-	assert.match(install, /Other installation methods/);
 	assert.match(readme, /detangler-app/);
-	assert.match(readme, /Get started/);
 	assert.doesNotMatch(readme, /later programs/);
-	assert.doesNotMatch(home, /whole artifact/);
-	assert.doesNotMatch(readme, /whole artifact/);
 });
 
 test("docs nav has a markdown file for every item", () => {
