@@ -114,7 +114,7 @@ test("public copy treats drafts and programs as first-class", () => {
 	assert.match(home, /\|\s*Drafts\s*\|\s*Programs\s*\|/);
 	assert.match(home, /detangler-app/);
 	assert.match(home, /draft or (application|program)/i);
-	assert.match(home, /Install in your agent/);
+	assert.match(home, /Install Detangler/);
 	assert.doesNotMatch(home, /pnpm add/);
 	assert.doesNotMatch(home, /not in the zip today/);
 	assert.match(install, /detangler-app\.zip/);
