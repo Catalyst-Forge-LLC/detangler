@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="site/static/logo.png" alt="Detangler" width="128" />
+  <img src="https://detangler.dev/logo.png" alt="Detangler" width="128" />
 </p>
 
 # Detangler
@@ -31,6 +31,21 @@ A writable workspace is required. Sample draft report:
 [detangler.dev/docs/sample-report](https://detangler.dev/docs/sample-report).
 Sample app report:
 [detangler.dev/docs/sample-app-report](https://detangler.dev/docs/sample-app-report).
+
+## Repair a reference left behind by an edit
+
+The worked-over-note fixture still says **“See Section 5 if you need the hook itself.”** Section 5 is now **Why we wait**. The hook moved to **How we invalidate**, numbered 6.
+
+The [sample report](https://detangler.dev/docs/sample-report) identifies the mismatch:
+
+> **F-004 · broken · misdirected** at `s3 (line 23)`.
+> Point at s5 (How we invalidate), or name the hook section by title.
+
+The report uses stable section IDs: `s5` identifies the heading now numbered 6. An author-applied repair is:
+
+> See “How we invalidate” if you need the hook itself.
+
+The reader reaches the hook without chasing the obsolete number. Review leaves the draft unchanged. Make this edit yourself or ask the matching Apply skill to address `F-004`. The finding comes from the sample report; the repaired sentence illustrates the resulting edit.
 
 ## First run
 

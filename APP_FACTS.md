@@ -1,7 +1,7 @@
 ---
 app_facts_version: 0.1.0
 name: Detangler
-type: web app
+type: agent skill package
 status: active
 license: MIT
 version: 0.1.27
@@ -27,7 +27,7 @@ credits:
 
 # Detangler
 
-`web app` · **active** · MIT
+`agent skill package` · **active** · MIT
 
 Find what the editing tangled. Structural pass for drafts and programs that have been worked over. Combs the whole draft or the whole program, not single strands.
 
@@ -56,4 +56,4 @@ _None listed_
 ---
 *Generated with [AppFacts](https://appfacts.dev) · Built by [Catalyst Forge](https://www.catalystforge.com/) · [Visual label][appfacts-label]*
 
-[appfacts-label]: https://appfacts.dev/v#af1.eNpNkEFLxDAQhf9KeYc9pS1ec10RlNWL3kRkmgxp3DQJzbS6LPvfJVsWPc7Mx3sfc8YKfacQaWJo3LNQdIFnKMgp19U3Dw3lDIUiJEuBBhnxK0MheMOxVOr58W0jzBH6jEDRLeTq5YlWejWzzwKFeYnir00vyXL3VWpPSsFHB40c84SLguVcoN8_FIbFB1sDM5kjOf6cKJLj-QYrCBeBhhTT7HZNTJabtq3LxvoivY-Wf7o6b2UmTdmHKnCNbspmdlEY08R5Ux5FctF9b2_f6Cyv1Z5zKl7SfPoHOS_jMnQmTf2ehMKpSPuQZsft4bD_i8DlF7J8ejs
+[appfacts-label]: https://appfacts.dev/v#af1.eNpNkEFLxDAQhf9KmMOe0havua4IyupFbyIymwxpbJqEzrRYlv53ydZFj_PmzXsfc4EFzJ2GhCOBgXsSTD7SBBpkLVVCT0kUDyFGVdAO6Ak0sKDMXNdWwlKVGCwlrhfPj2-7ww5gLhAx-bleGXjCBV_tFIqAhmlOEq6tL9lR-8W1M-cYkgcDJZURNg2OCoN5_9BwnkN0NfCX4nPEhJ6mm1mDEAsYELbqcFApO1JNU0XlAksXkqPvts57mc1jCbECXKMV72Sbhj6PVHbkXqSw6Tp3-0zraKn0VDIHydP6z-SD9PO5tXnsjigYV5bmIU-emtPp-BcB2w83in7W
