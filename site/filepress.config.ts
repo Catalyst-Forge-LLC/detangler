@@ -5,9 +5,9 @@ const npm = "https://www.npmjs.com/package/detangler";
 
 export default defineFilepressConfig({
 	title: "Detangler",
-	description: "After a draft or app has changed many times, Detangler checks for stale references, contradictions, duplicated material, and flows that no longer connect. Read the report, then choose the repairs.",
+	description: "After a draft or app has changed many times, Detangler checks for stale references, contradictions, duplicated material, and flows that no longer connect. Review the findings, then use the separate apply skill to repair the ones you select.",
 	tagline: "A structural pass for drafts and programs that have been worked over.",
-	lede: "Structural review skills for your AI agent",
+	lede: "Review and repair skills for your AI agent",
 	url: "https://detangler.dev",
 	author: "Catalyst Forge LLC",
 	logo: "/logo.png",

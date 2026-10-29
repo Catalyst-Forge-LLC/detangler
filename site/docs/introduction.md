@@ -2,7 +2,7 @@
 title: What it does
 ---
 
-**Detangler** is an installable skill for AI agents. It finds structural problems left by repeated edits: stale references, contradictions, duplicated sections, and flows that no longer connect.
+**Detangler** supplies review and repair skills for AI agents working on drafts or apps. It finds stale references, contradictions, duplicated sections, and flows that no longer connect, then provides a separate apply step for the repairs you select.
 
 An agent reads the matching skill and writes a report. Review does not edit the source. Apply is a second skill, after you select findings.
 

@@ -3,7 +3,7 @@
 	"version": "0.1.29",
 	"private": false,
 	"type": "module",
-	"description": "Find what the editing tangled. Structural pass for drafts and programs that have been worked over. Combs the whole draft or the whole program, not single strands.",
+	"description": "Review and repair skills for drafts and apps: find stale references, contradictions, duplication, and disconnected flows, then apply selected findings.",
 	"license": "MIT",
 	"author": "Catalyst Forge LLC",
 	"keywords": [

@@ -1,10 +1,10 @@
 ---
-title: "Find what repeated edits left disconnected."
-description: "After a draft or app has changed many times, Detangler checks for stale references, contradictions, duplicated material, and flows that no longer connect. Read the report, then choose the repairs."
+title: "Find and repair what repeated edits left disconnected."
+description: "After a draft or app has changed many times, Detangler checks for stale references, contradictions, duplicated material, and flows that no longer connect. Review the findings, then use the separate apply skill to repair the ones you select."
 order: 0
 ---
 
-<section class="value-hero" aria-label="Detangler overview"><div class="value-intro"><div class="value-headline"><p class="value-kind">Structural review skills for your AI agent</p><h1>Find what repeated edits left disconnected.</h1></div><div class="value-pitch"><p class="value-lede">After a draft or app has changed many times, Detangler checks for stale references, contradictions, duplicated material, and flows that no longer connect. Read the report, then choose the repairs.</p><div class="cta-row"><a class="cta cta-primary" href="/docs/install">Install Detangler</a><a class="cta cta-secondary" href="#one-example">See a pointer repaired</a></div><p class="value-limit">Review leaves the source unchanged. Apply named findings when you are ready. Draft and app reviews use separate skills.</p></div></div>
+<section class="value-hero" aria-label="Detangler overview"><div class="value-intro"><div class="value-headline"><p class="value-kind">Review and repair skills for your AI agent</p><h1>Find and repair what repeated edits left disconnected.</h1></div><div class="value-pitch"><p class="value-lede">After a draft or app has changed many times, Detangler checks for stale references, contradictions, duplicated material, and flows that no longer connect. Review the findings, then use the separate apply skill to repair the ones you select.</p><div class="cta-row"><a class="cta cta-primary" href="/docs/install">Install Detangler</a><a class="cta cta-secondary" href="#one-example">See a pointer repaired</a></div><p class="value-limit">Review leaves the source unchanged. Apply named findings when you are ready. Draft and app reviews use separate skills.</p></div></div>
 <figure class="value-proof worked-example" id="one-example" tabindex="-1">
 <figcaption>Send readers to the section that actually has the answer</figcaption>
 <p class="example-context">From the worked-over-note fixture: headings moved during editing, but an old numbered reference survived.</p>
