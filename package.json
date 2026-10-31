@@ -1,6 +1,6 @@
 {
 	"name": "detangler",
-	"version": "0.1.32",
+	"version": "0.1.33",
 	"private": false,
 	"type": "module",
 	"description": "Review and repair skills for drafts and apps: find stale references, contradictions, duplication, and disconnected flows, then apply selected findings.",
