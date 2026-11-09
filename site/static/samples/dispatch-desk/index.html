@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dispatch Desk · Detangler sample</title>
+<style>
+  :root { font: 100%/1.5 system-ui, sans-serif; color-scheme: light dark; }
+  body { max-width: 42rem; margin: 2rem auto; padding: 0 1rem; }
+  nav, .bar, li { display: flex; align-items: baseline; flex-wrap: wrap; gap: .5rem; }
+  button, input { font: inherit; padding: .2rem .5rem; }
+  ul { padding: 0; } li { padding: .3rem 0; }
+  [aria-current="page"] { font-weight: bold; text-decoration: underline; }
+</style>
+<main>
+  <h1>Dispatch Desk</h1>
+  <p>Queue repair tickets and send them to the bench. This practice desk resets on reload.</p>
+  <nav aria-label="Views"></nav>
+  <h2 id="heading"></h2>
+  <section id="view" aria-labelledby="heading"></section>
+  <p role="status" id="status"></p>
+</main>
+<script>
+  const tickets = [
+    { id: 1, title: 'Inspect lamp', bench: false },
+    { id: 2, title: 'Test radio', bench: true }
+  ];
+  let nextId = 3;
+  let query = '';
+  const view = document.querySelector('#view');
+  const heading = document.querySelector('#heading');
+  const nav = document.querySelector('nav');
+  const status = document.querySelector('#status');
+
+  function element(tag, text) {
+    const node = document.createElement(tag);
+    if (text !== undefined) node.textContent = text;
+    return node;
+  }
+  function button(label, act) {
+    const node = element('button', label);
+    node.type = 'button';
+    node.addEventListener('click', act);
+    return node;
+  }
+  function screen(title, current) {
+    heading.textContent = title;
+    status.textContent = '';
+    view.replaceChildren();
+    nav.replaceChildren();
+    for (const name of ['Queue', 'Bench', 'Search']) {
+      const tab = button(name, () => list(name));
+      if (name === current) tab.setAttribute('aria-current', 'page');
+      nav.append(tab);
+    }
+  }
+  function send(id, origin) {
+    const ticket = tickets.find(t => t.id === id);
+    if (!ticket) { status.textContent = 'Ticket not found.'; return; }
+    ticket.bench = true;
+    list(origin);
+    status.textContent = ticket.title + ' sent to bench.';
+  }
+  function editor(origin, ticket) {
+    screen(ticket ? 'Ticket ' + ticket.id : 'New ticket', origin);
+    const form = element('form');
+    const label = element('label', 'Ticket title ');
+    const title = element('input');
+    title.required = true;
+    title.value = ticket ? ticket.title : '';
+    label.append(title);
+    const save = element('button', 'Save');
+    form.append(label, save);
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      if (ticket) ticket.title = title.value;
+      else tickets.push({ id: nextId++, title: title.value, bench: origin === 'Bench' });
+      list(origin);
+    });
+    view.append(form, button('Back to ' + origin, () => list(origin)));
+    if (ticket && !ticket.bench) view.append(button('Send to bench', () => send(ticket.id, origin)));
+    title.focus();
+  }
+  function list(name) {
+    screen(name, name);
+    const rows = element('ul');
+    function row(ticket, source) {
+      const li = element('li');
+      li.append(button(ticket.title, () => editor(name, ticket)), element('small', source));
+      if (name === 'Queue' && !ticket.bench) {
+        li.append(button('Send to bench', () => send('queue:' + ticket.id, name)));
+      }
+      rows.append(li);
+    }
+    if (name === 'Search') {
+      const label = element('label', 'Find a ticket ');
+      const input = element('input');
+      input.type = 'search';
+      input.value = query;
+      const count = element('p');
+      function results() {
+        query = input.value;
+        rows.replaceChildren();
+        const matches = tickets.filter(t => t.title.toLowerCase().includes(query.toLowerCase()));
+        for (const ticket of matches) row(ticket, 'Queue');
+        for (const ticket of matches.filter(t => t.bench)) row(ticket, 'Bench');
+        count.textContent = rows.children.length + ' tickets found';
+      }
+      input.addEventListener('input', results);
+      label.append(input);
+      view.append(label, count);
+      results();
+    } else {
+      view.append(button(name === 'Queue' ? 'New ticket' : 'New bench ticket', () => editor(name)));
+      for (const ticket of tickets.filter(t => name === 'Queue' || t.bench)) {
+        row(ticket, ticket.bench ? 'On bench' : 'Waiting');
+      }
+    }
+    view.append(rows);
+  }
+  list('Queue');
+</script>
+</html>

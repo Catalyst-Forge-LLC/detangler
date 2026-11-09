@@ -1,0 +1,21 @@
+{
+  "app": "../../site/static/samples/dispatch-desk/index.html",
+  "broken": [
+    {
+      "action": "Send Inspect lamp to the bench",
+      "reproduce": "From a fresh load, use Send to bench on the Queue row. Then open that same ticket and use Send to bench.",
+      "evidence": "The row reports Ticket not found and leaves the ticket waiting; the editor moves ticket 1 to Bench.",
+      "repairCheck": "From equivalent initial states, either door sends ticket 1 to Bench exactly once."
+    },
+    {
+      "action": "Search for an assigned ticket",
+      "reproduce": "From a fresh load, search for Test radio and open each result.",
+      "evidence": "Search counts two tickets; both results open Ticket 2. Editing either changes the same ticket.",
+      "repairCheck": "Count each ticket ID once. Create a second, independent ticket titled Test radio: the correct count is now two, not one."
+    }
+  ],
+  "keep": [
+    "New ticket in Queue and New bench ticket in Bench share the editor. One creates a waiting ticket; the other puts it directly on the bench. Each returns to the originating view."
+  ],
+  "report": "Fix first names a broken finding and its user consequence. Evidence distinguishes behavior exercised from source traced. The proposed check can be repeated."
+}

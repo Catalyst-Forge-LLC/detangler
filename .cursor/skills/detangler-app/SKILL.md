@@ -38,8 +38,10 @@ features.
 3. Extract the map. Ids and rules: `references/map.md`. Do not
    invent nodes. If a surface is not in what shipped, it is
    not on the map.
-4. Check the five scopes. Read the reference files before you
-   emit. Do not list the same evidence twice.
+4. Follow one item across the surfaces that handle it. Use the
+   traversal in `references/map.md` when an item crosses views;
+   for a static site, follow a promised deliverable to its destination.
+   Use what you learn to check the five scopes. Report a break once.
 5. Write `<stem>.detangler-app/report.md` using
    `references/report.md`. Create the folder if needed.
 6. Hand them `report.md`. Stop. Do not edit the product.

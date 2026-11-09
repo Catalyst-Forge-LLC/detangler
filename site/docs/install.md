@@ -190,5 +190,7 @@ Same folder shape. Discovery and first-use checks are the same.
 
 ## Sample reports
 
+To try a review across views, open [Dispatch Desk](/samples/dispatch-desk/) or copy its [self-contained app folder](https://github.com/Catalyst-Forge-LLC/detangler/tree/main/site/static/samples/dispatch-desk) into your workspace. Ask: “Use detangler-app on Dispatch Desk. Follow one ticket through the views that handle it. Write the report and leave the app unchanged.” Compare it with [Following an item](/docs/report#following-an-item) afterward.
+
 - [Draft report](/docs/sample-report)
 - [App report](/docs/sample-app-report)

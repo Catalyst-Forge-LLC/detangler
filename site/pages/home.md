@@ -47,7 +47,7 @@ Choose Draft for prose and document sets. Choose App for screens, navigation, an
 
 </div>
 
-Do not run the draft skill on an app, or the app skill on a prose draft.
+[Follow one ticket through Dispatch Desk](/docs/report#following-an-item). Send it from Queue to Bench, then find it in Search. Does the result count match the number of tickets you actually created?
 
 ## After the report
 

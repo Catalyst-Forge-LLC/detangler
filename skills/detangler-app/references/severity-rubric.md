@@ -24,10 +24,11 @@ user, one is admin. Same noun, different audience.
 Action: confirm both should stay, and that shared facts
 still match.
 
-**judgment_call.** Two create-job paths that still write
-the same entity the same way. Bounded context or leftover
-duplicate. Action: pick one as the door, or name why both
-exist on the map.
+**judgment_call.** Two create-job paths do the same job for
+the same audience. It is unclear why someone would choose one.
+Action: establish which door serves that job. If one is quick
+capture and the other creates in a chosen project, and both
+preserve that context, drop the finding.
 
 **When unsure.** A kitchen-sink Settings page might be the
 job. Choose `judgment_call` or skip. Do not mint `broken`

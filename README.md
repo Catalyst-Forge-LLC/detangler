@@ -68,6 +68,17 @@ For programs, use the
 [broken-settings](https://detangler.dev/samples/broken-settings/)
 fixture on first use.
 
+For a review across screens, try [Dispatch Desk](https://detangler.dev/samples/dispatch-desk/).
+It runs in a browser and resets on reload. Ask the app reviewer to follow
+one ticket from Queue to Bench, then find and open it from Search. To
+review locally, point it at the [sample source](site/static/samples/dispatch-desk/).
+
+The app report leads with what to fix first and why it matters. Each
+finding says whether the reviewer observed the behavior or traced it
+in the shipped source. Two ways to reach the same editor can both be
+worth keeping: the check is whether each preserves the ticket and the
+context the user chose.
+
 ## Other installation methods
 
 npm supplies the skill files. It does not register the skill with the

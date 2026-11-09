@@ -48,6 +48,27 @@ Ids: `e1`, `e2`, … plus the noun (`User`, `Job`, `Rule`).
 
 Do not mint an entity for a file the user never meets.
 
+## Follow one item
+
+Pick a noun central to the shipped job. Follow the same instance:
+create or choose it, find it from another view, open it, act on it,
+and return. Follow only the steps the product offers. If two doors
+promise the same outcome, try both with equivalent starting state.
+Look for the first point where the identity, count, destination, or
+return context changes. Use a second distinct item with matching
+text if you need to tell identity from coincidence.
+
+Exercise the flow with disposable synthetic data when an isolated
+instance is available. Otherwise trace the shipped controls to their
+readers, writers, and destinations. Do not exercise writes against
+real user data. On a site with no editable item, follow one artifact
+(for example, the advertised download through to the file it contains).
+
+Two views can serve different jobs and share the same editor or record.
+If the shortcut keeps the right context and both paths agree, keep them.
+Drop an apparent break that a check disproves. Use existing map nodes
+and finding types for the breaks that remain.
+
 ## Authority (`a`)
 
 Which representation is allowed to be true for one fact.
